@@ -1,0 +1,12 @@
+Changelogs | CyanPop 6.0.0
+===========================
+
+```bash
+
+Open the changelog.txt or open this: https://goo.gl/owHZqS
+
+```
+
+
+
+
