@@ -1,0 +1,1336 @@
+====================
+     12-01-2015
+====================
+
+
+   * bionic/
+91d934a Revert "Revert "linker: Reset the active shim libs each time we do a dlopen""
+8110520 linker: Don't try to walk the g_active_shim_libs when doing dlsym
+3a2debf kernel-header : add alarm type and clock type for power off alarm
+fd0140b Revert "linker: Reset the active shim libs each time we do a dlopen"
+
+   * device/motorola/msm8226-common/
+c9633f7 Revert "msm8226-common: Build the kernel with gcc-4.9"
+e68079e msm8226-common: Update overlay
+b565d02 msm8226-common: Update for PerformanceManager changes
+b8732d7 msm8226-common: overlay: move settings to cmsdk
+89d9909 Revert "msm8226-common: overlay: move settings to cmsdk"
+954afe9 msm8226-common: Drop USB charging mode
+8052335 msm8226-common: releasetools: Add radio version assertion
+e49b111 msm8226-common: FFC fps range fixup for falcon/peregrine
+d2758d7 msm8226-common: Fix FFC crash when using auto focus
+6970324 msm8226-common: remove duplicated sepolicy
+e7ba3a6 msm8226-common: Kill mm-parser
+0ba4389 msm8226-common: remove persist.sys.usb.config override
+f8b4c22 msm8226-common: Allow rild to write in /data/misc/cutback
+0f09066 msm8226-common: Switch back to TARGET_QCOM_NO_FM_FIRMWARE
+3f6fa29 Revert "msm8226-common: Set jemalloc as the default allocator"
+097572f msm8226-common: Update media codecs
+456cd55 msm8226-common: Update thermal config
+399a865 msm8226-common: Remove setup_fs
+8cb3ecf msm8226-common: Commonize fstab
+26fb141 msm8226-common: Build the kernel with gcc-4.9
+763f831 msm8226-common: Remove FM Radio dependency
+f5ae42e msm8226-common: configs: Update audio_platform_info
+d534827 msm8226-common: Add camera wrapper
+3bd1af2 msm8226-common: Commonize camera blobs
+a1a19b6 msm8226-common: Update blobs to M
+6fe7ccd msm8226-common: configs: Update audio_policy.conf
+5928240 msm8226-common: configs: update media_profiles.xml
+5b91a68 msm8226-common: overlay: Update power_profile.xml
+ca2501d msm8226-common: Allow init to write to userdata/cache
+32317b9 msm8226-common: PowerHAL: Don't override user selected profiles
+8546dac msm8226-common: Update dump_pds permissions
+6ed2f87 msm8226-common: update dump_pds.sh
+025ecad msm8226-common: Restore QCOM time daemon
+1e1a9a0 msm8226-common: sepolicy: Set needed permissions for FM app
+2b04c61 msm8226-common: fm: Update for M
+ba5c7ca msm8226-common: Remove libstlport dependency
+660ff5c msm8226-common: Start timekeep on early boot
+a2d6321 msm8226-common: Use OSS TimeKeep service by Sony
+706a1d4 msm8226-common: Set jemalloc as the default allocator
+2a3b926 msm8226-common: liblight/libmoto: Switch to clang
+7d72d85 msm8226-common: Switch to Clang by default
+381b474 msm8226-common: Replace LD_PRELOAD with LD_SHIM_LIBS
+9b17dcc msm8226-common: overlay: move settings to cmsdk
+c713b27 msm8226-common: Enable gapless playback (offload)
+a3d6d88 msm8226-common: PowerHAL: Initialize mutex
+db16fa4 msm8226-common: init: Don't use absolute paths for preloading libs
+f2b06af msm8226-common: libmoto: Add ril symbols
+b39ab0e msm8226-common: enable doze
+
+   * frameworks/av/
+aeda337 Fix for getPosition after seek
+8a55244 Correct the time returned by AudioPlayer::getMediaTime
+118bc1d The progress bar of next song is not properly started in offload use case
+ee0fd2d audio: reset vorbis EOS status after a flush
+bbb702d GenericSource: acquire lock only for assigning dataSource.
+e4b4124 GenericSource: Hold an additional reference to dataSource.
+3745361 GenericSource: Synchronize access to dataSource
+c263222 stagefright: omx: delay observer death handling
+d15a8bd Audio Effects are not processing first buffer
+6cdcb6a Workaround for busy wait bug
+742132a MediaCodec: reset size to zero for EOS.
+43e8dfa stagefright: Fix tags in mpeg4 not parsed correctly.
+d69ffb9 libstagefright: Handle MPEG4 DP playback
+
+   * frameworks/base/
+a68350f QuickSettings: Add long click support for all tiles
+c18d632 QuickSettings: Improve draggable tiles management
+2ecf005 Screen pinning improvements
+
+   * kernel/motorola/msm8226/
+a6681ff MonsterKernel-MM Released
+1f3263f titan,thea,peregrine,falcon Updated defconfigs
+192c722 V1.1 FOR 6.0.0
+86334c6 Updated defconfigs
+4a760e1 Added FIFO Scheduler
+edc560c video: mdss: Report PCC values from pp registers
+0767fca Fix build
+f174e76 Removed LAZYPLUG on 6.0.0
+ca8e092 Up defconfigs
+1034f2e Added build-zip.sh
+45123da xz: Optimize Sfck Compression
+ad73fd4 block: Disable add_random
+4e20dea block: deadline: Optimize for non-rotational
+b87e017 Thea & titan: Added pure defconfig kernel
+9168538 Advanced TCP Congestions
+c65a191 Reclaim RAM from loggers
+058b24b random: entropy tweaks are all the rage nowadays
+9a2901a block: cfq: merge tweaked tunables.
+f108fb9 Enable pipe flag.
+bcb74e3 writeback: increase bdi_min_ratio to 5
+3ba62c9 mmc: Disable crc check
+c28bbaf Added optimized ARM RWSEM algorithm.
+59b9b94 arm: lz4: faster boot-up process.
+8291251 intelli_plug: add performance boost option
+ed2d38b increase Torch power 20mA
+4561387 drivers: usb: Use Android device as USB keyboard/mouse
+def2b5d drivers/thermal/Kconfig: fix default prompt error
+6cf572f Enabled lazyplug by default
+821e227 msm: kgsl: Bump the GPU frequency for long blocks of processing
+1df20cc msm: kgsl: set the correct max_state
+9d6292b PM / devfreq: Check for GPU busy time before sending the sample
+2567d40 Up defconfigs
+d6d50b7 msm: mdss: KCAL: Remove deprecated __dev* markings
+2ec39a6 msm: mdss: Add pa_v2 support to KCAL
+7b70b4c msm: mdss: Replace PGC implementation with PCC for KCAL
+3b3ed4e msm: mdss: Add KCAL support for post processing control [v2]
+5baba79 lazyplug: add mutex & boolean check for lazy mode
+52eb8ed vidc: add lazyplug hooks
+f870e4a Introduce Lazyplug
+a95a7c7 drivers: notifier: add state notifier driver
+2c34e89 sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire. From http://ripke.com/loadavg/moire
+304fb6d Up defconfigs
+0b15436 Added intelliactive governor
+83b65df Added dancedance governor
+1db8766 Added Wheatley governor
+604e1bc Updated defconfigs
+5391749 Sound Control: let register lock be dependent on different hw revisions
+ca43f91 Sound Control: Misc clean up for newer WCD9xxx SOCs
+8881d8f Sound Control: expose direct register manipulations to userspace
+4fa7f9f Sound Control 3.2: Adapt for Titan
+04b7793 Sound Control 3.2: Initial Port to MSM8226 Socs Signed-off-by: Paul Reioux <reioux@gmail.com>
+cc3dc66 Enabled BFQ-BFQIO
+7f933f3 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
+5aa9d32 block: introduce the BFQ-v7r8 I/O sched for 3.4
+deb2a91 block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
+534acfb Enabled INTELLI_PLUG
+1957901 Intelli_plug: kernel sched/core: add per cpu nr_running stats
+db468be intelli_plug: refactor stats calculation code to be less intrusive
+62f832d Added Intelli_plug from faux123
+a76e105 net: ipv6: Amend ipv6_recv_error usage
+811b353 msm: qcrypto: remove duplicate define for list_next_entry
+d514977 wlan: prima: Fix GCC 5.1.0 Build issues with WDI_ProcessResponse
+7aad410 lib: unlzo: Fix GCC 5.1.0 Build
+2b0d82b wlan: prima: Fix GCC 5.1.0 Build
+f649170 msm: vidc: update format during downscaling
+967a50f gcc5: drivers/staging/prima/CORE/MAC/src/pe/sch/schBeaconGen.c: fix warning: passing argument 2 of 'vos_mem_compare' discards 'const' qualifier from pointer target type
+3a7ff95 gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: comparison of constant '15' with boolean expression is always false
+905cc05 gcc5: drivers/video/msm/mdss/mdss_mdp_pp.c: fix warning: logical not is only applied to the left hand side of comparison
+a555c6b gcc5: sound/soc/codecs/wcd9xxx-mbhc.c fix warning: initialization discards 'const' qualifier from pointer target type
+84d20d2 gcc5: gpu: msm: fix 5.0 compile
+5b875bc Fix warnings spam with gcc5
+6abf870 arm: msm: mmi-pinmux: Fix GCC 5.1 Build
+4c4370b include: Add support for GCC 5.0,GCC 5.1 and 6.0
+d73a8c1 Enabled Alucard governor
+d04413a Enabled USB_FORCE_FAST_CHARGE
+7e94b50 Add Alucard Governor
+0e75869 ZEN I/o
+e411932 SIO I/O
+3e55206 LionHeart governor
+5a5dec3 Temp:Enabled CPU_BOOST && enabled defconfigs
+844ec51 MonsterKERNEL-MM
+4f9e8b8 Added I/O SioPlus
+982b9ca msm: vidc: Always return 0 for EXTRADATA_SIZE
+57119a7 Always set noatime no diratime on all partitions! I/O Boost! V2
+925923f Always set noatime no diratime on all partitions! I/O Boost!
+4f671af Supress more GCC 5.0 warnings
+82956dc Optimized SLUB memory allocator (creds: Christopher83)
+1074ceb THEA: Enabled INTELLI_THERMAL_V2=y
+174df1a INTELLI_THERMAL V2
+08a9f48 intellithermal v2: adapt for MSM8226 architecture
+a40f2ca Enabled frandom
+c34f44f Add /dev/frandom
+6519a93 Enabled modules
+cae7ea0 USB Force Fast charge
+1bd2cda drivers/usb/gadget/Kconfig:881:warning: defaults for choice values
+92950f6 Bye bye localversion
+1a275a2 msm8226: configs: disable CONFIG_SYSVIPC
+a387739 defconfig: Update falcon, peregrine, titan and thea defconfigs
+db5d6f4 power: qpnp-bms-mmi: Fix devm_kfree warning caused by NULL pointer
+3e47b3a ARM: dts: msm: Limit ADSP CMA heap to lowmem for 8x26
+d03dd85 defconfig: Enable CONFIG_UID_CPUTIME
+a5919fa cpu_power: Avoids race condition when the task exits.
+9adae85 sched: cpufreq: Adds a field cpu_power in the task_struct
+d66f857 cpufreq_stats: Adds the fucntionality to load current values for each frequency for all the cores.
+054a267 cpufreq: prevents NULL pointer reference while all_time_in_state stats is collected.
+5f7ee9a cpufreq: fix sleeping in atomic context when realloc freq_table for all_time_in_state
+06aede5 cpufreq: Persist cpufreq time in state data across hotplug
+4bceedd uid_cputime: Iterates over all the threads instead of processes.
+423fb32 uid_cputime: fix cputime overflow
+ff976ac uid_cputime: Fixes double accounting race condition on task exit.
+97df292 uid_cputime: Extends the cputime functionality to report power per uid
+b034bee proc: uid_cputime: fix show_uid_stat permission
+e3cdc03 proc: uid: Changes the thread notifier to profile event notifier.
+f7807b0 proc: uid: Adds accounting for the cputimes per uid.
+a693e53 defconfig: Enable tee target for netfilter
+8a7189e msm: vidc: add driver support to enable operating rate
+f4c57d2 msm: vidc: Enable session priority support.
+04f1d1c msm: vidc: Fix race condition during concurrent sessions
+f4333b4 Enable setting security contexts on rootfs inodes.
+4014252 selinux: enable genfscon labeling for sysfs and pstore files
+8130ed6 selinux: enable per-file labeling for debugfs files.
+be69348 selinux: correctly label /proc inodes in use before the policy is loaded
+109010b SELinux: ss: Fix policy write for ioctl operations
+54f8d95 SELinux: use deletion-safe iterator to free list
+1f7a84e SELinux: per-command whitelisting of ioctls
+5f6e079 security: lsm_audit: add ioctl specific auditing
+2d2eab8 SELinux: Update policy version to support constraints info
+a66a933 SELinux: add default_type statements
+e985fcf SELinux: allow default source/target selectors for user/role/range
+bbcec82 selinux: add SOCK_DIAG_BY_FAMILY to the list of netlink message types
+5d0a2e5 selinux/nlmsg: add XFRM_MSG_MAPPING
+cf8776d selinux/nlmsg: add XFRM_MSG_MIGRATE
+7526a16 selinux/nlmsg: add XFRM_MSG_REPORT
+ed4cc8b selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO
+8194911 selinux/nlmsg: add XFRM_MSG_GETSPDINFO
+7b7c1b6 selinux/nlmsg: add XFRM_MSG_NEWSPDINFO
+da79672 proc: Allow proc_free_inum to be called from any context
+65b532d proc: Usable inode numbers for the namespace file descriptors.
+a4e0fc5 proc: Fix the namespace inode permission checks.
+3e9b008 proc: Generalize proc inode allocation
+1d034b9 vfs: Allow unprivileged manipulation of the mount namespace.
+8f3cd07 vfs: Only support slave subtrees across different user namespaces
+d746194 vfs: Add a user namespace reference from struct mnt_namespace
+41c13b9 vfs: Add setns support for the mount namespace
+dbec0a6 consitify do_mount() arguments
+94268ed do_add_mount()/umount -l races
+f8871f9 fs: introduce inode operation ->update_time
+9830c65 VFS: Comment mount following code
+61d2903 VFS: Make clone_mnt()/copy_tree()/collect_mounts() return errors
+5679746 get rid of magic in proc_namespace.c
+495c0f5 get rid of ->mnt_longterm
+d8b1bac brlocks/lglocks: API cleanups
+a136294 brlocks/lglocks: turn into functions
+a13844d lglock: remove online variants of lock
+97211ce Revert "Revert "msm-camera: move target checks to userspace""
+3354dd3 wlan: Address buffer overflow due to invalid length
+b945bbd ARM: 8160/1: drop warning about return_address not using unwind tables
+
+   * packages/apps/Settings/
+3c9cda8 Revert "Added custom header"
+b00a65e Device info: Remove IMEI info from SIM status
+60a3d0a Fixed build
+205795b Settings: CyanPop devices & maintainers
+825c353 Settings: About CyanPop
+808abb9 Added custom header
+
+   * system/core/
+52746ee healthd: Actually use correct common backlight function
+78c2848 healthd: Call common backlight function
+1705d1c Revert "healthd: charger: Add backlight control in charging animation"
+7cad6ee healthd: charger: Add backlight control in charging animation
+ae15b25 healthd: Turn screen off before rebooting
+
+   * vendor/cm/
+650f671 CyanPoP 3.0 Released & Updated stuff
+da68f9f default marshmallow wallpapers (all devices) *should cover all current screen sizes
+5c7a633 Removed cm's wallpapers
+2c9da0c Correct Tele2 Sweden APNs and remove Comviq Sweden.
+
+====================
+     11-30-2015
+====================
+
+
+   * device/motorola/falcon/
+23ec0db falcon: Add radio version whitelist
+
+   * device/motorola/peregrine/
+e3d1cf0 peregrine: Add radio assert
+
+   * device/motorola/thea/
+f9ae8c3 thea: Add radio assert
+
+   * device/qcom/sepolicy/
+bc61f9b sepolicy: Label boot/recovery/cache partitions
+
+   * external/libpng/
+d3fe27f Kill more spam
+a29d002 Remove the most annoying error ever
+
+   * frameworks/av/
+46c4173 NuPlayerRenderer: always display the first video frame without delay.
+efc362f Fix overflow check so it doesn't reject legitimate files
+c85eb57 Merge branch 'LA.BF64.1.2.2_rb4.8' of git://codeaurora.org/platform/frameworks/av into cm-13.0
+
+   * frameworks/opt/telephony/
+1477974 CdmaLteServiceStateTracker: allow forcing reading eri from xml
+
+   * packages/apps/PackageInstaller/
+45bdbf7 Themes: Allow PackageInstaller tab Background to be themed
+
+   * packages/apps/Settings/
+2bf344f Removed layersmanager
+
+   * packages/apps/SetupWizard/
+76690b8 Merge pull request #1 from CyanogenMod/cm-13.0
+
+   * vendor/cm/
+18b2ad0 Removed layers
+94ee9a9 Added adaway
+
+   * vendor/cmsdk/
+a3baf9c migration: Clean up abstractions.
+4ae9604 cmsdk: Reimplement helper methods for secondary telephony service.
+c221959 cmsdk: Re-enable multiple profiles functions.
+
+   * vendor/motorola/
+b71671e Merge pull request #5 from TheMuppets/cm-13.0
+49f6bfc Merge pull request #187 from sultanqasim/cm-13.0
+4efbe80 otus: update blobs from victara Marshmallow
+6c87e3a otus: remove prebuilt HALs that don't belong
+2101569 Revert "otus: use prebuilt libOmxVdec.so"
+
+====================
+     11-29-2015
+====================
+
+
+   * bionic/
+ad21814 linker: Reset the active shim libs each time we do a dlopen
+
+   * device/motorola/falcon/
+0954a9d falcon: init: Update shell commands paths
+11579fd falcon: init: Update fingerprints
+
+   * external/wpa_supplicant_8/
+213afc9 Fix dependencies
+
+   * frameworks/base/
+4d7b8bc libhwui: make surface buffer allocation asynchronous
+f5d80fc libhwui: make setSurface asynchronous
+e55289f core: Don't enable qualcomm location overlay by default
+
+   * frameworks/opt/net/wifi/
+214bf2c wifi: Fix for re-association failure (auto join)
+100946b wifi: Handle the NULL check for the STATUS command
+
+   * packages/apps/Bluetooth/
+cc25472 Bluetooth: Disable clang
+
+   * packages/apps/Contacts/
+853b759 Expose the contact list text colors.
+
+   * packages/apps/Settings/
+f4a180d Fixed build
+9afd6b0 AppOps: Add it to the Settings dashboard
+14cf74b Settings: Enable App Ops
+c648e4d Add Adiutor to Dash
+4596b6f Enable Dev options by default
+82e9d80 Enable wifi tab by default
+4fc27c3 Enable wifi tab by default
+ed59479 add drawable for Layers
+0ed9a85 Add layers to settings when installed
+d10be52 settings: Remove direct usage of CMHardware
+406d173 Settings: Allow launching display rotation settings externally
+
+   * packages/services/Telephony/
+c2ba6de Telephony: reload CarrierConfig based on changes to build display version
+
+   * system/core/
+34dd214 init: Allow targets to ignore the ro.revision property
+
+   * vendor/cm/
+9139321 Added LayersManager
+bef1bb6 sepolicy: Allow adb pull of executables without root
+
+   * vendor/motorola/
+a9d039d shamu: Add whitelist_com.android.omadm.service.xml
+1174b97 shamu: Enable Sprint and Project FI
+
+====================
+     11-28-2015
+====================
+
+
+   * build/
+7ae965c Revert "Fix uncompressed ramdisk generation"
+
+   * device/qcom/sepolicy/
+c088c03 sepolicy: add missing fdAlbum type_transition
+
+   * external/tinyalsa/
+d762c50 tinyalsa: Add a board config to drop silence_size for blob compat.
+
+   * external/wpa_supplicant_8/
+02c2c68 Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+   * frameworks/base/
+e1041a4 Materialize Tab Selected to Fix Power Menu Theming
+fa57ac0 Change dividers from Holo Blue to Material Teal
+217bf0b sounds: Use Android M Camera Sounds
+933602b Remove Some Audio Files not included in M
+4cf299d Update no recent logo
+1796e43 IT: CyanPop is starting
+3e6c218 Fix mounting of non-FAT formatted SD cards (1/2)
+69b43fa services: devicepolicy: Restore backup service as system
+a35923d Themes: Allow Immersive cling colors to be fully themed
+ce24a0d MountService: Prevent NPE with DropBoxManager
+de43c7a Shell: Clean duplicated INSTALL_GRANT_RUNTIME_PERMISSIONS permission
+95472b0 SystemUI: Clean duplicated CONFIGURE_WIFI_DISPLAY permission
+1c91e86 fw: Add WIMAX_ON.
+bdc85c3 fw: Re-introduce WimaxHelper.
+d5c39df BroadcastReceiver : Get sender of broadcasts
+5bcd953 storage: Do not notify for volumes on non-removable disks
+fdf081f Keyguard: Squash undo UI changes after merge of branch 'LA.BF64.1.2.2_rb4.7'
+a62a404 QSTiles: use host to reset tiles instead of receiver
+45bfac2 SystemUi: Always wedge in the edit tile.
+a317c51 SystemUi: Have qs tiles impl point at CMSettingsProvider.
+b7533b2 WIP: draggable quick settings tiles
+eeedc19 SettingsProvider: Don't drop tables if we're matching CM DB version.
+5d29236 SettingsProvider: Provide upgrade path from cm-11 -> cm-13.
+03c6e56 Revert "Telephony: Enable few key carrierConfig param."
+0d0be28 Frameworks: follow charging notification settings also for wireless charging
+df43089 Handle renamed packages during default grants
+6bdc300 Remove opaque check in preparing dirty region
+2169889 Add the user set network mode to the siminfo table
+4b6f7f9 quailstar: @hide public API added via CAF
+899debe Store Network Mode selected in subId Table.
+bb50a64 Add Manual Provisioning Support
+44d86ed SysUI: Fix navbar theme changing with status bar
+6338f7b Add live lock screen previews [1/2]
+97c1820e Live lock screen support [1/2]
+19034a8 Revert "Materialize Tab Selected to Fix Power Menu Theming"
+effc34d Show Optimizing app dialog on first boot
+2e15c97 Added CyanPop thing: Enhance dexopt with random colours
+e5ce074 Bootmsg: The app name is now displayed in bold text.
+59626eb BootMessage: Show each app name being optimized during boot
+e31a5a7 Core: Fix setupwizard FC
+d851459 PermissionGrant: Introduce Support for flashing Gapps
+e6a2a41 GAPPS: Add Google Play Services, Google App and Account Manager permissions
+7ab9762 Allow chromium to sign in
+de54409 Revert "PermissionGrant: Introduce Support for flashing Gapps"
+f4acbd7 Marshmallow logo instead of 'No recent apps'
+4a1650f Materialize Tab Selected to Fix Power Menu Theming
+e18baa9 Update Alarm Files from N5 Factory Image
+a8404fb Update Effects from N5 Nexus Image
+6e4a9bf Update Dock/Undock Sounds from M Factory Image
+1ee07ab Update Notification Sounds from N5 Factory Image
+0a046d2 Update Material Ringtones to M from N5 Factory Image
+960e800 Update VideoRecord & Wireless Charging Sounds to M
+1f519d3 Use M Sound for LowBattery
+be56e0d Ensure M Camera Sounds
+163d911 Only allow power by default
+a7a9fef Enable non-market apps install by default, disable verifier
+3805d3e Allow faster app switching
+
+   * hardware/qcom/audio-caf/msm8994/
+13a1747 policy_hal: Line up default features with rest of HAL
+
+   * hardware/qcom/wlan-caf/
+f133a4d Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0
+
+   * packages/apps/Settings/
+c762a23 Use SystemSettingSwitchPreference.
+f6daead Settings: fix profile triggers not showing up for RTL languages
+
+   * vendor/cm/
+66b84b1 CyanPop v2.1
+
+   * vendor/motorola/
+a4f9bb3 victara: remove mm-parser
+19507a8 Merge pull request #201 from luk1337/cm-13.0
+1eb07a4 Merge pull request #4 from TheMuppets/cm-13.0
+
+====================
+     11-27-2015
+====================
+
+
+   * build/
+3647d24 Add suffix .so to use directly libart.so
+8a73d53 build: End this nightmare.
+b647edb Fix uncompressed ramdisk generation
+
+   * device/motorola/falcon/
+dae345d Falcon: Fix recovery build
+
+   * device/motorola/peregrine/
+23f5926 Peregrine: Fix recovery build
+
+   * device/motorola/thea/
+5161e09 Thea: Fix recovery build
+
+   * device/motorola/titan/
+8d42f6b Titan: Fix recovery build
+
+   * external/ffmpeg/
+5d36776 swscale: Disable NEW_FILTER on Android, for now.
+0ec330c Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
+
+   * external/stagefright-plugins/
+fe777d6 ffmpeg: video: Check if the codec is still open before flushing
+
+   * external/toybox/
+0466dbc mount: Fix read-only partitions remount
+
+   * frameworks/av/
+3f54b2b audioflinger: Adjust throttle interval when effects in use
+5183735 Revert "adjust audio timestamp to account for AudioRecord latency"
+d51e9d6 libstagefright: Added mime-types for enca/encv atoms
+
+   * frameworks/base/
+71dfc8b Disable More Debugging
+b4cced8 Materialize text select handle
+467b888 Materialize toast frames
+cd12594 Improve scrolling cache
+baec418 Turn off some debugs
+243f25b Smoother Upload and Download Animation
+
+   * hardware/qcom/display-caf/msm8916/
+fe70e38 Revert "hwc: Add secure display attribute"
+
+   * packages/apps/CyanPopWallpapers/
+e377272 Added a new wallpaper
+
+   * packages/apps/Settings/
+3927fce Settings: Change 'Model Number' to 'Model Name'
+4370487 wifi: forward port avoid poor connection setting
+8a5625f Settings: Clean duplicated permissions
+c31c1e2 Revert "update the permissions for the AccountManagerService"
+e0b6777 wifi: Allow configuration of country code for wifi (3/3)
+d9b65fd Settings: Remove screen rotation from accessibility
+4f0874c Hide LCD density preference from secondary users
+9f2da36 settings: Fix crash when saving button backlight enabled/disabled
+fe88b3b settings: Only show mobile_networks if we have telephony
+69f13f5 perf: Enable app-profile pref only if profile has support
+f8ecc3e perf: Add CM secure settings for app profile pref
+c2d320c storage: Do not allow eject for volumes on non-removable disks
+784c130 Settings - Display Rotation: Checkboxes to Switches
+d8e5232 Re-Implementation of Protected App Settings
+c99c902 Settings: Fix hiding button backlight option
+0bdd6f0 Revert "Settings : Nav ring"
+82b39da Use Theme.SettingsBase for notification log
+6a009d8 Only use device custom icon if it provides one
+841a692 Settings: update layouts
+44b930a Add isSupported() method to VibratorIntensity class
+8d0a3cf Show full proc/version information
+be3a71f Switch to OTA
+ec304dc Revert ...
+702ae58 Fix build
+6b9ccb4 Updated
+08da8e1 Switch to CyanPopOTA
+
+   * packages/providers/MediaProvider/
+bef7d6d Fix mounting of non-FAT formatted SD cards (2/2)
+
+   * packages/services/Telephony/
+300bb31 Use libphonenumber instead of libphonenumbergoogle
+
+   * vendor/cm/
+cf9946f init: Remove world-writable permissions in BFQ hierarchy
+2e04bd0 sepolicy: qcom: Allow reading PSU sysfs by system_server
+
+   * vendor/cmsdk/
+efb5274 Fix compile error in test cases from 3ddf435fb4085f07d47d67b21a6168c17d1f8aa1
+
+   * vendor/motorola/
+cb5e94b msm8226-common: Kill mm-parser
+d068f31 Merge pull request #200 from luk1337/cm-13.0
+d256195 Merge pull request #3 from TheMuppets/cm-13.0
+
+====================
+     11-26-2015
+====================
+
+
+   * bootable/recovery/
+8e8aebd sr: Set context for minivold
+175cc9e sr: Fix build when oemlock plugin is enabled
+7cfda80 update-binary: support reboot_now on older recoveries
+5e381e9 minui: support to pan display (FBIOPAN_DISPLAY)
+9db5957 recovery: Separate blkid.tab for vold in recovery
+cacf654 updater: Add LZMA support to blockimg
+3d561da updater: Allow devices to suppress BLKDISCARD
+f49b3e3 recovery: Allow devices to reboot to download mode
+22d36ae Improve placement of progress bar.
+0b0db7d Don't disable including TARGET_RECOVERY_UI_LIB if exists
+fb1db30 sr: Fix all the graphics issues
+f028ccd recovery: Headless mode
+d644eb5 recovery: autodetect filesystem type
+0176875 sr: updater: Fix multi-stage docs
+dd42d56 sr: Fix menu wrapping
+21d3a8f Allow custom bootloader msg offset in block misc
+bea646d Do not wipe block misc on bootloader msg update
+62718eb install: Ditch the generic error
+5cd84a0 recovery: Always include ext4 stuff
+abc5d0b sr: Allow device-specific recovery modules
+8696611 Fix HDPI images
+1ac4efa recovery: New icon type VIEWING_LOG
+8c07817 sr: Dejank the menus, fix colors
+f868d83 sr: Fix the progress bar
+8e614b8 sr: Touch UI
+a48fd33 sr: Return to main menu after selection
+25ac7ae recovery: Move icon_info.png to res-specific dirs
+89e2dcf recovery: Initial dialog implementation
+acc855f recovery: Handle oemunlock command
+e1ba5bc recovery: datamedia support
+40b9e54 recovery: Provide caching for sideload files
+423f1e9 recovery: bu: Implement backup/restore
+ffc8a87 recovery: Provide sideload cancellation
+3381ac4 Blank screen during shutdown and reboot
+f42bf40 recovery: turn on the backlight in recovery mode
+3f092f7 recovery: Awakening of MiniVold
+
+   * external/busybox/
+3f42617 busybox: Disable build with Clang for static executable
+
+   * external/ffmpeg/
+6b91701 avcodec/h264_slice: Limit max_contexts when slice_context_count is initialized
+1290c85 rtmpcrypt: Do the xtea decryption in little endian mode
+b70f7d2 avformat/matroskadec: Check subtitle stream before dereferencing
+71a3113 avcodec/pngdec: Replace assert by request for sample for unsupported TRNS cases
+859a6ed avformat/utils: Do not init parser if probing is unfinished
+2dc1f3a avcodec/jpeg2000dec: Fix potential integer overflow with tile dimensions
+9a9dda6 avcodec/jpeg2000: Use av_image_check_size() in ff_jpeg2000_init_component()
+b3bc052 avcodec/wmaprodec: Check for overread in decode_packet()
+093e582 avcodec/smacker: Check that the data size is a multiple of a sample vector
+948d93d avcodec/takdec: Skip last p2 sample (which is unused)
+824e72d avcodec/dxtory: Fix input size check in dxtory_decode_v1_410()
+c7a970a avcodec/dxtory: Fix input size check in dxtory_decode_v1_420()
+6af38b2 avcodec/error_resilience: avoid accessing previous or next frames tables beyond height
+0ce7baa avcodec/dpx: Move need_align to act per line
+7f0b589 avcodec/flashsv: Check size before updating it
+f64ffbb avcodec/ivi: Check image dimensions
+c0748b9 avcodec/utils: Better check for channels in av_get_audio_frame_duration()
+dbfec68 avcodec/jpeg2000dec: Check for duplicate SIZ marker
+34f2d74 aacsbr: don't call sbr_dequant twice without intermediate read_sbr_data
+22017f7 hqx: correct type and size check of info_offset
+b372ad8 mxfdec: check edit_rate also for physical_track
+bdbfc12 avcodec/jpeg2000: Change coord to 32bit to support larger than 32k width or height
+c3a44a2 avcodec/jpeg2000dec: Check SIZ dimensions to be within the supported range
+d1d48d4 avcodec/jpeg2000: Check comp coords to be within the supported size
+6b0bc64 mpegvideo: clear overread in clear_context
+983e63b avcodec/avrndec: Use the AVFrame format instead of the context
+bf2f711 dds: disable palette flag for compressed images
+ef699b4 dds: validate compressed source buffer size
+a851382 dds: validate source buffer size before copying
+df31acd dvdsubdec: validate offset2 similar to offset1
+d09fd07 brstm: reject negative sample rate
+c3f276b aacps: avoid division by zero in stereo_processing
+510d88a softfloat: assert when the argument of av_sqrt_sf is negative
+c4133b2 avcodec/takdec: Use memove, avoid undefined memcpy() use
+
+   * external/stagefright-plugins/
+bd35bb4 stagefright-plugins: Relax component role check
+
+   * frameworks/av/
+17c160c stagefright: Support hardware codecs with FFMPEG extractor
+
+   * frameworks/native/
+8c39282 libgui: Don't assign handle to NULL after free is common
+
+   * hardware/qcom/audio-caf/msm8996/
+ac3b580 audio: Use direct    * pathmap
+
+   * hardware/qcom/display-caf/msm8996/
+d9715de display: Use    * pathmap
+
+   * hardware/qcom/media-caf/msm8996/
+e356c44 media: Use    * pathmap
+
+   * packages/apps/CyanPopOTA/
+6c61ec4 README. We are CyanPop
+
+   * packages/apps/CyanPopWallpapers/
+e360a39 CyanPop !
+
+   * packages/apps/Screencast/
+baa621b Fix Media dir permissions issue on M
+e34c2cd Ensure recording directory is writable before starting
+e8eed2c Fix a typo in log statement
+
+   * system/core/
+5029693 mkbootimg: Add --second_offset to usage display
+
+   * system/vold/
+774fe22 vold: Fix crash on startup
+95c29db Don't try to unmount ASEC and FUSE paths in recovery
+53b98cf Do not overwrite existing metadata with empty values
+
+   * vendor/cm/
+8ca63f3 sepolicy: Allow recovery to create links in the rootfs
+687d89c Vendor: Build CyanPopWallpapers
+
+   * vendor/cmsdk/
+4a964c5 perf: Add PerformanceManager.getProfileHasAppProfiles API
+37b5909 perf: fix perf profile change issues
+
+   * vendor/motorola/
+fbd03d6 Revert "msm8226-common: bring back fm patchloader"
+5441078 Merge pull request #199 from luk1337/cm-13.0
+910037f peregrine: Use 5.1 sensor HAL
+60ba2b9 Merge pull request #2 from TheMuppets/cm-13.0
+
+====================
+     11-25-2015
+====================
+
+
+   * bionic/
+f3d29ee libc: Add memchr to a53+a57 target
+
+   * bootable/recovery/
+383f723 sr: Include vendor init trigger
+
+   * build/
+26ece51 kernel: add `make kernelxconfig' target
+
+   * device/motorola/falcon/
+af0891e falcon: Commonize fstab
+
+   * device/motorola/peregrine/
+0ad9149 peregrine: Commonize fstab
+
+   * device/motorola/thea/
+6e060b2 thea: Commonize fstab
+
+   * device/motorola/titan/
+f537330 titan: Commonize fstab
+
+   * device/qcom/sepolicy/
+58d33cf sepolicy: perfd: fix signull permission
+1a20a7f sepolicy: perf: allow checking for existence of other processes (signull)
+
+   * external/lzma/
+b80a599 xz: Enable crc64 support
+
+   * external/toybox/
+70c51a8 toybox: blkid: Only show non-empty / non-default labels
+179657e toybox: blkid: Properly distinguish ext2/ext3/ext4
+
+   * hardware/qcom/display-caf/msm8974/
+952f1d4 libcopybit: Fix issues when building with Clang for non C2D devices
+
+   * packages/apps/Browser/
+a0c028f Merge pull request #2 from CyanogenMod/cm-13.0
+
+   * packages/apps/Contacts/
+14bea0b Update DefaultImageProvider to the new API
+
+   * packages/apps/ContactsCommon/
+5e83544 Clean-up the DefaultImageProvider API
+
+   * packages/apps/Dialer/
+97d3cea Dialer: add to support speed number dial
+
+   * system/vold/
+1436fc7 vold: Honor mount options for ext4 partitions
+1163e5c vold: Support internal storage partitions
+fa407a0 vold: add support for more filesystems for public storage
+0d95eaa vold: minivold for recovery
+
+   * vendor/cm/
+8c39dca CyanPop 2.0 Released !!!
+
+   * vendor/cmsdk/
+35fdbda Protected apps components
+
+   * vendor/motorola/
+2e60548 Merge pull request #198 from crpalmer/ril-as-a-blob
+
+====================
+     11-24-2015
+====================
+
+
+   * build/
+7418c30 Merge branch 'cm-13.0' of https://github.com/CyanPop/android_build into cm-13.0
+c6750c5 Revert "core: copy installed ramdisk and bootloader to BOOT/"
+
+   * device/motorola/falcon/
+d8b3f3b Added ro.product-device for ota
+0abd321 falcon: configs: Update mixer_paths.xml
+45f084f falcon: init: Specify ro.telephony.ril.config
+92f8ee8 falcon: Commonize camera blobs
+
+   * device/motorola/msm8226-common/
+95ef11e msm8226-common: Update adreno blobs
+
+   * device/motorola/peregrine/
+6f95b92 Added ro.product-device for ota
+6c0e8ff peregrine: configs: Update mixer_paths.xml
+b7ef999 peregrine: Commonize camera blobs
+
+   * device/motorola/thea/
+fad3095 Added ro.product-device for ota
+bba311f thea: Commonize camera blobs
+60789b1 thea: init: Specify ro.telephony.ril.config
+7cd4eeb thea: overlay: Update power_profile.xml
+2cfc9d4 thea: configs: Update mixer_paths.xml
+ad8acc3 thea: Update fingerprints
+
+   * device/motorola/titan/
+a629d51 Added ro.product-device for ota
+5776db8 titan: Commonize camera blobs
+363633a titan: init: Specify ro.telephony.ril.config
+43a363f titan: configs: Update mixer_paths.xml
+fcc286a titan: Update fingerprints
+
+   * external/bash/
+3e80b52 bashrc: correct PS1
+76a049a bash: export environment variables in a way that bash understands
+
+   * external/flac/
+72a7ede Noise and sometimes tombstone crash observed while seeking FLAC content during playback
+
+   * external/nano/
+b6b3db7 nano: fix build after upstream merge
+850cb4f nano-2.4.3
+1e4d729 nano-2.4.2
+b760778 nano-2.4.1
+bae32ee nano-2.4.0
+bf6b5c5 nano-2.3.6
+5ee0261 nano-2.3.5
+7fc7c5c nano-2.3.4
+15dc7d4 nano-2.3.3
+0cdc6a9 nano-2.3.2
+0a4f7e6 nano-2.3.1
+59b3c38 nano-2.3.0
+34184dd nano-2.2.6
+db6a09d nano-2.2.5
+
+   * external/vim/
+d3985c0 patch 7.4.939 Problem:    Memory leak when encountering a syntax error. Solution:   Free the memory. (Dominique Pelle)
+fe2f3cb Fix build with FEAT_INS_EXPAND disabled
+88127bc patch 7.4.938 Problem:    X11 and GTK have moure mouse buttons than Vim supports. Solution:   Recognize more mouse buttons. (Benoit Pierre, closes #498)
+7aa93a8 patch 7.4.937 Problem:    Segfault reading unitialized memory. Solution:   Do not read match \z0, it does not exist. (Marius Gedminas, closes             #497)
+aa5154e patch 7.4.936 Problem:    Crash when dragging with the mouse. Solution:   Add safety check for NULL pointer. Check mouse position for valid             value. (Hirohito Higashi)
+6441db8 patch 7.4.935 Problem:    test_utf8 fails on MS-Windows when executed with gvim. Solution:   Use the insert flag on feedkeys() to put the string before the             ":" that was already read when checking for available chars.
+1cbd6fb patch 7.4.934 Problem:    Appveyor also builds on a tag push. Solution:   Add a skip_tags line. (Kenichi Ito, closes #489)
+f0bbb13 patch 7.4.933 Problem:    Crash when using longest completion match. Solution:   Fix array index.
+3b80b95 patch 7.4.932 Problem:    test_utf8 has confusing dummy command. Solution:   Use a real command instead of a colon.
+56bbabc patch 7.4.931 Problem:    Test 94 fails on some systems. Solution:   Set 'encoding' to utf-8.
+0a1cf9f Update runtime files.
+bd4f706 patch 7.4.930 Problem:    MS-Windows: Most users appear not to like the window border. Solution:   Remove WS_EX_CLIENTEDGE. (Ian Halliday)
+7de947b patch 7.4.929 Problem:    "gv" after paste selects one character less if 'selection' is             "exclusive". Solution:   Increment the end position. (Christian Brabandt)
+0879616 patch 7.4.928 Problem:    A clientserver message interrupts handling keys of a mapping. Solution:   Have mch_inchar() send control back to WaitForChar when it is             interrupted by server message. (James Kolb)
+7ae278b patch 7.4.927 Problem:    Ruby crashes when there is a runtime error. Solution:   Use ruby_options() instead of ruby_process_options(). (Damien)
+032f153 patch 7.4.926 Problem:    Completing the longest match doesn't work properly with multi-byte             characters. Solution:   When using multi-byte characters use another way to find the             longest match. (Hirohito Higashi)
+29ed807 patch 7.4.925 Problem:    User may yank or put using the register being recorded in. Solution:   Add the recording register in the message. (Christian Brabandt,             closes #470)
+52d2872 patch 7.4.924 Problem:    DEVELOPER_DIR gets reset by configure. Solution:   Do not reset DEVELOPER_DIR when there is no --with-developer-dir             argument. (Kazuki Sakamoto, closes #482)
+ed0391b patch 7.4.923 Problem:    Prototypes not always generated. Solution:   Change #if to OR with PROTO.
+a328ce4 Updated runtime files.
+4efccd1 patch 7.4.922 Problem:    Leaking memory with ":helpt {dir-not-exists}". Solution:   Free dirname. (Dominique Pelle)
+a878eae patch 7.4.921 Problem:    Missing proto file update. (Randall W. Morris) Solution:   Add the missing line for mch_ishidden.
+a750fa3 patch 7.4.920 Problem:    The rubydll option is not in the options window. Solution:   Add the rubydll option.
+23158cf patch 7.4.919 Problem:    The dll options are not in the options window. Solution:   Add the dll options.  And other fixes.
+fd475f3 patch 7.4.918 Problem:    A digit in an option name has problems. Solution:   Rename 'python3dll' to 'pythonthreedll'.
+093805e patch 7.4.917 Problem:    Compiler warning for comparing signed and unsigned. Solution:   Add a type cast.
+8cfe977 patch 7.4.916 Problem:    When running out of memory while copying a dict memory may be             freed twice. (ZyX) Solution:   Do not call the garbage collector when running out of memory.
+7c7735f patch 7.4.915 Problem:    When removing from 'path' and then adding, a comma may go missing.             (Malcolm Rowe) Solution:   Fix the check for P_ONECOMMA. (closes #471)
+aa65753 patch 7.4.914 Problem:    New compiler warning: logical-not-parentheses Solution:   Silence the warning.
+a36806a patch 7.4.913 Problem:    No utf-8 support for the hangul input feature. Solution:   Add utf-8 support. (Namsh)
+1e6002e patch 7.4.912 Problem:    Wrong indenting for C++ constructor. Solution:   Recognize ::.  (Anhong)
+7bbec21 patch 7.4.911 Problem:    t_Ce and t_Cs are documented but not supported. (Hirohito Higashi) Solution:   Define the options.
+7be2114 patch 7.4.910 Problem:    Compiler complains about type punned pointer. Solution:   Use another way to increment the ref count.
+2ce4b4f patch 7.4.909 Problem:    "make install" fails. Solution:   Only try installing desktop files if the destination directory             exists.
+83f8cfc patch 7.4.908 Problem:    Build error with MingW compiler. (Cesar Romani) Solution:   Change #if into #ifdef.
+cc6979c patch 7.4.907 Problem:    Libraries for dynamically loading interfaces can only be defined             at compile time. Solution:   Add options to specify the dll names. (Kazuki Sakamoto,             closes #452)
+e205200 patch 7.4.906 Problem:    On MS-Windows the viminfo file is (always) given the hidden             attribute. (raulnac) Solution:   Check the hidden attribute in a different way. (Ken Takata)
+2bf7c7b Add files in patch 7.4.904 missing from commit.
+aa23df8 patch 7.4.905 Problem:    Python interface can produce error "vim.message' object has no             attribute 'isatty'". Solution:   Add dummy isatty(), readable(), etc. (closes #464)
+507d4f0 patch 7.4.904 Problem:    Vim does not provide .desktop files. Solution:   Include and install .desktop files. (James McCoy, closes #455)
+ab6f21f Updated runtime files.
+628a8c7 patch 7.4.903 Problem:    MS-Windows: When 'encoding' differs from the current code page,             expandinig wildcards may cause illegal memory access. Solution:   Allocate a longer buffer. (Ken Takata)
+1e5027c patch 7.4.902 Problem:    Problems with using the MS-Windows console. Solution:   Revert patches 7.4.851, 7.4.876 and 7.4.886 until we find a better             solution. (suggested by Ken Takata)
+502affe Update runtime files.
+8266be1 patch 7.4.901 Problem:    When a BufLeave autocommand changes folding in a way it syncs             undo, undo can be corrupted. Solution:   Prevent undo sync. (Jacob Niehus)
+4a7254f patch 7.4.900 Problem:    README file can still be improved Solution:   Add a couple of links. (Christian Brabandt)
+a9b9900 patch 7.4.899 Problem:    README file is not optimal. Solution:   Move buttons, update some text. (closes #460)
+aff5cea Update runtime files.
+98b81be patch 7.4.898 Problem:    The 'fixendofline' option is set on with ":edit". Solution:   Don't set the option when clearing a buffer. (Yasuhiro Matsumoto)
+a50ce29 patch 7.4.897 Problem:    Freeze and crash when there is a sleep in a remote command.             (Karl Yngve LervÃ¥g) Solution:   Remove a message from the queue before dealing with it. (James             Kolb)
+af03f07 patch 7.4.896 Problem:    Editing a URL, which netrw should handle, doesn't work. Solution:   Avoid changing slashes to backslashes. (Yasuhiro Matsumoto)
+d791c48 patch 7.4.895 Problem:    Custom command line completion does not work for a command             containing digits. Solution:   Skip over the digits. (suggested by Yasuhiro Matsumoto)
+b02a0f1 patch 7.4.894 Problem:    vimrun.exe is picky about the number of spaces before -s. Solution:   Skip all spaces. (Cam Sinclair)
+a998b0f patch 7.4.893 Problem:    C indenting is wrong below a "case (foo):" because it is             recognized as a C++ base class construct.  Issue #38. Solution:   Check for the case keyword.
+65b00c9 patch 7.4.892 Problem:    On MS-Windows the iconv DLL may have a different name. Solution:   Also try libiconv2.dll and libiconv-2.dll. (Yasuhiro Matsumoto)
+58ec29d patch 7.4.891 Problem:    Indentation of array initializer is wrong. Solution:   Avoid that calling find_start_rawstring() changes the position             returned by find_start_comment(), add a test. (Hirohito Higashi)
+1551c3b patch 7.4.890 Problem:    Build failure when using dynamic python but not python3. Solution:   Adjust the #if to also include DYNAMIC_PYTHON3 and UNIX.
+f6c24d1 patch 7.4.889 Problem:    Triggering OptionSet from setwinvar() isn't tested. Solution:   Add a test. (Christian Brabandt)
+eecbbf6 patch 7.4.888 Problem:    The OptionSet autocommands are not triggered from setwinvar(). Solution:   Do not use switch_win() when not needed. (Hirohito Higashi)
+658b2e6 patch 7.4.887 Problem:    Using uninitialized memory for regexp with back reference.             (Dominique Pelle) Solution:   Initialize end_lnum.
+3d19b19 patch 7.4.886 Problem:    Windows7: Switching screen buffer causes flicker when using             system(). Solution:   Instead of actually switching screen buffer, duplicate the handle.             (Yasuhiro Matsumoto)
+90e7226 patch 7.4.885 Problem:    When doing an upwards search without wildcards the search fails if             the initial directory doesn't exist. Solution:   Fix the non-wildcard case. (Stefan Kempf)
+a33fb52 Update various runtime files.
+3a94930 patch 7.4.884 Problem:    Travis also builds on a tag push. Solution:   Filter out tag pushes. (Kenichi Ito)
+b911450 patch 7.4.883 Problem:    Block-mode replace works characterwise instead of blockwise after             column 147. (Issue #422) Solution:   Set Visual mode. (Christian Brabandt)
+c8abab1 patch 7.4.882 Problem:    When leaving the command line window with CTRL-C while a             completion menu is displayed the menu isn't removed. Solution:   Force a screen update. (Hirohito Higashi)
+1f56bc7 patch 7.4.881 Problem:    Test 49 fails. Solution:   Add line number to check of call stack.
+8ef5194 patch 7.4.880 Problem:    No build and coverage status. Solution:   Add links to the README file. (Christian Brabandt)
+dfa31f2 patch 7.4.879 Problem:    Can't see line numbers in nested function calls. Solution:   Add line number to the file name. (Alberto Fanjul)
+25895aa patch 7.4.878 Problem:    Coverity error for clearing only one byte of struct. Solution:   Clear the whole struct. (Dominique Pelle)
+9d06a3f patch 7.4.877 Problem:    ":find" sometimes fails. (Excanoe) Solution:   Compare current characters instead of previous ones.
+7d983ff patch 7.4.876 Problem:    Windows7: when using vim.exe with msys or msys2, conhost.exe             (console window provider on Windows7) will freeze or crash. Solution:   Make original screen buffer active, before executing external             program.  And when the program is finished, revert to vim's one.             (Taro Muraoka)
+30307c5 patch 7.4.875 Problem:    Not obvious how to contribute. Solution:   Add a remark about CONTRIBUTING.md to README.md
+392b1b4 patch 7.4.874 Problem:    MS-Windows: When Vim runs inside another application, the size             isn't right. Solution:   When in child mode compute the size differently. (Agorgianitis             Loukas)
+08241f0 patch 7.4.873 Problem:    Compiler warning for unused variable. (Tony Mechelynck) Solution:   Remove the variable.  Also fix int vs long_u mixup.
+c537267 patch 7.4.872 Problem:    Not using CI services available. Solution:   Add configuration files for travis and appveyor. (PR #401)
+67c40ef patch 7.4.871 Problem:    Vim leaks memory, when 'wildignore' filters out all matches. Solution:   Free the files array when it becomes empty.
+01f6149 patch 7.4.870 Problem:    May get into an invalid state when using getchar() in an             expression mapping. Solution:   Anticipate mod_mask to change. (idea by Yukihiro Nakadaira)
+3483737 patch 7.4.869 Problem:    MS-Windows: scrolling may cause text to disappear when using an             Intel GPU. Solution:   Call GetPixel(). (Yohei Endo)
+b6a0758 patch 7.4.868 Problem:    'smarttab' is also effective when 'paste' is enabled. (Alexander             Monakov) Solution:   Disable 'smarttab' when 'paste' is set. (Christian Brabandt)             Do the same for 'expandtab'.
+b76632b patch 7.4.867 Problem:    Can't build on MS-Windows. (Taro Muraoka) Solution:   Adjust #ifdef.
+ff45d73 patch 7.4.866 Problem:    Crash when changing the 'tags' option from a remote command.             (Benjamin Fritz) Solution:   Instead of executing messages immediately, use a queue, like for             netbeans. (James Kolb)
+2d33a9e patch 7.4.865 Problem:    Compiler warning for uninitialized variable. Solution:   Initialize.
+8fa8e36 patch 7.4.864 Problem:    Tiny build fails. Solution:   Put qf_ items inside #ifdef.
+e12314f patch 7.4.863 Problem:    plines_nofill() used without the diff feature. Solution:   Define PLINES_NOFILL().
+277d615 patch 7.4.862 Problem:    Still problems with pango_shape_full() not available. Solution:   Change AC_TRY_COMPILE to AC_TRY_LINK.
+2157a64 Update documentation and syntax files.
+016dff5 patch 7.4.861 Problem:    pango_shape_full() is not always available. Solution:   Add a configure check.
+447f52b patch 7.4.860 Problem:    Filetype detection is outdated. Solution:   Include all recent and not-so-recent changes.
+567278d patch 7.4.859 Problem:    Vim doesn't recognize all htmldjango files. Solution:   Recognize a comment. (Daniel Hahler, PR #410)
+3626d23 patch 7.4.858 Problem:    It's a bit clumsy to execute a command on a list of matches. Solution:   Add the ":ldo", ":lfdo", ":cdo" and ":cfdo" commands. (Yegappan             Lakshmanan)
+a52e8e8 patch 7.4.857 Problem:    Dragging the current tab with the mouse doesn't work properly. Solution:   Take the current tabpage index into account. (Hirohito Higashi)
+0aada39 patch 7.4.856 Problem:    "zt" still doesn't work well with filler lines. (Gary Johnson) Solution:   Check for filler lines above the cursor. (Christian Brabandt)
+05203b0 patch 7.4.855 Problem:    GTK: font glitches for combining characters Solution:   Use pango_shape_full() instead of pango_shape(). (luchr, PR #393)
+92679dc patch 7.4.854 Problem:    Missing information about runtime files. Solution:   Add section about runtime files. (Christian Brabandt)
+8cb349d patch 7.4.853 Problem:    "zt" in diff mode does not always work properly. (Gary Johnson) Solution:   Don't count filler lines twice. (Christian Brabandt)
+9f03418 patch 7.4.852 Problem:    On MS-Windows console Vim uses ANSI APIs for keyboard input and             console output, it cannot input/output Unicode characters. Solution:   Use Unicode APIs for console I/O. (Ken Takata, Yasuhiro Matsumoto)
+729ab26 patch 7.4.851 Problem:    Saving and restoring the console buffer does not work properly. Solution:   Instead of ReadConsoleOutputA/WriteConsoleOutputA use             CreateConsoleScreenBuffer and SetConsoleActiveScreenBuffer.             (Ken Takata)
+8ac18c0 patch 7.4.850 Problem:    <Esc> does not show up. Solution:   Use &gt; and &lt;. (Kazunobu Kuriyama)
+0d8a475 patch 7.4.849 Problem:    Moving the cursor in Insert mode starts new undo sequence. Solution:   Add CTRL-G U to keep the undo sequence for the following cursor             movement command. (Christian Brabandt)
+68fc06f patch 7.4.848 Problem:    CTRL-A on hex number in Visual block mode is incorrect. Solution:   Account for the "0x". (Hirohito Higashi)
+2a3abb7 patch 7.4.847 Problem:    "vi)d" may leave a character behind. Solution:   Skip over multi-byte character. (Christian Brabandt)
+27c4947 patch 7.4.846 Problem:    Some GitHub users don't know how to use issues. Solution:   Add a file that explains the basics of contributing.
+6f3c523 patch 7.4.845 Problem:    Compiler warning for possible loss of data. Solution:   Add a type cast. (Erich Ritz)
+b31e198 patch 7.4.844 Problem:    When '#' is in 'isident' the is# comparator doesn't work. Solution:   Don't use vim_isIDc(). (Yasuhiro Matsumoto)
+c4b8752 patch 7.4.843 Problem:    Still possible to go beyond the end of a string. Solution:   Check for NUL also in second string. (Dominique Pelle)
+6ba7536 patch 7.4.842 Problem:    Sending too many messages to close the balloon. Solution:   Only send a WM_CLOSE message. (Jurgen Kramer)
+b7f9c08 patch 7.4.841 Problem:    Can't compile without the multi-byte feature. (John Marriott) Solution:   Add more #ifdef's.
+c125469 patch 7.4.840 Problem:    Tooltip window stays open. Solution:   Send a WM_CLOSE message. (Jurgen Kramer)
+495cb29 patch 7.4.839 Problem:    Compiler warning on 64-bit system. Solution:   Add cast to int. (Mike Williams)
+929c750 patch 7.4.838 Problem:    Can't compile without the crypt feature. (John Marriott) Solution:   Add #ifdef.
+c1addf3 Updated runtime files and Italian messages.
+31fb4e3 patch 7.4.837 Problem:    Compiler warning with MSVC compiler when using +sniff. Solution:   Use Sleep() instead of _sleep(). (Tux)
+3e712b9 patch 7.4.836 Problem:    Accessing unitinialized memory. Solution:   Add missing calls to init_tv(). (Dominique Pelle)
+13462ee patch 7.4.835 Problem:    Comparing utf-8 sequences does not handle different byte sizes             correctly. Solution:   Get the byte size of each character. (Dominique Pelle)
+9404b34 patch 7.4.834 Problem:    gettabvar() doesn't work after Vim start. (Szymon Wrozynski) Solution:   Handle first window in tab still being NULL. (Christian Brabandt)
+9095ea3 patch 7.4.833 Problem:    More side effects of ":set all&" are missing. (BjÃ¶rn Linse) Solution:   Call didset_options() and add didset_options2() to collect more             side effects to take care of.  Still not everything...
+08e3683 patch 7.4.832 Problem:    $HOME in  is expanded too early. Solution:   Skip over  when expanding environment names.
+7641088 patch 7.4.831 Problem:    When expanding  on the command line and encountering an             error, the command is executed anyway. Solution:   Bail out when an error is detected.
+2956344 patch 7.4.830 Problem:    Resetting 'encoding' when doing ":set all&" causes problems.             (Bjorn Linse) Display is not updated. Solution:   Do not reset 'encoding'. Do a full redraw.
+50304ba patch 7.4.829 Problem:    Crash when clicking in beval balloon. (Travis Lebsock) Solution:   Use PostMessage() instead of DestroyWindow(). (Raymond Ko, PR 298)
+be6778b patch 7.4.828 Problem:    Crash when using "syn keyword x c". (Dominique Pelle) Solution:   Initialize the keyword tabble. (Raymond Ko, PR 397)
+2b4d997 patch 7.4.827 Problem:    Not all test targets are in the Makefile. Solution:   Add the missing targets.
+f5902f2 patch 7.4.826 Problem:    Compiler warnings and errors. Solution:   Make it build properly without the multi-byte feature.
+fb7bc92 patch 7.4.825 Problem:    Invalid memory access for ":syn keyword x a[". Solution:   Do not skip over the NUL. (Dominique Pelle)
+98b438a patch 7.4.824 Problem:    Can't compile without the multi-byte feature. (John Marriott) Solution:   Add #ifdef.
+f3e777e Update runtime files.
+3d52352 patch 7.4.823 Problem:    Cursor moves after CTRL-A on alphabetic character. Solution:   (Hirohito Higashi, test by Christian Brabandt)
+92699ab patch 7.4.822 Problem:    More problems reported by coverity. Solution:   Avoid the warnings. (Christian Brabandt)
+085c0ef patch 7.4.821 Problem:    Coverity reports a few problems. Solution:   Avoid the warnings. (Christian Brabandt)
+4ba65f2 patch 7.4.820 Problem:    Invalid memory access in file_pat_to_reg_pat. Solution:   Avoid looking before the start of a string. (Dominique Pelle)
+d8c52f2 patch 7.4.819 Problem:    Beeping when running the tests. Solution:   Fix 41 beeps. (Roland Eggner)
+f5e4e94 patch 7.4.818 Problem:    'linebreak' breaks c% if the last Visual selection was block.             (Chris Morganiser, Issue 389) Solution:   Handle Visual block mode differently. (Christian Brabandt)
+b3a3936 patch 7.4.817 Problem:    Invalid memory access in file_pat_to_reg_pat(). Solution:   Use vim_isspace() instead of checking for a space only. (Dominique             Pelle)
+281f751 patch 7.4.816 Problem:    Invalid memory access when doing ":fun X(". Solution:   Check for missing ')'. (Dominique Pelle)
+ddccaff patch 7.4.815 Problem:    Invalid memory access when doing ":call g:". Solution:   Check for an empty name. (Dominique Pelle)
+1e0491d patch 7.4.814 Problem:    Illegal memory access with "sy match a fold". Solution:   Check for empty string. (Dominique Pelle)
+c56722a patch 7.4.813 Problem:    It is not possible to save and restore character search state. Solution:   Add getcharsearch() and setcharsearch().  (James McCoy)
+142603e patch 7.4.812 Problem:    Gcc sanitizer complains about using a NULL pointer to memmove(). Solution:   Only call memmove when there is something to move. (Vittorio             Zecca)
+89fb259 patch 7.4.811 Problem:    Invalid memory access when using "exe 'sc'". Solution:   Avoid going over the end of the string. (Dominique Pelle)
+28a359d patch 7.4.810 Problem:    With a sequence of commands using buffers in diff mode E749 is             given. (itchyny) Solution:   Skip unloaded buffer. (Hirohito Higashi)
+6efa92e patch 7.4.809 Problem:    Test is duplicated. Solution:   Roll back 7.4.802.
+d0a1371 patch 7.4.808 Problem:    On MS-Windows 8 IME input doen't work correctly. Solution:   Read console input before calling MsgWaitForMultipleObjects().             (vim-jp, Nobuhiro Takasaki)
+c886b04 patch 7.4.807 Problem:    After CTRL-V CTRL-A mode isn't updated. (Hirohito Higashi) Solution:   Clear the command line or update the displayed command.
+a6a2eb4 patch 7.4.806 Problem:    CTRL-A in Visual mode doesn't work properly with "alpha" in             'nrformat'. Solution:   Make it work. (Christian Brabandt)
+e14a8f8 patch 7.4.805 Problem:    The ruler shows "Bot" even when there are only filler lines             missing. (Gary Johnson) Solution:   Use "All" when the first line and one filler line are visible.
+e947bfa patch 7.4.804 Problem:    Xxd doesn't have a license notice. Solution:   Add license as indicated by Juergen.
+c973098 patch 7.4.803 Problem:    C indent does not support C11 raw strings. (Mark Lodato) Solution:   Do not change indent inside the raw string.
+4967ee4 patch 7.4.802 Problem:    Using "A" in Visual mode while 'linebreak' is set is not tested. Solution:   Add a test for this, verifies the problem is fixed. (Ingo Karkat)
+352981b patch 7.4.801 Problem:    Test for ":diffoff" doesn't catch all potential problems. Solution:   Add a :diffthis and a :diffoff command. (Olaf Dabrunz)
+b710853 patch 7.4.800 Problem:    Using freed memory when triggering CmdUndefined autocommands. Solution:   Set pointer to NULL. (Dominique Pelle)
+11c9d0f patch 7.4.799 Problem:    Accessing memory before an allocated block. Solution:   Check for not going before the start of a pattern. (Dominique             Pelle)
+a726c51 patch 7.4.798 Problem:    Repeating a change in Visual mode does not work as expected.             (Urtica Dioica) Solution:   Make redo in Visual mode work better. (Christian Brabandt)
+21ed8ab patch 7.4.797 Problem:    Crash when using more lines for the command line than             'maxcombine'. Solution:   Use the correct array index.  Also, do not try redrawing when             exiting.  And use screen_Columns instead of Columns.
+8fb32e3 patch 7.4.796 Problem:    Warning from 64 bit compiler. Solution:   Add type cast. (Mike Williams)
+ab6f78b Correct optwin script, update PHP complete.
+275f4fc patch 7.4.795 Problem:    The 'fixeol' option is not copied to a new window. Solution:   Copy the option value. (Yasuhiro Matsumoto)
+cbb348e patch 7.4.794 Problem:    Visual Studio 2015 is not recognized. Solution:   Add the version numbers to the makefile. (Taro Muraoka)
+fcdec5f Updated and new runtime files.
+6d2bfb3 patch 7.4.793 Problem:    Can't specify when not to ring the bell. Solution:   Add the 'belloff' option. (Christian Brabandt)
+73117a2 patch 7.4.792 Problem:    Can only conceal text by defining syntax items. Solution:   Use matchadd() to define concealing. (Christian Brabandt)
+6b4a768 patch 7.4.791 Problem:    The buffer list can be very long. Solution:   Add an argument to ":ls" to specify the type of buffer to list.             (Marcin Szamotulski)
+211b0f1 patch 7.4.790 Problem:    Test fails when the autochdir feature is not available.  Test             output contains the test script. Solution:   Check for the autochdir feature. (Kazunobu Kuriyama)  Only write             the relevant test output.
+4ff687c patch 7.4.789 Problem:    Using freed memory and crash. (Dominique Pellej) Solution:   Correct use of pointers. (Hirohito Higashi)
+5000cb4 patch 7.4.788 Problem:    Can't build without the crypt feature. (John Marriott) Solution:   Add #ifdef's.
+c71fa64 patch 7.4.787 Problem:    snprintf() isn't available everywhere. Solution:   Use vim_snprintf(). (Ken Takata)
+78f0f05 patch 7.4.786 Problem:    It is not possible for a plugin to adjust to a changed setting. Solution:   Add the OptionSet autocommand event. (Christian Brabandt)
+4772975 patch 7.4.785 Problem:    On some systems automatically adding the missing EOL causes             problems. Setting 'binary' has too many side effects. Solution:   Add the 'fixeol' option, default on. (Pavel Samarkin)
+6c5ac79 patch 7.4.784 Problem:    Using both "noinsert" and "noselect" in 'completeopt' does not             work properly. Solution:   Change the ins_complete() calls. (Ozaki Kiichi)
+47317f6 patch 7.4.783 Problem:    copy_chars() and copy_spaces() are inefficient. Solution:   Use memset() instead. (Dominique Pelle)
+28b4c94 patch 7.4.782 Problem:    Still a few problems with CTRL-A and CTRL-X in Visual mode. Solution:   Fix the reported problems. (Christian Brabandt)
+ea583b4 patch 7.4.781 Problem:    line2byte() returns one less when 'bin' and 'noeol' are set. Solution:   Only adjust the size for the last line. (Rob Wu)
+0e90ffc patch 7.4.780 Problem:    Compiler complains about uninitialized variable and clobbered             variables. Solution:   Add Initialization.  Make variables static.
+0e155d2 patch 7.4.779 Problem:    Using CTRL-A in a line without a number moves the cursor. May             cause a crash when at the start of the line. (Urtica Dioica) Solution:   Do not move the cursor if no number was changed.
+ac0e458 patch 7.4.778 Problem:    Coverity warns for uninitialized variable. Solution:   Change condition of assignment.
+0f6b9f8 Updated runtime files.
+78e59d7 patch 7.4.777 Problem:    The README file doesn't look nice on github. Solution:   Add a markdown version of the README file.
+7b218af patch 7.4.776 Problem:    Equivalence class for 'd' does not work correctly. Solution:   Fix 0x1e0f and 0x1d0b. (Dominique Pelle)
+8908418 Add files missing from patch 7.4.771.
+89211a4 patch 7.4.775 Problem:    It is not possible to avoid using the first item of completion. Solution:   Add the "noinsert" and "noselect" values to 'completeopt'. (Shougo             Matsu)
+41f659a patch 7.4.774 Problem:    When using the CompleteDone autocommand event it's difficult to             get to the completed items. Solution:   Add the v:completed_items variable. (Shougo Matsu)
+777535d patch 7.4.773 Problem:    'langmap' is used in command-line mode when checking for mappings.             Issue 376. Solution:   Do not use 'langmap' in command-line mode. (Larry Velazquez)
+fc226e0 patch 7.4.772 Problem:    Racket 6.2 is not supported on MS-Windows. Solution:   Check for the "racket" subdirectory. (Weiyong Mao)
+7102a03 patch 7.4.771 Problem:    Search does not handle multi-byte character at the start position             correctly. Solution:   Take byte size of character into account. (Yukihiro Nakadaira)
+3dd274b patch 7.4.770 Problem:    Background color response with transparency is not ignored. Solution:   Change the way escape sequences are recognized. (partly by             Hirohito Higashi)
+085a0bd patch 7.4.769 Problem:    Behavior of :diffoff is not tested. Solution:   Add a bit of testing. (Olaf Dabrunz)
+e8f475c patch 7.4.768 Problem:    :diffoff only works properly once. Solution:   Also make :diffoff work when used a second time. (Olaf Dabrunz)
+32a6534 patch 7.4.767 Problem:    --remote-tab-silent can fail on MS-Windows. Solution:   Use single quotes to avoid problems with backslashes. (Idea by             Weiyong Mao)
+21b092c patch 7.4.766 Problem:    Background color check does not work on Tera Term. Solution:   Also recognize ST as a termination character. (Hirohito Higashi)
+45257c6 patch 7.4.765 Problem:    CTRL-A and CTRL-X in Visual mode do not always work well. Solution:   Improvements for increment and decrement. (Christian Brabandt)
+72d5e07 patch 7.4.764 Problem:    test_increment fails on MS-Windows. (Ken Takata) Solution:   Clear Visual mappings. (Taro Muraoka)
+ba46e2b patch 7.4.763 Problem:    Building with Lua 5.1 doesn't work. Solution:   Define lua_replace and lua_remove. (KF Leong)
+54d2955 patch 7.4.762 Problem:    Comment for may_req_bg_color() is wrong. (Christ van Willegen) Solution:   Rewrite the comment.
+1effeee Update help files.
+249b0a9 patch 7.4.761 Problem:    The request-background termcode implementation is incomplete. Solution:   Add the missing pieces.
+7f48cbd patch 7.4.760 Problem:    Spelling mistakes are not displayed after ":syn spell". Solution:   Force a redraw after ":syn spell" command. (Christian Brabandt)
+2b91d9f patch 7.4.759 Problem:    Building with Lua 5.3 doesn't work, symbols have changed. Solution:   Use the new names for the new version. (Felix Schnizlein)
+745e78d patch 7.4.758 Problem:    When 'conceallevel' is 1 and quitting the command-line window with             CTRL-C the first character ':' is erased. Solution:   Reset 'conceallevel' in the command-line window. (Hirohito             Higashi)
+0213c68 patch 7.4.757 Problem:    Cannot detect the background color of a terminal. Solution:   Add T_RBG to request the background color if possible. (Lubomir             Rintel)
+46cfd8c patch 7.4.756 Problem:    Can't use strawberry Perl 5.22 x64 on MS-Windows. Solution:   Add new defines and #if. (Ken Takata)
+c559ef7 patch 7.4.755 Problem:    It is not easy to count the number of characters. Solution:   Add the skipcc argument to strchars(). (Hirohito Higashi, Ken             Takata)
+b0c49f4 patch 7.4.754 Problem:    Using CTRL-A in Visual mode does not work well. (Gary Johnson) Solution:   Make it increment all numbers in the Visual area. (Christian             Brabandt)
+cbfc3d9 patch 7.4.753 Problem:    Appending in Visual mode with 'linebreak' set does not work             properly.  Also when 'selection' is "exclusive". (Ingo Karkat) Solution:   Recalculate virtual columns. (Christian Brabandt)
+2ae4bc0 patch 7.4.752 Problem:    Unicode 8.0 not supported. Solution:   Update tables for Unicode 8.0.  Avoid E36 when running the script.             (James McCoy)
+e732448 patch 7.4.751 Problem:    It is not obvious how to enable the address sanitizer. Solution:   Add commented-out flags in the Makefile. (Dominique Pelle)             Also add missing test targets.
+410fcf8 patch 7.4.750 Problem:    Cannot build with clang 3.5 on Cygwin with perl enabled. Solution:   Strip "-fdebug-prefix-map" in configure. (Ken Takata)
+ca3081a patch 7.4.749 Problem:    For some options two consecutive commas are OK. (Nikolay Pavlov) Solution:   Add the P_ONECOMMA flag.
+a474b30 patch 7.4.748 Problem:    Buffer overflow. Solution:   Make the buffer larger. (Kazunobu Kuriyama)
+2f9f568 Add the logiPat plugin to the distribution.
+3a92324 patch 7.4.747 Problem:    ":cnext" may jump to the wrong column when setting             'virtualedit=all' (cs86661) Solution:   Reset the coladd field. (Hirohito Higashi)
+dc750eb patch 7.4.746 Problem:    ":[count]tag" is not always working. (cs86661) Solution:   Set cur_match a bit later. (Hirohito Higashi)
+02a4bd4 patch 7.4.745 Problem:    The entries added by matchaddpos() are returned by getmatches()             but can't be set with setmatches(). (Lcd) Solution:   Fix setmatches(). (Christian Brabandt)
+fa5399f patch 7.4.744 Problem:    No tests for Ruby and Perl. Solution:   Add minimal tests. (Ken Takata)
+75f07d2 patch 7.4.743 Problem:    "p" in Visual mode causes an unexpected line split. Solution:   Advance the cursor first. (Yukihiro Nakadaira)
+2e79bf5 patch 7.4.742 Problem:    Cannot specify a vertical split when loading a buffer for a             quickfix command. Solution:   Add the "vsplit" value to 'switchbuf'. (Brook Hong)
+77d663f patch 7.4.741 Problem:    When using += with ":set" a trailing comma is not recognized.             (Issue 365) Solution:   Don't add a second comma. Add a test. (partly by Christian             Brabandt)
+9cd03fe Updated runtime files.
+c31cce2 patch 7.4.740 Problem:    ":1quit" works like ":.quit". (Bohr Shaw) Solution:   Don't exit Vim when a range is specified. (Christian Brabandt)
+6ec4f1b patch 7.4.739 Problem:    In a string "\U" only takes 4 digits, while after CTRL-V U eight             digits can be used. Solution:   Make "\U" also take eight digits. (Christian Brabandt)
+57637e5 patch 7.4.738 Problem:    Can't compile without the syntax highlighting feature. Solution:   Add #ifdef around use of w_p_cul. (Hirohito Higashi)
+c076bca patch 7.4.737 Problem:    On MS-Windows vimgrep over arglist doesn't work (Issue 361) Solution:   Only escape backslashes in ## expansion when it is not used as the             path separator. (James McCoy)
+a429e05 patch 7.4.736 Problem:    Invalid memory access. Solution:   Avoid going over the end of a NUL terminated string. (Dominique             Pelle)
+81c03ff patch 7.4.735 Problem:    Wrong argument for sizeof(). Solution:   Use a pointer argument. (Chris Hall)
+0701d57 patch 7.4.734 Problem:    ml_get error when using "p" in a Visual selection in the last             line. Solution:   Change the behavior at the last line. (Yukihiro Nakadaira)
+b34bf79 patch 7.4.733 Problem:    test_listchars breaks on MS-Windows. (Kenichi Ito) Solution:   Set fileformat to "unix". (Christian Brabandt)
+33541be Updated runtime files.
+2ae5aaf patch 7.4.732 Problem:    The cursor line is not always updated for the "O" command. Solution:   Reset the VALID_CROW flag. (Christian Brabandt)
+9675b2f patch 7.4.731 Problem:    The tab menu shows "Close tab" even when it doesn't work. Solution:   Don't show "Close tab" for the last tab. (John Marriott)
+b101a21 patch 7.4.730 Problem:    When setting the crypt key and using a swap file, text may be             encrypted twice or unencrypted text remains in the swap file.             (Issue 369) Solution:   Call ml_preserve() before re-encrypting.  Set correct index for             next pointer block.
+4d2e513 patch 7.4.729 Problem:    Occasional crash with 'list' set. Solution:   Fix off-by-one error. (Christian Brabandt)
+c72c94b patch 7.4.728 Problem:    Can't build with some version of Visual Studio 2015. Solution:   Recognize another version 14 number. (Sinan)
+3e1a03e patch 7.4.727 Problem:    Cannot build GvimExt with MingW. Solution:   Add -lgdi32.  (KF Leong)
+c73f8aa patch 7.4.726 Problem:    Cannot build GvimExt. Solution:   Set APPVER to 5.0.  (KF Leong)
+05721de patch 7.4.725 Problem:    ":call setreg('"', [])" reports an internal error. Solution:   Make the register empty. (Yasuhiro Matsumoto)
+f4407b0 patch 7.4.724 Problem:    Vim icon does not show in Windows context menu. (issue 249) Solution:   Load the icon in GvimExt.
+d8dd94c patch 7.4.723 Problem:    For indenting, finding the C++ baseclass can be slow. Solution:   Cache the result. (Hirohito Higashi)
+739edd4 patch 7.4.722 Problem:    0x202f is not recognized as a non-breaking space character. Solution:   Add 0x202f to the list. (Christian Brabandt)
+8aa9452 patch 7.4.721 Problem:    When 'list' is set Visual mode does not highlight anything in             empty lines. (mgaleski) Solution:   Check the value of lcs_eol in another place. (Christian Brabandt)
+1a111a8 patch 7.4.720 Problem:    Can't build with Visual Studio 2015. Solution:   Recognize the "version 14" numbers and omit /nodefaultlib when             appropriate. (Paul Moore)
+a3ef030 patch 7.4.719 Problem:    Overflow when adding MAXCOL to a pointer. Solution:   Subtract pointers instead. (James McCoy)
+545ca55 patch 7.4.718 Problem:    Autocommands triggered by quickfix cannot get the current title             value. Solution:   Set w:quickfix_title earlier. (Yannick)             Also move the check for a title into the function.
+c22125c patch 7.4.717 Problem:    ":let list += list" can change a locked list. Solution:   Check for the lock earlier. (Olaf Dabrunz)
+e5a134a patch 7.4.716 Problem:    When using the 'c' flag of ":substitute" and selecting "a" or "l"             at the prompt the flags are not remembered for ":&&". (Ingo             Karkat) Solution:   Save the flag values and restore them. (Hirohito Higashi)
+2a9a193 patch 7.4.715 Problem:    Invalid memory access when there are illegal bytes. Solution:   Get the length from the text, not from the character. (Dominique             Pelle)
+9ad74ab patch 7.4.714 Problem:    Illegal memory access when there are illegal bytes. Solution:   Check the byte length of the character. (Dominique Pelle)
+15ba923 patch 7.4.713 Problem:    Wrong condition for #ifdef. Solution:   Change USR_EXRC_FILE2 to USR_VIMRC_FILE2. (Mikael Fourrier)
+e1a4cae patch 7.4.712 Problem:    Missing change in another file. Solution:   Also change message.c
+6317132 patch 7.4.711 Problem:    Missing change in one file. Solution:   Also change option.c
+5a3cdec patch 7.4.710 Problem:    It is not possible to make spaces visibible in list mode. Solution:   Add the "space" item to 'listchars'. (David BÃ¼rgin, issue 350)
+52a96a8 patch 7.4.709 Problem:    ":tabmove" does not work as documented. Solution:   Make it work consistently.  Update documentation and add tests.             (Hirohito Higashi)
+d0d3ae7 patch 7.4.708 Problem:    gettext() is called too often. Solution:   Do not call gettext() for messages until they are actually used.             (idea by Yasuhiro Matsumoto)
+16e1ef4 patch 7.4.707 Problem:    Undo files can have their executable bit set. Solution:   Strip of the executable bit. (Mikael Berthe)
+39dc18c patch 7.4.706 Problem:    Window drawn wrong when 'laststatus' is zero and there is a             command-line window. (Yclept Nemo) Solution:   Set the status height a bit later. (Christian Brabandt)
+dbd255d patch 7.4.705 Problem:    Can't build with Ruby 2.2. Solution:   Add #ifdefs to handle the incompatible change. (Andrei Olsen)
+54cc890 patch 7.4.704 Problem:    Searching for a character matches an illegal byte and causes             invalid memory access. (Dominique Pelle) Solution:   Do not match an invalid byte when search for a character in a             string.  Fix equivalence classes using negative numbers, which             result in illegal bytes.
+a8f8f32 patch 7.4.703 Problem:    Compiler warning for start_dir unused when building unittests. Solution:   Move start_dir inside the #ifdef.
+d567864 patch 7.4.702 Problem:    Joining an empty list does uneccessary work. Solution:   Let join() return early. (Marco Hinz)
+c4a9976 patch 7.4.701 Problem:    Compiler warning for using uninitialized variable. (Yasuhiro             Matsumoto) Solution:   Initialize it.
+d92707a Remove local-additions entries from help.txt.
+eb6784b Updated runtime files.
+3582054 patch 7.4.700 Problem:    Fold can't be opened after ":move". (Ein Brown) Solution:   Delete the folding information and update it afterwards.             (Christian Brabandt)
+1cd013c patch 7.4.699 Problem:    E315 when trying to delete a fold. (Yutao Yuan) Solution:   Make sure the fold doesn't go beyond the last buffer line.             (Christian Brabandt)
+581d492 patch 7.4.698 Problem:    Various problems with locked and fixed lists and dictionaries. Solution:   Disallow changing locked items, fix a crash, add tests. (Olaf             Dabrunz)
+b41f826 patch 7.4.697 Problem:    The filename used for ":profile" must be given literally. Solution:   Expand "~" and environment variables. (Marco Hinz)
+c42a5bf patch 7.4.696 Problem:    Not freeing memory when encountering an error. Solution:   Free the stack before returning. (Eliseo MartÃ­nez)
+13aac3c patch 7.4.695 Problem:    Out-of-bounds read, dectected by Coverity. Solution:   Remember the value of cmap for the first matching encoding.  Reset             cmap to that value if first matching encoding is going to be used.             (Eliseo MartÃ­nez)
+fd4b3c7 More updated runtime files.
+92f61fb patch 7.4.694 Problem:    Running tests changes the .viminfo file. Solution:   Disable viminfo in the text objects test.
+1e7b7ab Updated runtime files.
+f708198 patch 7.4.693 Problem:    Session file is not correct when there are multiple tab pages. Solution:   Reset the current window number for each tab page. (Jacob Niehus)
+4d79036 patch 7.4.692 for Problem: Defining SOLARIS for no good reason. (Danek Duvall) Solution:   Remove it.
+a9a2afe patch 7.4.691 for Problem: Can't build with MzScheme. Solution:   Change "cwd" into the global variable "start_dir".
+7903a07 patch 7.4.690 for Problem: Memory access errors when changing indent in Ex mode. Also missing             redraw when using CTRL-U. (Knil Ino) Solution:   Update pointers after calling ga_grow().
+016eeaf updated for version 7.4.689 Problem:    On MS-Windows, when 'autochdir' is set, diff mode with files in             different directories does not work. (Axel Bender) Solution:   Remember the current directory and use it where needed. (Christian             Brabandt)
+6ae48a5 updated for version 7.4.688 Problem:    When "$" is in 'cpo' the popup menu isn't undrawn correctly.             (Issue 166) Solution:   When using the popup menu remove the "$".
+6719896 updated for version 7.4.687 Problem:    There is no way to use a different in Replace mode for a terminal. Solution:   Add t_SR. (Omar Sandoval)
+6536607 updated for version 7.4.686 Problem:    "zr" and "zm" do not take a count. Solution:   Implement the count, restrict the fold level to the maximum             nesting depth.  (Marcin Szamotulski)
+28df6df updated for version 7.4.685 Problem:    When there are illegal utf-8 characters the old regexp engine may             go past the end of a string. Solution:   Only advance to the end of the string. (Dominique Pelle)
+e64f522 updated for version 7.4.684 Problem:    When starting several Vim instances in diff mode, the temp files             used may not be unique. (Issue 353) Solution:   Add an argument to vim_tempname() to keep the file.
+b107ebb updated for version 7.4.683 Problem:    Typo in the vimtutor command. Solution:   Fix the typo. (Corey Farwell, github pull 349)
+5020521 updated for version 7.4.682 Problem:    The search highlighting and match highlighting replaces the             cursorline highlighting, this doesn't look good. Solution:   Combine the highlighting. (Yasuhiro Matsumoto)
+273a7d5 Add test files for patch 7.4.680.
+115536f updated for version 7.4.681 Problem:    MS-Windows: When Vim is minimized the window height is computed             incorrectly. Solution:   When minimized use the previously computed size. (Ingo Karkat)
+e96e0cc updated for version 7.4.680 Problem:    CTRL-W in Insert mode does not work well for multi-byte             characters. Solution:   Use mb_get_class(). (Yasuhiro Matsumoto)
+042380e updated for version 7.4.679 Problem:    Color values greater than 255 cause problems on MS-Windows. Solution:   Truncate to 255 colors. (Yasuhiro Matsumoto)
+b748bc3 updated for version 7.4.678 Problem:    When using --remote the directory may end up being wrong. Solution:   Use localdir() to find out what to do. (Xaizek)
+759b8e0 updated for version 7.4.677 Problem:    Configure fails when specifying a python-config-dir. (Lcd) Solution:   Check if PYTHONFRAMEWORKPREFIX is set.
+cb91f7a updated for version 7.4.676 Problem:    On Mac, when not using the default Python framework configure             doesn't do the right thing. Solution:   Use a linker search path. (Kazunobu Kuriyama)
+d6d296e updated for version 7.4.675 Problem:    When a FileReadPost autocommand moves the cursor inside a line it             gets moved back. Solution:   When checking whether an autocommand moved the cursor store the             column as well. (Christian Brabandt)
+de7072c updated for version 7.4.674 Problem:    Missing changes in one file. Solution:   Also change the win32 file.
+196c3e8 updated for version 7.4.673 Problem:    The first syntax entry gets sequence number zero, which doesn't             work. (Clinton McKay) Solution:   Start at number one. (Bjorn Linse)
+9ac499d Update runtime files.
+9dd4697 updated for version 7.4.672 Problem:    When completing a shell command, directories in the current             directory are not listed. Solution:   When "." is not in $PATH also look in the current directory for             directories.
+73871c5 updated for version 7.4.671 Problem:    Warning for shadowing a variable. Solution:   Rename off to mb_off. (Kazunobu Kuriyama)
+49d9ff7 updated for version 7.4.670 Problem:    Using 'cindent' for Javascript is less than perfect. Solution:   Improve indenting of continuation lines. (Hirohito Higashi)
+2fe2a65 updated for version 7.4.669 Problem:    When netbeans is active the sign column always shows up. Solution:   Only show the sign column once a sign has been added. (Xavier de             Gaye)
+920cab2 updated for version 7.4.668 Problem:    Can't use a glob pattern as a regexp pattern. Solution:   Add glob2regpat(). (Christian Brabandt)
+14b2ebf updated for version 7.4.667 Problem:    'colorcolumn' isn't drawn in a closed fold while 'cursorcolumn'             is. (Carlos Pita) Solution:   Make it consistent. (Christian Brabandt)
+eff9d4f updated for version 7.4.666 Problem:    There is a chance that Vim may lock up. Solution:   Handle timer events differently. (Aaron Burrow)
+aa7ba51 updated for version 7.4.665 Problem:    'linebreak' does not work properly with multi-byte characters. Solution:   Compute the pointer offset with mb_head_off().  (Yasuhiro             Matsumoto)
+b3476cb updated for version 7.4.664 Problem:    When 'compatible' is reset 'numberwidth' is set to 4, but the             effect doesn't show until a change is made. Solution:   Check if 'numberwidth' changed. (Christian Brabandt)
+9d722de updated for version 7.4.663 Problem:    When using netbeans a buffer is not found in another tab. Solution:   When 'switchbuf' is set to "usetab" then switch to another tab             when possible. (Xavier de Gaye)
+3b109f7 updated for version 7.4.662 Problem:    When 'M' is in the 'cpo' option then selecting a text object in             parenthesis does not work correctly. Solution:   Keep 'M' in 'cpo' when finding a match. (Hirohito Higashi)
+2dda3a4 updated for version 7.4.661 Problem:    Using "0 CTRL-D" in Insert mode may have CursorHoldI interfere.             (Gary Johnson) Solution:   Don't store K_CURSORHOLD as the last character. (Christian             Brabandt)
+900fb92 updated for version 7.4.660 Problem:    Using freed memory when g:colors_name is changed in the colors             script. (oni-link) Solution:   Make a copy of the variable value.
+12401bb updated for version 7.4.659 Problem:    When 'ruler' is set the preferred column is reset. (Issue 339) Solution:   Don't set curswant when redrawing the status lines.
+f8042eb updated for version 7.4.658 Problem:    'formatexpr' is evaluated too often. Solution:   Only invoke it when beyond the 'textwidth' column, as it is             documented. (James McCoy)
+4050f0b updated for version 7.4.657 Problem:    Compiler warnings for pointer mismatch. Solution:   Add a typecast. (John Marriott)
+90282d3 updated for version 7.4.656 Problem:    Missing changes for glob() in one file. Solution:   Add the missing changes.
+b9e9f77 updated for version 7.4.655 Problem:    Text deleted by "dit" depends on indent of closing tag.             (Jan Parthey) Solution:   Do not adjust oap->end in do_pending_operator(). (Christian             Brabandt)
+cbbb7ec updated for version 7.4.654 Problem:    glob() and globpath() cannot include links to non-existing files.             (Charles Campbell) Solution:   Add an argument to include all links with glob(). (James McCoy)             Also for globpath().
+022ebff updated for version 7.4.653 Problem:    Insert mode completion with complete() may have CTRL-L work like             CTRL-P. Solution:   Handle completion with complete() differently. (Yasuhiro             Matsumoto, Christian Brabandt, Hirohito Higashi)
+c02dcfe updated for version 7.4.652 Problem:    Xxd lacks a few features. Solution:   Use 8 characters for the file position.  Add the -e and -o             arguments. (Vadim Vygonets)
+a0e9ee4 updated for version 7.4.651 Problem:    Can't match "%>80v" properly for multi-byte characters. Solution:   Multiply the character number by the maximum number of bytes in a             character. (Yasuhiro Matsumoto)
+5cd0c47 updated for version 7.4.650 Problem:    Configure check may fail because the dl library is not used. Solution:   Put "-ldl" in LIBS rather than LDFLAGS. (Oazki Kiichi)
+0b2523f updated for version 7.4.649 Problem:    Compiler complains about ignoring return value of fwrite().             (Michael Jarvis) Solution:   Add (void).
+d61af4c Update a few runtime files.
+efdfe53 Updated runtime files.
+b692ed8 updated for version 7.4.648 Problem:    Tests broken on MS-Windows. Solution:   Delete wrong copy line. (Ken Takata)
+1029ab5 updated for version 7.4.647 Problem:    After running the tests on MS-Windows many files differ from their             originals as they were checked out. Solution:   Use a temp directory for executing the tests. (Ken Takata, Taro             Muraoka)
+c43ddac updated for version 7.4.646 Problem:    ":bufdo" may start at a deleted buffer. Solution:   Find the first not deleted buffer. (Shane Harper)
+9e5d1be updated for version 7.4.645 Problem:    When splitting the window in a BufAdd autocommand while still in             the first, empty buffer the window count is wrong. Solution:   Do not reset b_nwindows to zero and don't increment it.
+5871948 updated for version 7.4.644 Problem:    Stratus VOS doesn't have sync(). Solution:   Use fflush(). (Karli Aurelia)
+7dff2aa updated for version 7.4.643 Problem:    Using the default file format for Mac files. (Issue 77) Solution:   Reset the try_mac counter in the right place. (Oswald)
+d58e686 updated for version 7.4.642 Problem:    When using "gf" escaped spaces are not handled. Solution:   Recognize escaped spaces.
+997e27c updated for version 7.4.641 Problem:    The tabline menu was using ":999tabnew" which is now invalid. Solution:   Use ":$tabnew" instead. (Florian Degner)
+376c175 updated for version 7.4.640 Problem:    After deleting characters in Insert mode such that lines are             joined undo does not work properly. (issue 324) Solution:   Use Insstart instead of Insstart_orig. (Christian Brabandt)
+da04f6b updated for version 7.4.639 Problem:    Combination of linebreak and conceal doesn't work well. Solution:   Fix the display problems. (Christian Brabandt)
+232993b updated for version 7.4.638 Problem:    Can't build with Lua 5.3 on Windows. Solution:   use luaL_optinteger() instead of LuaL_optlong(). (Ken Takata)
+27a249d updated for version 7.4.637 Problem:    Incorrectly read the number of buffer for which an autocommand             should be registered. Solution:   Reverse check for "<buffer=abuf>". (Lech Lorens)
+482ae7c Add missing test files from 7.4.634 to the repository.
+3d0ba01 updated for version 7.4.636 Problem:    A search with end offset gets stuck at end of file. (Gary Johnson) Solution:   When a search doesn't move the cursor repeat it with a higher             count. (Christian Brabandt)
+b49d35f updated for version 7.4.635 Problem:    If no NL or CR is found in the first block of a file then the             'fileformat' may be set to "mac". (Issue 77) Solution:   Check if a CR was found. (eswald)
+4a6615c updated for version 7.4.634 Problem:    Marks are not restored after redo + undo. Solution:   Fix the way marks are restored. (Olaf Dabrunz)
+dcd872b updated for version 7.4.633 Problem:    After 7.4.630 the problem persists. Solution:   Also skip redo when calling a user function.
+7678a22 updated for version 7.4.632 Problem:    7.4.592 breaks the netrw plugin, because the autocommands are             skipped. Solution:   Roll back the change.
+0ea75d4 updated for version 7.4.631 Problem:    The default conceal character is documented to be a space but it's             initially a dash. (Christian Brabandt) Solution:   Make the intial value a space.
+89ca05b updated for version 7.4.630 Problem:    When using Insert mode completion combined with autocommands the             redo command may not work. Solution:   Do not save the redo buffer when executing autocommands. (Yasuhiro             Matsumoto)
+5e4f0d8 updated for version 7.4.629 Problem:    Coverity warning for Out-of-bounds read. Solution:   Increase MAXWLEN to 254. (Eliseo MartÃ­nez)
+75a636e updated for version 7.4.628 Problem:    Compiler warning for variable might be clobbered by longjmp. Solution:   Add volatile. (Michael Jarvis)
+25c3ed7 updated for version 7.4.627 Problem:    The last screen cell is not updated. Solution:   Respect the "tn" termcap feature. (Hayaki Saito)
+1c1318e updated for version 7.4.626 Problem:    MSVC with W4 gives useless warnings. Solution:   Disable more warnings. (Mike Williams)
+6976e33 updated for version 7.4.625 Problem:    Possible NULL pointer dereference. Solution:   Check for NULL before using it. (Mike Williams)
+b649448 updated for version 7.4.624 Problem:    May leak memory or crash when vim_realloc() returns NULL. Solution:   Handle a NULL value properly. (Mike Williams)
+b531e63 updated for version 7.4.623 Problem:    Crash with pattern: \(\)\{80000}  (Dominique Pelle) Solution:   When the max limit is large fall back to the old engine.
+ecfbcd6 updated for version 7.4.622 Problem:    Compiler warning for unused argument. Solution:   Add UNUSED.
+1523b82 updated for version 7.4.621 Problem:    Returning 1 in the wrong function. (Raymond Ko) Solution:   Return 1 in the right function (hopefully).
+5a814d8 updated for version 7.4.620 Problem:    Compiler warning for unitinialized variable. (Tony Mechelynck) Solution:   Initialize "did_free". (Ben Fritz)
+9e757b9 updated for version 7.4.619 Problem:    luaV_setref() not returning the correct value. Solution:   Return one.
+3c29afe updated for version 7.4.618 Problem:    luaV_setref() is missing a return statement. (Ozaki Kiichi) Solution:   Put the return statement back.
+d0c7309 Update runtime files.
+58729a8 updated for version 7.4.617 Problem:    Wrong ":argdo" range does not cause an error. Solution:   Reset "cmd" to NULL. (Marcin Szamotulski, Ingo Karkat)
+6468009 updated for version 7.4.616 Problem:    Cannot insert a tab in front of a block. Solution:   Correctly compute aop->start. (Christian Brabandt)
+4839503 updated for version 7.4.615 Problem:    Vim hangs when freeing a lot of objects. Solution:   Do not go back to the start of the list every time.  (Yasuhiro             Matsumoto and Ariya Mizutani)
+cae9209 updated for version 7.4.614 Problem:    There is no test for what patch 7.4.601 fixes. Solution:   Add a test. (Christian Brabandt)
+7fddfeb updated for version 7.4.613 Problem:    The NFA engine does not implement the 'redrawtime' time limit. Solution:   Implement the time limit.
+e304b5c updated for version 7.4.612 Problem:    test_eval fails on Mac. Solution:   Use the * register instead of the + register. (Jun Takimoto)
+3131405 updated for version 7.4.611 Problem:    Syntax error. Solution:   Change statement to return.
+09458ad updated for version 7.4.610 Problem:    Some function headers may be missing from generated .pro files. Solution:   Add PROTO to the #ifdef.
+da91733 updated for version 7.4.609 Problem:    For complicated list and dict use the garbage collector can run             out of stack space. Solution:   Use a stack of dicts and lists to be marked, thus making it             iterative instead of recursive. (Ben Fritz)
+78dbbd9 updated for version 7.4.608 Problem:    test_eval fails when the clipboard feature is missing. Solution:   Skip part of the test. Reduce the text used.
+e365418 updated for version 7.4.607 Problem:    Compiler warnings for unused variables. Solution:   Move them inside #ifdef. (Kazunobu Kuriyama)
+182aa0a updated for version 7.4.606 Problem:    May crash when using a small window. Solution:   Avoid dividing by zero. (Christian Brabandt)
+233decb updated for version 7.4.605 Problem:    The # register is not writable, it cannot be restored after             jumping around. Solution:   Make the # register writable. (Marcin Szamotulski)
+2a9afcf updated for version 7.4.604 Problem:    Running tests changes viminfo. Solution:   Disable viminfo.
+8859c0b updated for version 7.4.603 Problem:    'foldcolumn' may be set such that it fills the whole window, not             leaving space for text. Solution:   Reduce the foldcolumn width when there is not sufficient room.             (idea by Christian Brabandt)
+36e21d7 updated for version 7.4.602 Problem:    ":set" does not accept hex numbers as documented. Solution:   Use vim_str2nr(). (ZyX)
+b969f04 updated for version 7.4.601 Problem:    It is not possible to have feedkeys() insert characters. Solution:   Add the 'i' flag.
+6e58997 updated for version 7.4.600 Problem:    Memory wasted in struct because of aligning. Solution:   Split pos in lnum and col. (Dominique Pelle)
+4511c38 updated for version 7.4.599 Problem:    Out-of-memory error. Solution:   Avoid trying to allocate a negative amount of memory, use size_t             instead of int. (Dominique Pelle)
+e4e3784 updated for version 7.4.598 Problem:    ":tabdo windo echo 'hi'" causes "* register not to be changed.             (Salman Halim) Solution:   Change how clip_did_set_selection is used and add             clipboard_needs_update and global_change_count.  (Christian             Brabandt)
+f79c223 updated for version 7.4.597 Problem:    Cannot change the result of systemlist(). Solution:   Initialize v_lock. (Yukihiro Nakadaira)
+881b56f updated for version 7.4.596 Problem:    Tiny build doesn't compile.  (Ike Devolder) Solution:   Add #ifdef.
+bafbdf1 updated for version 7.4.595 Problem:    The test_command_count test fails when using Japanese. Solution:   Force the language to C. (Hirohito Higashi)
+4a48964 updated for version 7.4.594 Problem:    Using a block delete while 'breakindent' is set does not work             properly. Solution:   Use "line" instead of "prev_pend" as the first argument to             lbr_chartabsize_adv().  (Hirohito Higashi)
+b61437c updated for version 7.4.593 Problem:    Crash when searching for "x\{0,90000}". (Dominique Pelle) Solution:   Bail out from the NFA engine when the max limit is much higher             than the min limit.
+d74cfe1 updated for version 7.4.592 Problem:    When doing ":e foobar" when already editing "foobar" and 'buftype'             is "nofile" the buffer is cleared. (Xavier de Gaye) Solution:   Do no clear the buffer.
+2f6225a Update runtime files.
+1485162 updated for version 7.4.591 Problem:    test_listlbr_utf8 fails when the conceal feature is not available. Solution:   Check for the conceal feature. (Kazunobu Kuriyama)
+fd071f0 updated for version 7.4.590 Problem:    Using ctrl_x_mode as if it contains flags. Solution:   Don't use AND with CTRL_X_OMNI. (Hirohito Higashi)
+d44a1e4 updated for version 7.4.589 Problem:    In the MS-Windows console Vim can't handle greek characters when             encoding is utf-8. Solution:   Escape K_NUL. (Yasuhiro Matsumoto)
+9eef0bc updated for version 7.4.588 Problem:    ":0argedit foo" puts the new argument in the second place instead             of the first. Solution:   Adjust the range type. (Ingo Karkat)
+358a256 updated for version 7.4.587 Problem:    Conceal does not work properly with 'linebreak'. (cs86661) Solution:   Save and restore boguscols. (Christian Brabandt)
+c4f3e52 updated for version 7.4.586 Problem:    Parallel building of the documentation html files is not reliable. Solution:   Remove a cyclic dependency. (Reiner Herrmann)
+593e335 updated for version 7.4.585 Problem:    Range for :bdelete does not work. (Ronald Schild) Solution:   Also allow unloaded buffers.
+e5705d4 updated for version 7.4.584 Problem:    With tiny features test_command_count may fail. Solution:   Source small.vim. (Christian Brabandt)
+f6e0f0c updated for version 7.4.583 Problem:    With tiny features test 16 may fail. Solution:   Source small.vim. (Christian Brabandt)
+4286344 updated for version 7.4.582 Problem:    Can't match "%>80v" properly. (Axel Bender) Solution:   Correctly handle ">". (Christian Brabandt)
+83a5a15 updated for version 7.4.581 Problem:    Compiler warnings for unitinialized variables. (John Little) Solution:   Initialize the variables.
+06ad32f updated for version 7.4.580 Problem:    ":52wincmd v" still gives an invalid range error. (Charles             Campbell) Solution:   Skip over white space.
+17a335e Updated runtime files.
+d927380 updated for version 7.4.579 Problem:    Wrong cursor positioning when 'linebreak' is set and lines wrap. Solution:   (Christian Brabandt)
+979ccca updated for version 7.4.578 Problem:    Using getcurpos() after "$" in an empty line returns a negative             number. Solution:   Don't add one when this would overflow. (Hirohito Higashi)
+509b07f updated for version 7.4.577 Problem:    Matching with a virtual column has a lot of overhead on very long             lines. (Issue 310) Solution:   Bail out early if there can't be a match. (Christian Brabandt)             Also check for CTRL-C at every position.
+d6cbbe6 updated for version 7.4.576 Problem:    Redrawing problem with 'relativenumber' and 'linebreak'. Solution:   Temporarily reset 'linebreak' and restore it in more places.             (Christian Brabandt)
+793eb6d updated for version 7.4.575 Problem:    Unicode character properties are outdated. Solution:   Update the tables with the latest version.
+0101db1 updated for version 7.4.574 Problem:    No error for eval('$'). Solution:   Check for empty name. (Yasuhiro Matsumoto)
+9a33ace updated for version 7.4.573 Problem:    Mapping CTRL-C in Visual mode doesn't work. (Ingo Karkat) Solution:   Call get_real_state() instead of using State directly.
+f4be982 updated for version 7.4.572 Problem:    Address type of :wincmd depends on the argument. Solution:   Check the argument.
+a4f5de3 updated for version 7.4.571 Problem:    Can't build with tiny features. (Ike Devolder) Solution:   Add #ifdef.
+4eb8d81 updated for version 7.4.570 Problem:    Building with dynamic library does not work for Ruby 2.2.0 Solution:   Change #ifdefs and #defines. (Ken Takata)
+7bdc374 Updated runtime files.
+44ad6d4 updated for version 7.4.569 Problem:    Having CTRL-C interrupt or not does not check the mode of the             mapping. (Ingo Karkat) Solution:   Use a bitmask with the map mode. (Christian Brabandt)
+
+   * frameworks/av/
+92d5d48 stagefright: Fix voodoo ifdefs
+540dcbb media: Require property to be set to use QC AV enhancements
+4f8fc5a Revert "GenericSource: Synchronize access to dataSource"
+3a0bcf1 stagefright: Act V: I am become death, the destroyer of worlds
+29c7525 stagefright: Welcome to my nightmare, act IV
+186221a stagefright: Don't break the ABI in ACodec
+25c999f audioflinger: Fix compilation with debug enabled
+7c02c8d Bug 1113271 - Fix stagefright FLACParser
+
+   * frameworks/native/
+eed8455 libgui: Don't assign handle to NULL after free
+
+   * frameworks/opt/telephony/
+2d18d9c Activate default UICC application if not done automatically.
+
+   * hardware/qcom/media/default/
+058375e Fix duplicated OMX.qcom.audio.decoder.aac entry
+
+   * hardware/ril/
+e3085f7 ril: Allow devices to opt-out of building rild
+
+   * packages/apps/Dialer/
+45f1832 Do not reload smart dial database twice in DialtactsActivity.
+
+   * packages/apps/FMRadio/
+20a4082 [FM] Temporary: use software rendering for FM-to-earphone playback
+
+   * packages/services/Telecomm/
+b1fb89c Telecomm: Forward port phone_type switch support
+
+   * system/core/
+966f665 ueventd: Fix bootdevice by-name/by-num link creation
+
+   * system/media/
+8e61c2a audio_route: fix unsupported control types in audio_route_update_path
+
+   * vendor/cm/
+46b2be1 Updated CyanPop version
+7800c88 sepolicy: Rule for CM's perfd extension
+354d773 sepolicy: fix denial for sudaemon
+
+   * vendor/cmsdk/
+a6cf63a cmsdk: Fix readme on hist migration util.
+
+   * vendor/motorola/
+b98fa10 Merge pull request #1 from luca020400/cm-13.0
+5cac89e victara: Proper support for our proprietary ril
+0396e35 victara: Remove libfwdlockengine and libdrmclearkeyplugin as props
+97d7de6 victara: Remove duplicated entry and remove deleted script
+cc4cd66 victara: Remove mount_ext4.sh which we removed from proprietary-files.txt
+38892ae Merge pull request #197 from luca020400/cm-13.0
+3ecc382 msm8226-common: Rename camera.msm8226.so => camera.vendor.msm8226.so
+d295b89 msm8226-common: commonize camera blobs
+
+====================
+     11-23-2015
+====================
+
+
+   * hardware/qcom/fm/
+08b1a99 libfm_jni: Skip loading FM firmware if requested
+
+   * packages/apps/Eleven/
+24df409 Eleven: Add missing RecyclerView support ressources
+
+   * system/bt/
+6f8dac7 Bluetooth losing HF connection to car-kit after 5 seconds
+debfb9d a2dp: kill more logspam
+5c7d033 shut a2dp logspam.
+f163275 Fix compile when BTM_WBS_INCLUDED true and BLUETOOTH_QTI_SW false
+4318e62 bluedroid: Disable the test interface
+71bb688 bluedroid: Disable AVRCP 1.5 by default
+31a9daa Add I2S-PCM slave mode for SCO
+24f3576 bluedroid: Disable BLUETOOTH_QTI_SW by default
+
+   * system/core/
+fc73ae3 init: Add support for gzipped firmware files
+
+====================
+     11-22-2015
+====================
+
+
+   * build/
+4c12cae Merge pull request #17 from CyanogenMod/cm-13.0
+
+   * frameworks/opt/telephony/
+8480c33 RIL: Make mQANElements configurable by property
+
+   * packages/apps/CyanPopOTA/
+46d24aa Updated
+807ba61 Fix version
+
+   * packages/apps/Dialer/
+51d80e3 Undo CAF Dialer IMS conference changes
+
+   * system/bt/
+c2a0ac8 bt: Kill some logspam
+
+   * vendor/cm/
+65a1e3f Updated ro.ota.version
+
+   * vendor/motorola/
+afe9abc falcon/peregrine: Update blobs to M
+cc071cc titan/thea: Update blobs to M
+76f589e msm8226-common: Update blobs to M
