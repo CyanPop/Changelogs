@@ -1,13 +1,195 @@
 ====================
-     12-01-2015
+     12-03-2015
+====================
+
+
+   * bootable/recovery/
+d4ca7f0 recovery: Assimilate minivold
+0657fd2 recovery: fstools: symlink sgdisk so we can actually use it
+0c8d0d8 recovery: Switch to CyanogenMod branding
+
+   * build/
+bcdf0e5 Add Make Dirty Option
+6d949b0 Droiddoc: Allocate more RAM
+b64e7c9 build: recovery: Support extra recovery resources
+
+   * frameworks/av/
+40b5cb7 stagefright: Fix build breaks
+53f3009 stagefright: More HW codec support w/ FFMPEGExtractor
+
+   * frameworks/base/
+d17e78c SystemUI: various qs tile detail improvements
+930dfe8 SystemUI: add circle page indicator for qs tiles
+9bd34eb Revert "systemui: Fix race condition in setting notification panel height"
+0f3c86b Themes: Don't uninstall theme when processing an overlay fails
+9941a81 Core: Allow Build.DISPLAY or Build.FINGERPRINT to deterimine mIsUpgrade
+
+   * packages/apps/Contacts/
+1a447e7 Contacts: Use common contacts uri extra
+3728745 Contacts: Save contact image from lookup
+a8a8ddd Contacts: Remove contact shortcut for lookup contact
+8e0f895 Contacts: Add contact lookup with attribution to quick contacts
+b163f4a Contacts : Ensure query excludes LOCAL_CONTACTS
+182560e Fix local account name display for groups.
+2b8d200 Remove arbitrary set visibility call
+d2c1b46 Keep a local instance of mContactData when copying to SIM card.
+7fceb32 Contacts:remove memory status from overflow in search mode
+72dd839 fix crash in QuickContact on sending contact via sms
+0929c89 Summarize local phone storage in MemoryStatusActivity.
+086231d QuickContacts: Fix null pointer exception when clicking a contact
+
+   * packages/apps/ContactsCommon/
+ca42a57 Populate group title.
+
+   * packages/apps/CyanPopOTA/
+92f2f65 Updated name to Updates
+
+   * packages/apps/PackageInstaller/
+51cd037 Revert "PackageInstaller: Show current & new version"
+edb51de PackageInstaller: Show current & new version
+
+   * packages/apps/Settings/
+9acd11f Updated name of OTA
+01995f2 Device developer -> Rom Developer
+eb072ae Correct development shortcut summary
+3a8f6aa Correct double tap to sleep summary
+
+   * system/vold/
+56f5c11 minivold: Build as static library for linkage into recovery
+
+   * vendor/cm/
+377f75a Updated bootanimations for CyanPop
+e3db497 vendor/cm: Update Japanese APNs
+
+====================
+     12-02-2015
 ====================
 
 
    * bionic/
 91d934a Revert "Revert "linker: Reset the active shim libs each time we do a dlopen""
 8110520 linker: Don't try to walk the g_active_shim_libs when doing dlsym
+
+   * bootable/recovery/
+0e70a87 fstools: Invite sfdisk to the party
+e023d79 recovery: Fix mounting f2fs partitions
+
+   * build/
+e0e32e8 Show CyanPop in flashing
+
+   * device/motorola/falcon/
+56f5501 Falcon: Using GCC 4.9 TC
+
+   * device/motorola/peregrine/
+3f8c629 Peregrine: Using GCC 4.9 TC
+
+   * device/motorola/thea/
+0995d27 Thea: Using GCC 4.9 TC
+
+   * device/motorola/titan/
+f594374 Titan: Using GCC 4.9 TC
+
+   * device/qcom/sepolicy/
+00aceec sepolicy: allow gatekeeperd to access firmware_files (ex. kmota)
+
+   * external/gptfdisk/
+1c3ad1d gptfdisk: Switch to static lib for including in fstools
+
+   * external/toybox/
+47d005d toybox: mount: Support multiple fs-types/mountpoint
+
+   * frameworks/av/
+f474d17 Handle error result from DrmManagerClient correctly
+bc585fb Handle malformed audio packets received during RTSP stream switching
+e19236d Tuning the number of packets for one read in StreamingSource
+b6cc3eb stagefright: Fix fallback mechanism to SW decoder
+1de1d15 stagefright: handleSetSurface: Don't dereference null graphic buffers
+fb3719c stagefright: Fix cts testGetMaxSupportedInstances
+
+   * frameworks/base/
+982ddc5 SystemUI: fix building test package
+cf75799 Revert "utils: Introduce ScreenType class"
+44991f0 gesture: fix possible race during initialization
+cbccf7d alarmmanager: Reduce calls to elapsedRealtime()
+c801f26 Bluetooth: Fix for CTS failure
+539415d Alarm: add support for power off alarm
+b87b292 Update A2DP device connection state properly.
+c7c2cea Revert "Change the routing path of bluetooth headset connections."
+e0e3859 video: Add QHD & 2K profile for recorder
+6e3a20d frameworks/base: Add checks for 4KUHD and VGA timelapse
+0a1de22 Udpate instrumentation code
+99497a8 MediaHTTPConnection: support Cookie update
+6a9ea6b SystemUI: fix QS quick pull down
+31e9d8b Themes: Allow SystemUI Tuner Icon to be Tinted
+fa33447 Themes: Allow Permission Icons to be fully themed
+
+   * frameworks/opt/telephony/
+c615adb Merge pull request #1 from CyanogenMod/cm-13.0
+0cfdefd Telephony: Allow more RIL methods to be overridden
+
+   * hardware/broadcom/libbt/
+97df6c9 libbt-vendor: add support for Samsung semco
+
+   * hardware/qcom/audio-caf/msm8996/
+ab6ba9c Merge commit '8f769c5' into cm-13.0-caf-8996
+
+   * hardware/qcom/media-caf/msm8996/
+fb94441 Merge commit '67d010d' into cm-13.0-caf-8996
+
+   * kernel/motorola/msm8226/
+9484cd9 DefConfigs: Removed pure_defconfig for titan and thea.
+3cfdc7b Build.sh: Added support for falcon's dt.img
+
+   * packages/apps/Contacts/
+fad2dab Contacts: Update dialog with the correct selected count
+a6a9548 Contacts: Impove CAF strings
+ffd11b5 Contacts: move CAF strings to cm_strings
+c61ce77 contacts: Add support for import contacts to local phone storage
+5b45a0b Fix group detail activity action bar theme.
+c17b4a3 Fix up group fragment padding.
+
+   * packages/apps/Settings/
+85a3402 Settings: Fix IllegalArgumentException in AppGroupConfig
+46c05d4 Use ScreenType util from cmsdk
+0097208 Added Rom Developer to CyanPop devices & maintainers
+3c9cda8 Revert "Added custom header"
+b00a65e Device info: Remove IMEI info from SIM status
+60a3d0a Fixed build
+205795b Settings: CyanPop devices & maintainers
+825c353 Settings: About CyanPop
+
+   * packages/apps/SetupWizard/
+876e060 Merge pull request #2 from CyanogenMod/cm-13.0
+
+   * system/core/
+f3cdf56 Revert "healthd: Support QC2.0 type charger"
+5692966 adb: host: Provide better sideload status
+c96c137 Partially revert "healthd: allow custom charger"
+1a8d317 adb: Fix recovery_mode
+
+   * vendor/cm/
+635c5c6 Revert "Removed cm's wallpapers"
+32d48cd Revert "default marshmallow wallpapers (all devices) *should cover all current screen sizes"
+650f671 CyanPoP 3.0 Released & Updated stuff
+da68f9f default marshmallow wallpapers (all devices) *should cover all current screen sizes
+5c7a633 Removed cm's wallpapers
+
+   * vendor/cmsdk/
+ad00d5b cmsdk: Add initial cleanspec.
+33fecfb cmsdk: Compile in internal java src files to internal sdk.
+bcc94d1 utils: Introduce ScreenType class
+
+====================
+     12-01-2015
+====================
+
+
+   * bionic/
 3a2debf kernel-header : add alarm type and clock type for power off alarm
 fd0140b Revert "linker: Reset the active shim libs each time we do a dlopen"
+
+   * device/motorola/falcon/
+23ec0db falcon: Add radio version whitelist
 
    * device/motorola/msm8226-common/
 c9633f7 Revert "msm8226-common: Build the kernel with gcc-4.9"
@@ -59,7 +241,14 @@ db16fa4 msm8226-common: init: Don't use absolute paths for preloading libs
 f2b06af msm8226-common: libmoto: Add ril symbols
 b39ab0e msm8226-common: enable doze
 
+   * device/motorola/peregrine/
+e3d1cf0 peregrine: Add radio assert
+
+   * device/motorola/thea/
+f9ae8c3 thea: Add radio assert
+
    * frameworks/av/
+9ea60c7 ffmpeg: flac: Assume 16 bits per sample if not set
 aeda337 Fix for getPosition after seek
 8a55244 Correct the time returned by AudioPlayer::getMediaTime
 118bc1d The progress bar of next song is not properly started in offload use case
@@ -78,6 +267,9 @@ d69ffb9 libstagefright: Handle MPEG4 DP playback
 a68350f QuickSettings: Add long click support for all tiles
 c18d632 QuickSettings: Improve draggable tiles management
 2ecf005 Screen pinning improvements
+
+   * frameworks/opt/telephony/
+b72ea20 Set default subscriptions when single SIM is available
 
    * kernel/motorola/msm8226/
 a6681ff MonsterKernel-MM Released
@@ -238,13 +430,23 @@ a13844d lglock: remove online variants of lock
 3354dd3 wlan: Address buffer overflow due to invalid length
 b945bbd ARM: 8160/1: drop warning about return_address not using unwind tables
 
+   * packages/apps/Bluetooth/
+02f9940 Bluetooth: Move & improve caf strings
+
+   * packages/apps/BluetoothExt/
+d875afe BluetoothExt: Update icon
+
    * packages/apps/Settings/
-3c9cda8 Revert "Added custom header"
-b00a65e Device info: Remove IMEI info from SIM status
-60a3d0a Fixed build
-205795b Settings: CyanPop devices & maintainers
-825c353 Settings: About CyanPop
 808abb9 Added custom header
+
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
+bebc956 November 1st, 2015 - UBER AARCH64 4.9.x ROM Toolchain
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+10a3aea 12/01/15 - 4.9.4 UBERTC Snapshot
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+7cfcf32 12/1/2015 - 4.9.4 UBERTC Snapshot
 
    * system/core/
 52746ee healthd: Actually use correct common backlight function
@@ -254,24 +456,18 @@ b00a65e Device info: Remove IMEI info from SIM status
 ae15b25 healthd: Turn screen off before rebooting
 
    * vendor/cm/
-650f671 CyanPoP 3.0 Released & Updated stuff
-da68f9f default marshmallow wallpapers (all devices) *should cover all current screen sizes
-5c7a633 Removed cm's wallpapers
 2c9da0c Correct Tele2 Sweden APNs and remove Comviq Sweden.
+
+   * vendor/cmsdk/
+95bb1d5 Protected Components: Adding validator. Fixing crash in Trebuchet due to missing validator.
+
+   * vendor/motorola/
+b71671e Merge pull request #5 from TheMuppets/cm-13.0
 
 ====================
      11-30-2015
 ====================
 
-
-   * device/motorola/falcon/
-23ec0db falcon: Add radio version whitelist
-
-   * device/motorola/peregrine/
-e3d1cf0 peregrine: Add radio assert
-
-   * device/motorola/thea/
-f9ae8c3 thea: Add radio assert
 
    * device/qcom/sepolicy/
 bc61f9b sepolicy: Label boot/recovery/cache partitions
@@ -295,6 +491,7 @@ c85eb57 Merge branch 'LA.BF64.1.2.2_rb4.8' of git://codeaurora.org/platform/fram
 2bf344f Removed layersmanager
 
    * packages/apps/SetupWizard/
+070fbea Fingerprint: Use AOSP fingerprint setup
 76690b8 Merge pull request #1 from CyanogenMod/cm-13.0
 
    * vendor/cm/
@@ -307,7 +504,6 @@ a3baf9c migration: Clean up abstractions.
 c221959 cmsdk: Re-enable multiple profiles functions.
 
    * vendor/motorola/
-b71671e Merge pull request #5 from TheMuppets/cm-13.0
 49f6bfc Merge pull request #187 from sultanqasim/cm-13.0
 4efbe80 otus: update blobs from victara Marshmallow
 6c87e3a otus: remove prebuilt HALs that don't belong
@@ -549,6 +745,9 @@ bef7d6d Fix mounting of non-FAT formatted SD cards (2/2)
    * packages/services/Telephony/
 300bb31 Use libphonenumber instead of libphonenumbergoogle
 
+   * system/core/
+5029693 mkbootimg: Add --second_offset to usage display
+
    * vendor/cm/
 cf9946f init: Remove world-writable permissions in BFQ hierarchy
 2e04bd0 sepolicy: qcom: Allow reading PSU sysfs by system_server
@@ -560,6 +759,7 @@ efb5274 Fix compile error in test cases from 3ddf435fb4085f07d47d67b21a6168c17d1
 cb5e94b msm8226-common: Kill mm-parser
 d068f31 Merge pull request #200 from luk1337/cm-13.0
 d256195 Merge pull request #3 from TheMuppets/cm-13.0
+fbd03d6 Revert "msm8226-common: bring back fm patchloader"
 
 ====================
      11-26-2015
@@ -672,9 +872,6 @@ baa621b Fix Media dir permissions issue on M
 e34c2cd Ensure recording directory is writable before starting
 e8eed2c Fix a typo in log statement
 
-   * system/core/
-5029693 mkbootimg: Add --second_offset to usage display
-
    * system/vold/
 774fe22 vold: Fix crash on startup
 95c29db Don't try to unmount ASEC and FUSE paths in recovery
@@ -689,7 +886,6 @@ e8eed2c Fix a typo in log statement
 37b5909 perf: fix perf profile change issues
 
    * vendor/motorola/
-fbd03d6 Revert "msm8226-common: bring back fm patchloader"
 5441078 Merge pull request #199 from luk1337/cm-13.0
 910037f peregrine: Use 5.1 sensor HAL
 60ba2b9 Merge pull request #2 from TheMuppets/cm-13.0
@@ -1252,9 +1448,6 @@ e3085f7 ril: Allow devices to opt-out of building rild
    * packages/apps/Dialer/
 45f1832 Do not reload smart dial database twice in DialtactsActivity.
 
-   * packages/apps/FMRadio/
-20a4082 [FM] Temporary: use software rendering for FM-to-earphone playback
-
    * packages/services/Telecomm/
 b1fb89c Telecomm: Forward port phone_type switch support
 
@@ -1281,56 +1474,3 @@ cc4cd66 victara: Remove mount_ext4.sh which we removed from proprietary-files.tx
 38892ae Merge pull request #197 from luca020400/cm-13.0
 3ecc382 msm8226-common: Rename camera.msm8226.so => camera.vendor.msm8226.so
 d295b89 msm8226-common: commonize camera blobs
-
-====================
-     11-23-2015
-====================
-
-
-   * hardware/qcom/fm/
-08b1a99 libfm_jni: Skip loading FM firmware if requested
-
-   * packages/apps/Eleven/
-24df409 Eleven: Add missing RecyclerView support ressources
-
-   * system/bt/
-6f8dac7 Bluetooth losing HF connection to car-kit after 5 seconds
-debfb9d a2dp: kill more logspam
-5c7d033 shut a2dp logspam.
-f163275 Fix compile when BTM_WBS_INCLUDED true and BLUETOOTH_QTI_SW false
-4318e62 bluedroid: Disable the test interface
-71bb688 bluedroid: Disable AVRCP 1.5 by default
-31a9daa Add I2S-PCM slave mode for SCO
-24f3576 bluedroid: Disable BLUETOOTH_QTI_SW by default
-
-   * system/core/
-fc73ae3 init: Add support for gzipped firmware files
-
-====================
-     11-22-2015
-====================
-
-
-   * build/
-4c12cae Merge pull request #17 from CyanogenMod/cm-13.0
-
-   * frameworks/opt/telephony/
-8480c33 RIL: Make mQANElements configurable by property
-
-   * packages/apps/CyanPopOTA/
-46d24aa Updated
-807ba61 Fix version
-
-   * packages/apps/Dialer/
-51d80e3 Undo CAF Dialer IMS conference changes
-
-   * system/bt/
-c2a0ac8 bt: Kill some logspam
-
-   * vendor/cm/
-65a1e3f Updated ro.ota.version
-
-   * vendor/motorola/
-afe9abc falcon/peregrine: Update blobs to M
-cc071cc titan/thea: Update blobs to M
-76f589e msm8226-common: Update blobs to M
