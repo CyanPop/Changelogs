@@ -1,4 +1,113 @@
 ====================
+     12-10-2015
+====================
+
+
+   * build/
+02ddc7e core_minimal: Change make_f2fs to mkfs.f2fs
+
+   * device/motorola/msm8226-common/
+5605098 msm8226-common: cmhw: Add isSelfManaged for SRE module
+e4a5599 msm8226-common: do not check fsg, modem and persist
+dc33d44 msm8226-common: Remove unneeded vold flags
+f1c8aac msm8226-common: Add ANT+ support
+08eb5e1 msm8226-common: Update sec_config
+
+   * device/motorola/thea/
+249e307 thea: configs: fix mixer_paths.xml
+863ef10 thea: Restore 6DB earpiece boost
+
+   * device/motorola/titan/
+d676f72 titan: configs: fix mixer_paths.xml
+d27b087 titan: Restore 6DB earpiece boost
+
+   * external/stagefright-plugins/
+487d143 stagefright-plugins: Fix video of resolution 320x240
+f7f46cc ffmpeg-extractor: Fix sample aspect ratioa issue
+
+   * frameworks/av/
+4d1793b stagefright: Fix videot thumbnail retrival for wmv
+6904c9a stagefright: Override to use ffmpeg for decoding wmv1
+7450c3d libstagefright: Fix for testException
+
+   * frameworks/base/
+b355481 Revert "Add Restart SystemUI to reboot menu"
+70b7756 Remove other crap
+d7621ee Add color to network traffic arrows
+4304ef7 Make 'Restrict Background Data' notification swipeable
+0a39861 FWB: Network Traffic [1/2]
+abdbeb4 crap
+18b0643 Revert "Add option to disable scrolling cache [1/2]"
+e638a15 Merge pull request #11 from CyanogenMod/cm-13.0
+073c02d Reduce sscanf times for optimization
+a01f572 Add option to disable scrolling cache [1/2]
+755434c3 SystemUI: Make sure Tuner doesn't show up in Settings dashboard
+958e4d0 livedisplay: Handle self-managed SRE/SVI implementations
+dbe7222 Added show volume panel tile to QS
+c7a735c QSDragPanel : Fix loading of tiles
+a119231 QSBooleanSettingsRow : Add default value attribute
+db9cc40 QS: add Sync tile (1/2)
+2b920de Toast: Fix toast layout for RTL
+7ea79cf SystemUI: Enable three icon switching within QS DND tile
+a616e3a SystemUI: add NFC tile
+
+   * frameworks/native/
+7cacf26 libbinder: allow devices to disable ashmem size tracking
+
+   * frameworks/opt/telephony/
+dd2e780 Merge pull request #6 from CyanogenMod/cm-13.0
+
+   * hardware/qcom/audio-caf/msm8974/
+9d90f41 msm8974: Clean up PCM offload checks in policy HAL
+
+   * packages/apps/Dialer/
+850f49b Lookup: fix unencrypted HTTP requests by allowing cleartext traffic
+
+   * packages/apps/InCallUI/
+5da3b19 InCallUI: Move CAF strings
+
+   * packages/apps/Settings/
+1a6e761 Themes: Use SRC_ATOP tintMode for external tile icons
+4c282f5 Fix FC when trying to adjust radio band via *#*#4636#*#* dialer code.
+3644efd Settings: Network traffic indicator [SQUASHED]
+
+   * packages/apps/SoundRecorder/
+a05b629 SoundRecorder: Remove CAF translations
+bbf6a2a SoundRecorder: Sync with AOSP translations
+
+   * packages/apps/Stk/
+6fb4106 Stk: Move CAF strings
+4c7c70c Stk: EL AOSP translation modification
+
+   * packages/apps/ThemeChooser/
+d35a8c1 Fix duplicate "Get More" buttons in menu
+
+   * packages/inputmethods/LatinIME/
+fd5645b Add support for BÃ©po keyboard layout
+7b22160 make default overlay for "show correction suggestion"
+423bea8 Rearrange Slavic & Greek morekeys
+afb56da Rearrange morekeys
+25d115d LatinIME: Add Luxembourgish keyboard & spellchecking dictionary
+6504f24 LatinIME: Add support for Australian English
+b20fb42 LatinIME: Enable Greek spell checking
+0da4448 LatinIME: Enable spellchecker for additional languages
+6d7fee8 LatinIME: HU enable predictive dictionary and remove unused letters
+fda4c76 LatinIME: Regenerate KeyboardTextsTable
+c072548 LatinIME: Apply "Enable more keys for top row on tablets" (f6620308ba) and "Add "more" keys to ALL the keys" (c561f31af9) to slavik layouts.
+e71c46d LatinIME: Add "more" keys to ALL the keys in Greek layouts
+
+   * vendor/cm/
+82d3c81 Fix Digi Mobile defaults
+148b71f 4.2 is up
+
+   * vendor/cmsdk/
+066a58e cmsdk: Add helper class for working with colors
+968127f cmsdk: Add CMHW method to check if SRE is self managed
+8719ebf CMSDK : Add volume tile
+5cace15 CMSDK : Add sync tile
+be217ae CMSDK : Add nfc tile
+
+====================
      12-09-2015
 ====================
 
@@ -6,13 +115,11 @@
    * development/
 23936f4 idegen: don't use hardcoded out directory
 
-   * device/motorola/msm8226-common/
-fe894e9 msm8226-common: configs: Remove AUDIO_DEVICE_IN_VOICE_CALL from inputs
-
-   * external/libpng/
-8bfa0dd Merge pull request #1 from CyanogenMod/cm-13.0
+   * external/stagefright-plugins/
+5101cbe ffmpeg: Fix crash when avio_check is called
 
    * frameworks/base/
+3187e88 SystemUI: port compass tile to cm-13.0
 2cf51a9 Correct RAM Bar text color and also made it themeable
 517768c Adjustments in RAM Bar
 688c02a Fix recents button force close after RAM bar commit
@@ -22,35 +129,36 @@ fe894e9 msm8226-common: configs: Remove AUDIO_DEVICE_IN_VOICE_CALL from inputs
 0f95b63 Merge pull request #10 from CyanogenMod/cm-13.0
 6be220d QSTiles : Switch to sdk constants
 bd85853 SystemUI : Add adb over network tile
-fa8fc29 Alarm: Don't use invalid timerfd alarm types
-d2bec52 SystemUI: Fix quick-quick settings pulldown settings
-436d594 Merge pull request #9 from CyanogenMod/cm-13.0
 
    * frameworks/opt/telephony/
+f44be14 Also activate default UICC apps once after SIM presence.
 f447ac3 Merge pull request #5 from CyanogenMod/cm-13.0
 fa7ee16 UiccController: use registerForAvailable only for persist.radio.apm_sim_not_pwdn
 cd35dc0 Revert "Use radio availability to sync card status instead of radio on"
 
-   * hardware/qcom/display-caf/apq8084/
-2d84ec7 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
+   * hardware/qcom/audio-caf/msm8974/
+baaa8b9 hal: Add support for perf lock management (continued)
+86659ab audio HAL: do not stop capture on overrun
+8c88487 hal: add support for ull audio playback
 
    * hardware/qcom/display-caf/msm8960/
 192b634 gralloc: Add a private flag for INTERNAL only
 
-   * hardware/qcom/media-caf/apq8084/
-ef9af05 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
-
    * kernel/motorola/msm8226/
-2cd5ac1 wlan: Fix discrepancy in channel list passed to FW.
+26bf637 build.sh: move device to generic
+4559435 V5 is up
+0b05649 Remove dt.img from kernel/dt.img by default
+7974b51 Make zip-creator/kernel folder for use dt.img
+7e7dfc5 dt.img: Updated titan & thea
+
+   * packages/apps/AudioFX/
+8edd63d AudioFX: Sync with AOSP translations
 
    * packages/apps/Dialer/
 2d9f534 Lookup: use a more up-to-date user agent
 
    * packages/apps/Messaging/
 dbcecc6 Added local blacklist and framework blacklist database synchronization
-
-   * packages/apps/PackageInstaller/
-d641613 Merge pull request #1 from CyanogenMod/cm-13.0
 
    * packages/apps/Settings/
 bdc8bb1 Add membar to recents options [2/2]
@@ -60,14 +168,16 @@ e99de5d Remove all Google Legal Information, System Update Settings
    * packages/providers/TelephonyProvider/
 18ca1ba Modified notify() to return the Uri being modified so that ContentObservers can be informed of the modified Uri
 
+   * system/bt/
+98889ad btm: Fix compile with BLE disabled
+0e96e94 Bluetooth: Don't use command TX idle timer on Broadcoms
+
    * vendor/cm/
 c7f76e2 CyanPop 4.1 (Android 6.0.1_r3)
 
    * vendor/cmsdk/
+34ef4e3 CMSDK : Add compass tile
 af4d676 cmsdk: Add QS utility classes.
-
-   * vendor/motorola/
-1267b88 Merge pull request #9 from TheMuppets/cm-13.0
 
 ====================
      12-08-2015
@@ -100,13 +210,15 @@ ab03691 Add Toolchain Version to Lunch Menu
 96d0ebe Merge pull request #21 from CyanogenMod/cm-13.0
 4748671 build: add msm8996 to QCOM targets
 f24fab8 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/build into cm-13.0
-059dafe Fix uncompressed ramdisk generation
 
    * cts/
 0b4c949 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/cts into HEAD
 
    * development/
 74b818e Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/development into HEAD
+
+   * device/motorola/msm8226-common/
+fe894e9 msm8226-common: configs: Remove AUDIO_DEVICE_IN_VOICE_CALL from inputs
 
    * device/qcom/sepolicy/
 d795ff0 Merge branch 'LA.BF64.1.2.2_rb4.9' of git://codeaurora.org/device/qcom/sepolicy into cm-13.0
@@ -133,6 +245,7 @@ f7e17a9 Ion: Update mediafile to match mediastores BMP entries
 bac4648 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/external/libnfc-nci into HEAD
 
    * external/libpng/
+8bfa0dd Merge pull request #1 from CyanogenMod/cm-13.0
 8e14020 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/external/libpng into HEAD
 
    * external/libvpx/
@@ -160,6 +273,7 @@ c35ba5f Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platfor
 ef1e5c2 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/external/wpa_supplicant_8 into cm-13.0
 
    * frameworks/av/
+c973285 audiopolicy: Add voip flag to output flag list
 02d88d6 audioflinger: Don't do float conversion in upmix/downmix for legacy ALSA
 41ccd68 stagefright: Add OMX.ffmpeg. checking
 697a7ab Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/frameworks/av into cm-13.0
@@ -177,6 +291,9 @@ c3e8884 libmedia: add NULL check before accessing source and destination buffers
 3c0409b libstagefright: squash exynos4 support
 
    * frameworks/base/
+fa8fc29 Alarm: Don't use invalid timerfd alarm types
+d2bec52 SystemUI: Fix quick-quick settings pulldown settings
+436d594 Merge pull request #9 from CyanogenMod/cm-13.0
 15c8288 Revert "PICK"
 bb895b5 SystemUI: Fix status bar clock color disappearing
 4e3d7e2 Fix clock seconds display with am/pm Instead of just adding seconds to the resulting timestamp, replace within the dateformat itself the minutes together with the seconds.
@@ -228,6 +345,7 @@ d40a35f bug#460672 framebuffer surface can't keep triple buffer if define NUM_FR
 4951bcc Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/frameworks/native into cm-13.0
 
    * frameworks/opt/hardware/
+a949d95 hardware: Reference internal sdk instead of external.
 595a401 cmhw: Add isSelfManaged for SRE module
 
    * frameworks/opt/net/ethernet/
@@ -297,9 +415,15 @@ d995c59 hal: Add support for perf lock management
    * hardware/qcom/display/
 a88abd6 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/hardware/qcom/display into HEAD
 
+   * hardware/qcom/display-caf/apq8084/
+2d84ec7 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
+
    * hardware/qcom/display-caf/msm8974/
 735e8c3 Merge branch 'LA.BF.1.1.3_rb1.5' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
 147e8f3 Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
+
+   * hardware/qcom/media-caf/apq8084/
+ef9af05 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
 
    * hardware/qcom/media-caf/msm8974/
 f8524be Merge branch 'LA.BF.1.1.3_rb1.5' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0
@@ -307,6 +431,9 @@ f8524be Merge branch 'LA.BF.1.1.3_rb1.5' of git://codeaurora.org/platform/hardwa
 
    * hardware/qcom/media/default/
 74d7d04 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/hardware/qcom/media into HEAD
+
+   * kernel/motorola/msm8226/
+2cd5ac1 wlan: Fix discrepancy in channel list passed to FW.
 
    * libcore/
 333a40e Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/libcore into HEAD
@@ -327,7 +454,6 @@ ac133b5 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platfor
    * packages/apps/Dialer/
 16360c8 Handle lookup permissions at runtime
 45b869a Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/Dialer into HEAD
-d713943 Add people and reverse lookup provider "Auskunft" (AT).
 
    * packages/apps/Email/
 ebf1d23 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/Email into HEAD
@@ -351,6 +477,7 @@ ebf1d23 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platfor
 3c66d27 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/Nfc into cm-13.0
 
    * packages/apps/PackageInstaller/
+d641613 Merge pull request #1 from CyanogenMod/cm-13.0
 79216f2 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD
 
    * packages/apps/Settings/
@@ -489,12 +616,11 @@ fc97734 CMSettings: Add secure validators and relocate protected apps validator
 204ffe0 add default value for QS_USE_MAIN_TILES
 
    * vendor/motorola/
+1267b88 Merge pull request #9 from TheMuppets/cm-13.0
 77e6e45 Merge pull request #208 from Moto8610/cm-13.0
 f1052a2 shamu: Nexus 6 (Mobile) binaries for Android 6.0.1 (MMB29K)
 ad60bf5 Merge pull request #209 from stargo/cm-13.0
 4533ed2 omap4-common: update widevine from mako
-201ebe1 condor: Add back acdb calib files
-8d7743d otus: Kill thermal-engine-otus.conf
 
    * vendor/qcom/opensource/display-frameworks/
 e0d967c Merge branch 'LA.BF64.1.2.2_rb4.9' of git://codeaurora.org/platform/vendor/qcom-opensource/display-frameworks into cm-13.0
@@ -505,6 +631,7 @@ e0d967c Merge branch 'LA.BF64.1.2.2_rb4.9' of git://codeaurora.org/platform/vend
 
 
    * build/
+059dafe Fix uncompressed ramdisk generation
 56041e7 dopush: Add support for OS X
 
    * device/motorola/msm8226-common/
@@ -525,6 +652,7 @@ c235428 Added fsync on/off support.
 79422bd Add and enable kexec-hardboot changes for peregrine,falcon.thea and titan.
 
    * packages/apps/Dialer/
+d713943 Add people and reverse lookup provider "Auskunft" (AT).
 ca7b74d Dialer: fix NPE in ReverseLookupService.doLookup
 
    * packages/apps/Settings/
@@ -539,6 +667,8 @@ b0887a5 Settings: skip Misc/Overcounted battery stats in builds
 ee33dd4 vold: Fix fsck on public volumes
 
    * vendor/motorola/
+201ebe1 condor: Add back acdb calib files
+8d7743d otus: Kill thermal-engine-otus.conf
 34ebb32 Merge pull request #207 from invisiblek/drm
 1fe6116 victara: add libdivxdrmdecrypt dependencies
 bdef182 Condor: Copy prima configs from kernel
@@ -595,9 +725,6 @@ beca804 recovery: Drop dependency on mkfs.f2fs
    * device/motorola/msm8226-common/
 38ea57f msm8226-common: Remove camera compatibility flag
 
-   * external/f2fs-tools/
-1ccb75a f2fs-tools: Update version in Android.mk
-
    * frameworks/av/
 89fdc5b stagefright: Fix Divx version key
 65890a7 Fixed comparison on 64 bit system
@@ -622,9 +749,6 @@ d1e6240 settingslib: Make networkId visible.
 
    * frameworks/opt/telephony/
 308c9f1 Merge pull request #3 from CyanogenMod/cm-13.0
-
-   * hardware/qcom/keymaster/
-5161822 keymaster: add TARGET_PROVIDES_KEYMASTER
 
    * hardware/qcom/media-caf/msm8994/
 a8e57df Fix duplicated OMX.qcom.audio.decoder.aac entry
@@ -670,7 +794,6 @@ ae61d53 vold: Fix native exfat driver support
 e5aa821 Merge pull request #204 from crpalmer/victara-oemcrypto
 02c6866 Merge pull request #7 from luca020400/cm-13.0
 da66c95 victara: Remove liboemcrypto.so as a blob
-44f94cd msm8226-common: update blobs
 
 ====================
      12-04-2015
@@ -688,14 +811,15 @@ c35fae7 gdbclient: Properly locate outdir on CM
 d412d8d msm8226-common: Update fstab
 ec3621d msm8226-common: Remove libmoto
 
+   * external/f2fs-tools/
+1ccb75a f2fs-tools: Update version in Android.mk
+
    * frameworks/av/
 3720c6e Volume should take VOLUME_MIN_DB value when audio is muted.
 
    * frameworks/base/
 a708e5e Fix permission for Development shortcut
 04eee74 USB MIDI: Fix race condition that causes intermittent connections.
-3fc128c telephony: Update MAXIMUM_VALID_VALUE for disconnect codes
-688dc6f telephony: Make the disconnect cause distinguishable
 
    * frameworks/native/
 53602ff libbinder: allow devices to disable ashmem size tracking
@@ -712,17 +836,11 @@ a8f7501 Telephony: Identify NetworkRequests by phone
    * hardware/qcom/audio-caf/msm8974/
 fc5fc5d Merge "hal: fix compilation issues with audio FM extention." into LA.BF.1.1.3_rb1.5
 
-   * hardware/qcom/audio-caf/msm8994/
-7e59397 Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
-
    * hardware/qcom/display-caf/msm8974/
 588348c Merge AU_LINUX_ANDROID_LA.BF.1.1.3_RB1.06.00.00.181.003 on remote branch
 
-   * hardware/qcom/display-caf/msm8994/
-df5855f Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
-
-   * hardware/qcom/media-caf/msm8994/
-e9b2c98 Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
+   * hardware/qcom/keymaster/
+5161822 keymaster: add TARGET_PROVIDES_KEYMASTER
 
    * kernel/motorola/msm8226/
 ce4df8e cpufreq: stats: Initialize all_freq_table earlier
@@ -759,6 +877,7 @@ a2f4c58 Revert "Fingerprint: Use AOSP fingerprint setup"
 144146e CMSettingsProvider: Only enable component if already disabled.
 
    * vendor/motorola/
+44f94cd msm8226-common: update blobs
 01bed0d Merge pull request #6 from TheMuppets/cm-13.0
 
 ====================
@@ -769,28 +888,30 @@ a2f4c58 Revert "Fingerprint: Use AOSP fingerprint setup"
    * bootable/recovery/
 d4ca7f0 recovery: Assimilate minivold
 0657fd2 recovery: fstools: symlink sgdisk so we can actually use it
-0c8d0d8 recovery: Switch to CyanogenMod branding
-
-   * build/
-2562446 build: recovery: Support extra recovery resources
 
    * device/qcom/sepolicy/
 8e2a7a4 msm8974: Fix mm-qcamerad denial
 
    * frameworks/av/
 40b5cb7 stagefright: Fix build breaks
-53f3009 stagefright: More HW codec support w/ FFMPEGExtractor
 
    * frameworks/base/
+3fc128c telephony: Update MAXIMUM_VALID_VALUE for disconnect codes
+688dc6f telephony: Make the disconnect cause distinguishable
 a356fec SystemUI: Apply tint on battery level text
 40fdc4a SystemUI: various qs tile detail improvements
 6ec9ea7 SystemUI: add circle page indicator for qs tiles
 601bd9b Revert "systemui: Fix race condition in setting notification panel height"
 1a665a3 Themes: Don't uninstall theme when processing an overlay fails
-9909e28 Core: Allow Build.DISPLAY or Build.FINGERPRINT to deterimine mIsUpgrade
 
-   * hardware/qcom/fm/
-ecf9478 libfm_jni: Use correct QCOM HW flag
+   * hardware/qcom/audio-caf/msm8994/
+7e59397 Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
+
+   * hardware/qcom/display-caf/msm8994/
+df5855f Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
+
+   * hardware/qcom/media-caf/msm8994/
+e9b2c98 Merge remote-tracking branch 'caf/LA.BF64.1.2.2_rb4.8' into cm-13.0
 
    * packages/apps/Contacts/
 1a447e7 Contacts: Use common contacts uri extra
@@ -817,8 +938,6 @@ ca42a57 Populate group title.
 
    * packages/apps/Settings/
 39aaf2b Add toggle for heads up notifications
-d804348 Correct development shortcut summary
-a317f91 Correct double tap to sleep summary
 
    * packages/apps/TvSettings/
 07b5c81 CM PlatLogo: CyanogenMod version preference
@@ -828,32 +947,18 @@ a317f91 Correct double tap to sleep summary
 
    * vendor/cm/
 377f75a Updated bootanimations for CyanPop
-e3db497 vendor/cm: Update Japanese APNs
 
 ====================
      12-02-2015
 ====================
 
 
-   * bionic/
-91d934a Revert "Revert "linker: Reset the active shim libs each time we do a dlopen""
-8110520 linker: Don't try to walk the g_active_shim_libs when doing dlsym
-
    * bootable/recovery/
+0c8d0d8 recovery: Switch to CyanogenMod branding
 0e70a87 fstools: Invite sfdisk to the party
-e023d79 recovery: Fix mounting f2fs partitions
 
-   * device/motorola/falcon/
-56f5501 Falcon: Using GCC 4.9 TC
-
-   * device/motorola/peregrine/
-3f8c629 Peregrine: Using GCC 4.9 TC
-
-   * device/motorola/thea/
-0995d27 Thea: Using GCC 4.9 TC
-
-   * device/motorola/titan/
-f594374 Titan: Using GCC 4.9 TC
+   * build/
+2562446 build: recovery: Support extra recovery resources
 
    * device/qcom/sepolicy/
 00aceec sepolicy: allow gatekeeperd to access firmware_files (ex. kmota)
@@ -866,29 +971,27 @@ f594374 Titan: Using GCC 4.9 TC
 47d005d toybox: mount: Support multiple fs-types/mountpoint
 
    * frameworks/av/
+53f3009 stagefright: More HW codec support w/ FFMPEGExtractor
 f474d17 Handle error result from DrmManagerClient correctly
 bc585fb Handle malformed audio packets received during RTSP stream switching
 e19236d Tuning the number of packets for one read in StreamingSource
 b6cc3eb stagefright: Fix fallback mechanism to SW decoder
 1de1d15 stagefright: handleSetSurface: Don't dereference null graphic buffers
-fb3719c stagefright: Fix cts testGetMaxSupportedInstances
 
    * frameworks/base/
+9909e28 Core: Allow Build.DISPLAY or Build.FINGERPRINT to deterimine mIsUpgrade
 3bf3797 SystemUI: fix building test package
 af05108 Revert "utils: Introduce ScreenType class"
 055bf37 gesture: fix possible race during initialization
 
    * frameworks/opt/telephony/
 c615adb Merge pull request #1 from CyanogenMod/cm-13.0
-0cfdefd Telephony: Allow more RIL methods to be overridden
-
-   * hardware/broadcom/libbt/
-97df6c9 libbt-vendor: add support for Samsung semco
 
    * hardware/qcom/audio-caf/msm8996/
 ab6ba9c Merge commit '8f769c5' into cm-13.0-caf-8996
 
    * hardware/qcom/fm/
+ecf9478 libfm_jni: Use correct QCOM HW flag
 4a211ef libfm_jni: Do not come here unless QCOM_HARDWARE is in use
 
    * hardware/qcom/media-caf/msm8996/
@@ -914,15 +1017,11 @@ c17b4a3 Fix up group fragment padding.
 219e99a Revert "Disable libfmjni module."
 
    * packages/apps/Settings/
+d804348 Correct development shortcut summary
+a317f91 Correct double tap to sleep summary
 949eea1 Settings: Fix IllegalArgumentException in AppGroupConfig
 87ed376 Settings: update contributors cloud db
 8d17b9a settings: contributors cloud
-
-   * packages/apps/SetupWizard/
-876e060 Merge pull request #2 from CyanogenMod/cm-13.0
-
-   * packages/services/Telecomm/
-b4f6f73 MSIM: Phone account related changes
 
    * system/core/
 f3cdf56 Revert "healthd: Support QC2.0 type charger"
@@ -934,11 +1033,9 @@ c96c137 Partially revert "healthd: allow custom charger"
 1acddc8 Networks: Implement network control for WLAN and cellular network
 
    * vendor/cm/
+e3db497 vendor/cm: Update Japanese APNs
 635c5c6 Revert "Removed cm's wallpapers"
 32d48cd Revert "default marshmallow wallpapers (all devices) *should cover all current screen sizes"
-650f671 CyanPoP 3.0 Released & Updated stuff
-da68f9f default marshmallow wallpapers (all devices) *should cover all current screen sizes
-5c7a633 Removed cm's wallpapers
 
    * vendor/cmsdk/
 ad00d5b cmsdk: Add initial cleanspec.
@@ -951,11 +1048,16 @@ bcc94d1 utils: Introduce ScreenType class
 
 
    * bionic/
+91d934a Revert "Revert "linker: Reset the active shim libs each time we do a dlopen""
+8110520 linker: Don't try to walk the g_active_shim_libs when doing dlsym
 3a2debf kernel-header : add alarm type and clock type for power off alarm
 fd0140b Revert "linker: Reset the active shim libs each time we do a dlopen"
 
+   * bootable/recovery/
+e023d79 recovery: Fix mounting f2fs partitions
+
    * device/motorola/falcon/
-23ec0db falcon: Add radio version whitelist
+56f5501 Falcon: Using GCC 4.9 TC
 
    * device/motorola/msm8226-common/
 c9633f7 Revert "msm8226-common: Build the kernel with gcc-4.9"
@@ -1008,15 +1110,19 @@ f2b06af msm8226-common: libmoto: Add ril symbols
 b39ab0e msm8226-common: enable doze
 
    * device/motorola/peregrine/
-e3d1cf0 peregrine: Add radio assert
+3f8c629 Peregrine: Using GCC 4.9 TC
 
    * device/motorola/thea/
-f9ae8c3 thea: Add radio assert
+0995d27 Thea: Using GCC 4.9 TC
+
+   * device/motorola/titan/
+f594374 Titan: Using GCC 4.9 TC
 
    * external/libncurses/
 067ae32 gen
 
    * frameworks/av/
+fb3719c stagefright: Fix cts testGetMaxSupportedInstances
 9ea60c7 ffmpeg: flac: Assume 16 bits per sample if not set
 aeda337 Fix for getPosition after seek
 8a55244 Correct the time returned by AudioPlayer::getMediaTime
@@ -1045,10 +1151,13 @@ c861407 frameworks/base: Add checks for 4KUHD and VGA timelapse
 68c40f3 SystemUI: fix QS quick pull down
 536e68f Themes: Allow SystemUI Tuner Icon to be Tinted
 3ba963d Themes: Allow Permission Icons to be fully themed
-b609711 QuickSettings: Add long click support for all tiles
 
    * frameworks/opt/telephony/
+0cfdefd Telephony: Allow more RIL methods to be overridden
 b72ea20 Set default subscriptions when single SIM is available
+
+   * hardware/broadcom/libbt/
+97df6c9 libbt-vendor: add support for Samsung semco
 
    * kernel/motorola/msm8226/
 a6681ff MonsterKernel-MM Released
@@ -1226,6 +1335,12 @@ c8ff69a Camera2: Stop using GPS when going to background
 81e6b54 DeskClock: add support for power off alarm
 78cc046 Alarm: Use dedicated alarm type for poweroff alarm.
 
+   * packages/apps/SetupWizard/
+876e060 Merge pull request #2 from CyanogenMod/cm-13.0
+
+   * packages/services/Telecomm/
+b4f6f73 MSIM: Phone account related changes
+
    * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
 bebc956 November 1st, 2015 - UBER AARCH64 4.9.x ROM Toolchain
 
@@ -1240,9 +1355,11 @@ bebc956 November 1st, 2015 - UBER AARCH64 4.9.x ROM Toolchain
 78c2848 healthd: Call common backlight function
 1705d1c Revert "healthd: charger: Add backlight control in charging animation"
 7cad6ee healthd: charger: Add backlight control in charging animation
-ae15b25 healthd: Turn screen off before rebooting
 
    * vendor/cm/
+650f671 CyanPoP 3.0 Released & Updated stuff
+da68f9f default marshmallow wallpapers (all devices) *should cover all current screen sizes
+5c7a633 Removed cm's wallpapers
 2c9da0c Correct Tele2 Sweden APNs and remove Comviq Sweden.
 
    * vendor/cmsdk/
@@ -1253,65 +1370,5 @@ b14378e victara: remove blobs we no longer use
 aa2e4ae qcom-common: hex edit libqc-opt for version 55
 b020f18 Merge pull request #202 from sultanqasim/cm-13.0
 d191342 otus: add victara blobs that I accidentally missed
-b71671e Merge pull request #5 from TheMuppets/cm-13.0
-
-====================
-     11-30-2015
-====================
-
-
-   * device/qcom/sepolicy/
-bc61f9b sepolicy: Label boot/recovery/cache partitions
-
-   * external/libpng/
-d3fe27f Kill more spam
-a29d002 Remove the most annoying error ever
-
-   * frameworks/av/
-46c4173 NuPlayerRenderer: always display the first video frame without delay.
-efc362f Fix overflow check so it doesn't reject legitimate files
-c85eb57 Merge branch 'LA.BF64.1.2.2_rb4.8' of git://codeaurora.org/platform/frameworks/av into cm-13.0
-
-   * frameworks/base/
-e4c0797 QuickSettings: Improve draggable tiles management
-
-   * frameworks/opt/telephony/
-1477974 CdmaLteServiceStateTracker: allow forcing reading eri from xml
-
-   * hardware/qcom/audio-caf/msm8974/
-5300daa policy_hal: add support for fm device loopback
-d3bfcb3 audio_policy: modify few methods to appropriately override base
-4a84252 Revert "policy_hal: Function prototype correction for custom policy".
-
-   * packages/apps/Dialer/
-b8d8223 Dialer: add block caller to call log list item
-
-   * packages/apps/PackageInstaller/
-45bdbf7 Themes: Allow PackageInstaller tab Background to be themed
-
-   * packages/apps/Settings/
-c9503e0 Use ScreenType util from cmsdk
-
-   * packages/apps/SetupWizard/
-070fbea Fingerprint: Use AOSP fingerprint setup
-76690b8 Merge pull request #1 from CyanogenMod/cm-13.0
-
-   * packages/services/Telephony/
-33776ee Telephony: Return the correct res id for text and tone
-
-   * vendor/cm/
-18b2ad0 Removed layers
-94ee9a9 Added adaway
-
-   * vendor/cmsdk/
-a3baf9c migration: Clean up abstractions.
-4ae9604 cmsdk: Reimplement helper methods for secondary telephony service.
-c221959 cmsdk: Re-enable multiple profiles functions.
-
-   * vendor/motorola/
-49f6bfc Merge pull request #187 from sultanqasim/cm-13.0
-4efbe80 otus: update blobs from victara Marshmallow
-6c87e3a otus: remove prebuilt HALs that don't belong
-2101569 Revert "otus: use prebuilt libOmxVdec.so"
 
 
