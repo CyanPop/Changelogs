@@ -1,5 +1,5 @@
 ====================
-     12-16-2015
+     12-17-2015
 ====================
 
 
@@ -34,7 +34,100 @@ ab86f95 Condor: Source-build more OMX libs
 b3cc1b2 Revert "Condor: Don't specify opengles version"
 
    * device/motorola/msm8610-common/
+32d6bd3 msm8610-common: remove redundant USB config file
 ffeaabd msm8610-common: Commonize media_profiles and sec_config [1/3]
+
+   * external/skia/
+c4401db skia: qc-perf: link against libqc-opt.so for msm8996
+
+   * external/wpa_supplicant_8/
+dc3f470 Merge branch 'LA.BF64.1.2.2_rb4.10' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+   * frameworks/av/
+d462b4d Merge pull request #3 from CyanogenMod/cm-13.0
+f45ba7f audiopolicy: Set sane defaults for QC audio features
+
+   * frameworks/base/
+d19eddf Live Volume Steps [1/2]
+90fd9bc Enable/disable notification color inversion [1/2]
+c4d2cee [2/2] Frameworks: Slim doze options
+42a2e0f FWB: PIE: Always on the right switch (1/2)
+a295850 FWB: PIE 3.0 (1/2)
+c5c50e5 Fix battery bar glitch on NavBar
+1533c4b Services: DO NOT send Broadcast On boot
+fe7a132 SystemUI: fix incorrect tile shifting behavior
+57d4294 SystemUI: hide visualizer when keyguard is occluded
+289b565 SystemUI: fix NPE crash when Visualizer is not initialized
+6619118 SystemUI: use new visualizer from Eleven
+1f73ff1 Allow disabling the privacy guard notification - port from cm-12.1 (2/3)
+8bf3d49 connectivity: Configure additional TCP parameters
+ac2417e libhwui: make setSurface asynchronous
+0e64495 Use custom ADB over wifi property
+25fbd06 fix checkapi
+
+   * frameworks/native/
+31ab17f Fix the execution point of onFrameAvailable/onFrameReplaced callbacks
+
+   * frameworks/opt/net/wifi/
+ab84c9f Merge branch 'LA.BF64.1.2.2_rb4.10' of git://codeaurora.org/platform/frameworks/opt/net/wifi into cm-13.0
+40162df wifi: Configure additional TCP parameters
+
+   * frameworks/opt/telephony/
+7a3f226 Merge pull request #8 from CyanogenMod/cm-13.0
+4810ebf telephony: Configure additional TCP parameters
+
+   * hardware/qcom/audio-caf/msm8974/
+44b0192 Add more allowed frame counts to be configured
+26d4452 hal: Trivial cleanups
+
+   * kernel/motorola/msm8974/
+d0975b7 bluetooth: Validate socket address length in sco_sock_bind().
+
+   * packages/apps/DeskClock/
+aba22b8 DeskClock: add increasing volume option for alarm clocks
+
+   * packages/apps/InCallUI/
+48b5109 InCallUI: Improve more CAF strings
+
+   * packages/apps/Messaging/
+294b589 Add new FW blacklisted numbers to local db cache
+d1147c1 LookupProvider Integration
+
+   * packages/apps/Settings/
+1c1fc51 Enable/disable notification color inversion [2/2]
+b2063b4 [1/2] Settings: Slim doze options
+20b9007 Settings: PIE: Always on the right switch (2/2)
+7898ef7 Settings: PIE 3.0 (2/2)
+e765319 Live Volume Steps [2/2]
+9839e47 Settings: Fix the SoundSettings activity and intents
+af9e2d3 Settings: add lock screen visualizer toggle
+25b2594 Allow disabling the privacy guard notification - port from cm-12.1 (1/3)
+9d2ca1e Settings: fix mobile network switch being unchecked
+2737f00 Settings: add dashboard switch view for sw600dp
+1c081be Settings: move double press power for camera to button settings
+
+   * system/bt/
+cc3b973 bluedroid: Add wiimote pairing support
+
+   * system/vold/
+b134799 vold: hw_fde: fix OTA issues from L to M
+
+   * vendor/cm/
+6bb571a otasigcheck: Rewrite for CM 13.0
+9de3415 SELinux: Use custom ADB over network property
+6d3fe07 sepolicy: Add permission for formatting user/cache partition
+1c1a303 sepolicy: Add domain for mkfs binaries
+
+   * vendor/cmsdk/
+a61af19 cmsdk: add LOCKSCREEN_VISUALIZER_ENABLED
+ba670bf Allow disabling the privacy guard notification - port from cm-12.1 (3/3)
+
+====================
+     12-16-2015
+====================
+
+
+   * device/motorola/msm8610-common/
 4e00eae msm8610-common: disable multi_window
 b41b5ef msm8610-common: specify OpenGL version
 9b197fe msm8610-common: specify output directory for RIL script
@@ -69,9 +162,9 @@ fdaf3e1 tinycompress: Lrn2C
 
    * frameworks/av/
 c44fd9d Merge pull request #2 from CyanogenMod/cm-13.0
+5355397 stagefright: Update makefile for Exynos variants.
 
    * frameworks/base/
-25fbd06 fix checkapi
 929bf3f pm: Don't try to create oat dirs for prebundled apps on system
 4a3659c Fix memory leak in HWUI
 c3834bb SystemUI : Add location tile from 12.1
@@ -94,20 +187,21 @@ ac9f949 nf: IDLETIMER: time-stamp and suspend/resume handling.
 
    * packages/apps/DeskClock/
 421038c DeskClock: SwitchPreference for Automatic home clock
+1151aa1 DeskClock: Add option to hide AlarmClock Icon in StatusBar
 
    * packages/apps/Settings/
 5dd23e7 Settings: add switches for dashboard items
 133de2e Settings : Remove status bar weather entry
 edb6691 Fix CyanPop Extras FCs and updated stringss
+ca1752f Updated CyanPop Extras icons
+3a73193 fix other
 
    * packages/services/Telephony/
+7ac61d7 Telephony: Improve call forwarding strings
 74f644c Telephony: Improve call barring settings
 854982b Telephony: Cleanup CAF strings
 9285956 Telephony: Move CAF strings to cm_strings
 a4bb59c Fix CDMA vs. WCDMA typo in cs translations
-
-   * system/bt/
-cc3b973 bluedroid: Add wiimote pairing support
 
    * vendor/cm/
 1bfff74 Bye bye CMUpdater and CMAccount
@@ -122,6 +216,15 @@ cead77a CMSDK : Migrate QS_ADVANCED_LOCATION_SETTINGS
      12-15-2015
 ====================
 
+
+   * device/motorola/condor/
+cb8e9f0 Added ro.product.device for ota
+7bfdf43 Condor: Using GCC 4.9 TC
+28458e0 CyanPop'ify condor
+
+   * device/motorola/msm8226-common/
+59288f0 msm8226-common: Specify androidboot.bootdevice
+0a9e28d msm8226-common: Specify persist.sys.ssr.enable_debug
 
    * device/motorola/msm8610-common/
 f48f546 msm8610-common: Commonize media_codecs [3/3]
@@ -164,11 +267,19 @@ a6a36bf quark: Do not expose USB OTG Enabled property
 9151922 quark: update camera wrapper
 396a518 quark: Remove BOARD_SEPOLICY_UNION (implicit now)
 
+   * device/motorola/thea/
+364c1b7 Revert "thea: init: Unify XT1077 and XT1079"
+837b106 thea: init: Fix typo
+de0889f thea: init: Unify XT1077 and XT1079
+374487b thea: rootdir: Remove fstab.qcom
+
+   * external/sepolicy/
+62438c8 Revert "property: Make the adb tcp port property a wildcard"
+
    * external/tinycompress/
 da916d1 timycompress: Show a warning if metadata ioctl is not supported
 
    * frameworks/av/
-5355397 stagefright: Update makefile for Exynos variants.
 769510a Merge pull request #1 from CyanogenMod/cm-13.0
 455a745 nuplayer: Improve offload format conversions
 093c8ed nuplayer: Avoid crash when codec fails to load
@@ -573,16 +684,17 @@ e176269 SELinux: per-command whitelisting of ioctls
    * kernel/motorola/msm8974/
 716b539 net: add validation for the socket syscall protocol argument
 
-   * packages/apps/DeskClock/
-1151aa1 DeskClock: Add option to hide AlarmClock Icon in StatusBar
+   * packages/apps/ContactsCommon/
+2f17da1 ContactsCommon: Improve CAF strings
 
    * packages/apps/InCallUI/
 cafe6b4 InCallUI: Fix background colour of tabs on DSDA phones
 5539f52 Fix reveal animation for outgoing calls.
 
+   * packages/apps/PhoneCommon/
+5c724e8 PhoneCommon: Move CAF strings
+
    * packages/apps/Settings/
-ca1752f Updated CyanPop Extras icons
-3a73193 fix other
 f4482cf SoundSettings: Fix mismerge
 38efd26 Settings: fix Vibrate on touch preference not working
 922d36e Revert "Settings: fix Vibrate on touch preference not working"
@@ -604,26 +716,15 @@ c9251e2 netd: Don't build the QSAP SDK on Nexii
 
    * vendor/cmsdk/
 be9f6b8 CMSettingsProvider: Split default load, don't load global for non-owner.
+5acf08c CMSDK : Add live display tile
+
+   * vendor/motorola/
+c69c4c7 Merge pull request #10 from TheMuppets/cm-13.0
 
 ====================
      12-14-2015
 ====================
 
-
-   * device/motorola/condor/
-cb8e9f0 Added ro.product.device for ota
-7bfdf43 Condor: Using GCC 4.9 TC
-28458e0 CyanPop'ify condor
-
-   * device/motorola/msm8226-common/
-59288f0 msm8226-common: Specify androidboot.bootdevice
-0a9e28d msm8226-common: Specify persist.sys.ssr.enable_debug
-
-   * device/motorola/thea/
-364c1b7 Revert "thea: init: Unify XT1077 and XT1079"
-837b106 thea: init: Fix typo
-de0889f thea: init: Unify XT1077 and XT1079
-374487b thea: rootdir: Remove fstab.qcom
 
    * device/samsung/i9300/
 170e8cf i9300: remove storage_list
@@ -661,14 +762,11 @@ dc5f0eb nuplayer: Fix audio EOS notifiy on AudioSink not ready
    * hardware/qcom/media/default/
 c3286b6 media: Avoid collision with FFMPEG plugin
 
-   * packages/apps/ContactsCommon/
-2f17da1 ContactsCommon: Improve CAF strings
+   * packages/apps/Contacts/
+b568f09 Contacts: Cleanup strings
 
    * packages/apps/OmniSwitch/
 98453c4 Merge pull request #1 from omnirom/android-6.0
-
-   * packages/apps/PhoneCommon/
-5c724e8 PhoneCommon: Move CAF strings
 
    * packages/apps/Settings/
 a890594 Settings: make (more) dashboard icon color consistent.
@@ -701,11 +799,7 @@ c7d5137 Settings: forward port lock pattern grid size (2/2)
 b748c50 4.4
 3a660b2 sysinit: use a for loop instead of run-parts
 
-   * vendor/cmsdk/
-5acf08c CMSDK : Add live display tile
-
    * vendor/motorola/
-c69c4c7 Merge pull request #10 from TheMuppets/cm-13.0
 96706f7 Merge pull request #210 from stargo/cm-13.0
 ec2d82e omap4: use libmotou.so to provide reservedVectorImpl
 
@@ -717,15 +811,15 @@ ec2d82e omap4: use libmotou.so to provide reservedVectorImpl
    * build/
 3920fd7 core: tasks: Use KERNEL_ARCH in dt_image task
 
+   * external/f2fs-tools/
+fe06482 f2fs-tools: Cleanup build targets
+
    * external/stagefright-plugins/
 70cbfe5 stagefright-plugins: Init port with larger audio buffer size
 
    * frameworks/av/
 fb97654 stagefright: Fix a few format strings on 64-bit
 743c7e2 StagefrightRecorder: Add support for WAVE recording
-
-   * packages/apps/Contacts/
-b568f09 Contacts: Cleanup strings
 
    * packages/apps/ContactsCommon/
 23f6138 ContactsCommon: move CAF strings to cm_strings
@@ -830,6 +924,8 @@ c2d640a [Settings] long press back to kill configurable timeout
 
    * packages/apps/SoundRecorder/
 25d0fa6 SoundRecorder: Remove dependency on android-support-v4
+7134128 SoundRecorder: runtime permissions
+0609dc8 SoundRecorder: much update, so new
 
    * packages/apps/TvSettings/
 d24f3cb About: Fix build error caused by 07b5c8183b4e8d4d83f6d3631f41363ba290860b
@@ -846,21 +942,23 @@ dc68b0c Telecomm: Fix copyright headers
 6d79500 bionic: Do not allow LD_SHIM_LIBS for setuid executables
 d45ca0d Make shim lib load failure non-fatal.
 
+   * build/
+0b15dd1 build: only specify least specific directory to dtbtool
+
    * device/samsung/i9300/
 b83ca28 i9300: clean up radio access families
 eb9cf34 i9300: ril-wrapper: fake GET_RADIO_CAPABILITY response
 49f8e63 i9300: bring SamsungExynos4RIL inline with frameworks
 7651d6d i9300: more selinux fixes
 
-   * external/f2fs-tools/
-fe06482 f2fs-tools: Cleanup build targets
+   * hardware/qcom/display-caf/msm8996/
+5bdcfa4 Additional pathmap & build fixes
 
    * hardware/samsung/
 b8400a2 ril: Unify network elements property check
 
-   * packages/apps/SoundRecorder/
-7134128 SoundRecorder: runtime permissions
-0609dc8 SoundRecorder: much update, so new
+   * vendor/cm/
+f842953 4.3
 
    * vendor/cmsdk/
 baf6723 cmsdk: Add AmbientDisplayTile.
@@ -874,10 +972,13 @@ baf6723 cmsdk: Add AmbientDisplayTile.
 ====================
 
 
+   * bionic/
+3dc9613 libc: ARM64: denver64: optimized memmove breaks denver
+
    * build/
-0b15dd1 build: only specify least specific directory to dtbtool
 dd4bdcd Build: Add Custom Toolchain Support
 916152a Show custom rom and kernel toolchain
+02ddc7e core_minimal: Change make_f2fs to mkfs.f2fs
 
    * device/motorola/otus/
 5c43652 otus: do not check fsg, modem and persist
@@ -900,6 +1001,9 @@ eee724f victara: update media_codecs from MPE24.49-18
 
    * hardware/qcom/display-caf/msm8996/
 e80bb52 display: Use    * pathmap
+
+   * hardware/qcom/media-caf/msm8916/
+1bef905 Merge "8909w: mm-video disable compilation issue"
 
    * hardware/qcom/media-caf/msm8996/
 8ba01d1 media: Use    * pathmap
@@ -932,8 +1036,11 @@ d4bc3a6 KEYS: Perform RCU synchronisation on keys prior to key destruction
 e60c2d0 Fix MSIM incoming call notification handling.
 86c696a Proper supplementary service notification handling (5/5).
 
+   * packages/apps/SoundRecorder/
+a05b629 SoundRecorder: Remove CAF translations
+
    * vendor/cm/
-f842953 4.3
+82d3c81 Fix Digi Mobile defaults
 
    * vendor/cmsdk/
 4aae796 cmsdk: Nuke concept of Dynamic Tiles in available tiles.
@@ -942,6 +1049,7 @@ f842953 4.3
 ed0f0ce CMSDK : Ensure getAvailableTiles clones object
 55eb818 CMSDK : Add screen timeout tile
 66d189a CMSDK : Add usb tether tile
+b5db07a CMSDK: Add profiles tile
 
    * vendor/samsung/
 aca7171 Merge pull request #698 from keepcalm444/cm-13.0
@@ -950,12 +1058,6 @@ aca7171 Merge pull request #698 from keepcalm444/cm-13.0
      12-10-2015
 ====================
 
-
-   * bionic/
-3dc9613 libc: ARM64: denver64: optimized memmove breaks denver
-
-   * build/
-02ddc7e core_minimal: Change make_f2fs to mkfs.f2fs
 
    * device/motorola/msm8226-common/
 5605098 msm8226-common: cmhw: Add isSelfManaged for SRE module
@@ -997,8 +1099,12 @@ dd2e780 Merge pull request #6 from CyanogenMod/cm-13.0
 e04e869 Remove usage of MASTER_SIDE_CP_TARGET_LIST
 3fd7d00 Revert "hqd: Use MSM_VIDC_TARGET_LIST for Venus color format"
 
-   * hardware/qcom/media-caf/msm8916/
-1bef905 Merge "8909w: mm-video disable compilation issue"
+   * kernel/motorola/msm8226/
+26bf637 build.sh: move device to generic
+4559435 V5 is up
+0b05649 Remove dt.img from kernel/dt.img by default
+7974b51 Make zip-creator/kernel folder for use dt.img
+7e7dfc5 dt.img: Updated titan & thea
 
    * kernel/motorola/msm8974/
 b4e28f0 victara: disable SYSVIPC
@@ -1025,7 +1131,6 @@ eb5e11a KEYS: Perform RCU synchronisation on keys prior to key destruction
 5da3b19 InCallUI: Move CAF strings
 
    * packages/apps/SoundRecorder/
-a05b629 SoundRecorder: Remove CAF translations
 bbf6a2a SoundRecorder: Sync with AOSP translations
 
    * packages/apps/Stk/
@@ -1053,11 +1158,9 @@ e71c46d LatinIME: Add "more" keys to ALL the keys in Greek layouts
 98889ad btm: Fix compile with BLE disabled
 
    * vendor/cm/
-82d3c81 Fix Digi Mobile defaults
 148b71f 4.2 is up
 
    * vendor/cmsdk/
-b5db07a CMSDK: Add profiles tile
 066a58e cmsdk: Add helper class for working with colors
 968127f cmsdk: Add CMHW method to check if SRE is self managed
 8719ebf CMSDK : Add volume tile
@@ -1076,6 +1179,9 @@ e84ac48 smdk4412-common: use hammerhead drm blobs
    * development/
 23936f4 idegen: don't use hardcoded out directory
 
+   * device/motorola/msm8226-common/
+fe894e9 msm8226-common: configs: Remove AUDIO_DEVICE_IN_VOICE_CALL from inputs
+
    * device/motorola/msm8610-common/
 4dacde7 msm8610-common: we don't need libbson
 
@@ -1091,8 +1197,17 @@ ae6bc00 Merge pull request #1 from CyanogenMod/cm-13.0
    * device/samsung/smdk4412-common/
 02a3b7b smdk4412-common: camera: add 720p for front camera
 
+   * external/libpng/
+8bfa0dd Merge pull request #1 from CyanogenMod/cm-13.0
+
    * external/stagefright-plugins/
 5101cbe ffmpeg: Fix crash when avio_check is called
+
+   * external/wpa_supplicant_8/
+b6720b4 EAP-pwd server: Fix last fragment length validation
+
+   * frameworks/opt/hardware/
+a949d95 hardware: Reference internal sdk instead of external.
 
    * frameworks/opt/telephony/
 f44be14 Also activate default UICC apps once after SIM presence.
@@ -1105,18 +1220,23 @@ baaa8b9 hal: Add support for perf lock management (continued)
 86659ab audio HAL: do not stop capture on overrun
 8c88487 hal: add support for ull audio playback
 
+   * hardware/qcom/display-caf/apq8084/
+2d84ec7 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
+
    * hardware/qcom/display-caf/msm8960/
 192b634 gralloc: Add a private flag for INTERNAL only
+
+   * hardware/qcom/media-caf/apq8084/
+ef9af05 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
 
    * hardware/qcom/media-caf/msm8916/
 6448258 8909w: mm-video disable compilation issue
 
+   * hardware/samsung/
+bc0da3a exynos: multimedia: speed up color conversion from ARGB8888 to YUV420SP
+
    * kernel/motorola/msm8226/
-26bf637 build.sh: move device to generic
-4559435 V5 is up
-0b05649 Remove dt.img from kernel/dt.img by default
-7974b51 Make zip-creator/kernel folder for use dt.img
-7e7dfc5 dt.img: Updated titan & thea
+2cd5ac1 wlan: Fix discrepancy in channel list passed to FW.
 
    * kernel/motorola/otus/
 e5b283e defconfig: enable BFQ for otus and condor
@@ -1131,12 +1251,16 @@ cc23179 arm: add SDIV/UDIV emulation for ARMv7 processors
 827605e ARM: 7206/1: Add generic ARM instruction set condition code checks.
 546eace Revert "bcmdhd: update from i9305 source drop (1.141.15 --> 1.141.44)"
 31a7106 Enable optimized AES and SHA1 routines
+51a62c0 bcmdhd: pass ipv6 in suspend
 
    * packages/apps/Dialer/
 2d9f534 Lookup: use a more up-to-date user agent
 
    * packages/apps/Messaging/
 dbcecc6 Added local blacklist and framework blacklist database synchronization
+
+   * packages/apps/PackageInstaller/
+d641613 Merge pull request #1 from CyanogenMod/cm-13.0
 
    * packages/providers/TelephonyProvider/
 18ca1ba Modified notify() to return the Uri being modified so that ContentObservers can be informed of the modified Uri
@@ -1150,6 +1274,9 @@ c7f76e2 CyanPop 4.1 (Android 6.0.1_r3)
    * vendor/cmsdk/
 34ef4e3 CMSDK : Add compass tile
 af4d676 cmsdk: Add QS utility classes.
+
+   * vendor/motorola/
+1267b88 Merge pull request #9 from TheMuppets/cm-13.0
 
    * vendor/samsung/
 cfa30ee Merge pull request #696 from ljzyal/cm-13.0
@@ -1189,15 +1316,13 @@ ab03691 Add Toolchain Version to Lunch Menu
 96d0ebe Merge pull request #21 from CyanogenMod/cm-13.0
 4748671 build: add msm8996 to QCOM targets
 f24fab8 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/build into cm-13.0
+059dafe Fix uncompressed ramdisk generation
 
    * cts/
 0b4c949 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/cts into HEAD
 
    * development/
 74b818e Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/development into HEAD
-
-   * device/motorola/msm8226-common/
-fe894e9 msm8226-common: configs: Remove AUDIO_DEVICE_IN_VOICE_CALL from inputs
 
    * device/motorola/msm8610-common/
 1fc1f89 msm8610-common: Add cm.dependencies
@@ -1256,7 +1381,6 @@ f7e17a9 Ion: Update mediafile to match mediastores BMP entries
 bac4648 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/external/libnfc-nci into HEAD
 
    * external/libpng/
-8bfa0dd Merge pull request #1 from CyanogenMod/cm-13.0
 8e14020 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/external/libpng into HEAD
 
    * external/libvpx/
@@ -1324,7 +1448,6 @@ d40a35f bug#460672 framebuffer surface can't keep triple buffer if define NUM_FR
 4951bcc Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/frameworks/native into cm-13.0
 
    * frameworks/opt/hardware/
-a949d95 hardware: Reference internal sdk instead of external.
 595a401 cmhw: Add isSelfManaged for SRE module
 
    * frameworks/opt/net/ethernet/
@@ -1394,15 +1517,9 @@ d995c59 hal: Add support for perf lock management
    * hardware/qcom/display/
 a88abd6 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/hardware/qcom/display into HEAD
 
-   * hardware/qcom/display-caf/apq8084/
-2d84ec7 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
-
    * hardware/qcom/display-caf/msm8974/
 735e8c3 Merge branch 'LA.BF.1.1.3_rb1.5' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
 147e8f3 Merge branch 'LA.BF.1.1.3_rb1.4' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
-
-   * hardware/qcom/media-caf/apq8084/
-ef9af05 Merge remote-tracking branch 'caf/LA.BF.2.1.2_rb1.4' into cm-13.0-caf-8084
 
    * hardware/qcom/media-caf/msm8974/
 f8524be Merge branch 'LA.BF.1.1.3_rb1.5' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0
@@ -1411,14 +1528,7 @@ f8524be Merge branch 'LA.BF.1.1.3_rb1.5' of git://codeaurora.org/platform/hardwa
    * hardware/qcom/media/default/
 74d7d04 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/hardware/qcom/media into HEAD
 
-   * hardware/samsung/
-bc0da3a exynos: multimedia: speed up color conversion from ARGB8888 to YUV420SP
-
-   * kernel/motorola/msm8226/
-2cd5ac1 wlan: Fix discrepancy in channel list passed to FW.
-
    * kernel/samsung/smdk4412/
-51a62c0 bcmdhd: pass ipv6 in suspend
 ca3f12c Display correct kernel version in CM defconfig files
 e030f5a bcmdhd: update from i9305 source drop (1.141.15 --> 1.141.44)
 
@@ -1441,6 +1551,7 @@ ac133b5 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platfor
    * packages/apps/Dialer/
 16360c8 Handle lookup permissions at runtime
 45b869a Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/Dialer into HEAD
+d713943 Add people and reverse lookup provider "Auskunft" (AT).
 
    * packages/apps/Email/
 ebf1d23 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/Email into HEAD
@@ -1464,7 +1575,6 @@ ebf1d23 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platfor
 3c66d27 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/Nfc into cm-13.0
 
    * packages/apps/PackageInstaller/
-d641613 Merge pull request #1 from CyanogenMod/cm-13.0
 79216f2 Merge tag 'android-6.0.1_r3' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD
 
    * packages/apps/Settings/
@@ -1588,11 +1698,12 @@ fc97734 CMSettings: Add secure validators and relocate protected apps validator
 204ffe0 add default value for QS_USE_MAIN_TILES
 
    * vendor/motorola/
-1267b88 Merge pull request #9 from TheMuppets/cm-13.0
 77e6e45 Merge pull request #208 from Moto8610/cm-13.0
 f1052a2 shamu: Nexus 6 (Mobile) binaries for Android 6.0.1 (MMB29K)
 ad60bf5 Merge pull request #209 from stargo/cm-13.0
 4533ed2 omap4-common: update widevine from mako
+201ebe1 condor: Add back acdb calib files
+8d7743d otus: Kill thermal-engine-otus.conf
 
    * vendor/qcom/opensource/display-frameworks/
 e0d967c Merge branch 'LA.BF64.1.2.2_rb4.9' of git://codeaurora.org/platform/vendor/qcom-opensource/display-frameworks into cm-13.0
@@ -1600,78 +1711,5 @@ e0d967c Merge branch 'LA.BF64.1.2.2_rb4.9' of git://codeaurora.org/platform/vend
    * vendor/samsung/
 4ff052c Merge pull request #694 from CyanideL/cm-13.0
 7edba4f smdk4412-common: wifi firmware update from i9305
-
-====================
-     12-07-2015
-====================
-
-
-   * build/
-059dafe Fix uncompressed ramdisk generation
-56041e7 dopush: Add support for OS X
-
-   * device/motorola/msm8226-common/
-20b9a18 msm8226-common: Refactor PowerHAL
-aac6598 msm8226-common: lights: Fix compiler warnings
-f1a10c1 msm8226-common: PowerHAL: Don't handle low power hints
-95eed94 msm8226-common: camera: BFC fps range fixup for falcon/peregrine
-
-   * device/motorola/otus/
-1359b85 otus: use common vendor blobs
-
-   * device/motorola/victara/
-97bc398 victara: add libdivxdrmdecrypt dependencies
-
-   * device/samsung/i9300/
-cc743cf i9300: use responseFailCause on REQUEST_LAST_CALL_FAIL_CAUSE
-
-   * hardware/qcom/audio-caf/msm8960/
-b457ca9 alsa_sound: Make changes for FM_TUNER support
-
-   * hardware/qcom/media-caf/msm8916/
-432b9e3 Include kernel header dependency for libOmxVidcCommon
-
-   * kernel/motorola/msm8226/
-a80596c Added peregrine support
-6dcaa9b v4
-3ea9631 fs: sync: add missing return if fsync is disabled from userspace.
-4e5d786 fs: sync: enable fsync by default.
-c235428 Added fsync on/off support.
-79422bd Add and enable kexec-hardboot changes for peregrine,falcon.thea and titan.
-
-   * packages/apps/Dialer/
-d713943 Add people and reverse lookup provider "Auskunft" (AT).
-ca7b74d Dialer: fix NPE in ReverseLookupService.doLookup
-
-   * packages/apps/Settings/
-050c08b Settings: make dashboard icons color consistent
-b0887a5 Settings: skip Misc/Overcounted battery stats in builds
-3dd3598 Settings: we do not ship Google Now Launcher wallpapers
-
-   * packages/services/Telephony/
-889c24f Fix removal of 'all accounts' preference.
-
-   * system/vold/
-ee33dd4 vold: Fix fsck on public volumes
-
-   * vendor/motorola/
-201ebe1 condor: Add back acdb calib files
-8d7743d otus: Kill thermal-engine-otus.conf
-34ebb32 Merge pull request #207 from invisiblek/drm
-1fe6116 victara: add libdivxdrmdecrypt dependencies
-bdef182 Condor: Copy prima configs from kernel
-41983ee Merge pull request #8 from TheMuppets/cm-13.0
-7b6df04 condor: take out blobs moved to common
-05fe85c otus: take out blobs moved to common
-073e137 msm8610-common: unite condor and otus
-
-   * vendor/samsung/
-3f3ef55 Merge pull request #693 from invisiblek/drm
-d85f2b1 Merge pull request #670 from javelinanddart/cm-13.0
-2309aa0 jf: add back libdivxdrmdecrypt dependencies
-78b5da0 msm8960: add back libdivxdrmdecrypt dependencies
-c788477 Merge pull request #692 from arco/cm-13.0
-3a11af2 Revert "serrano: Use rild and libril.so from Galaxy A5 lollipop"
-2939adb Revert "serrano: Use rild/libril blobs from I9505"
 
 
