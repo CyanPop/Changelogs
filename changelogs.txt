@@ -1,0 +1,766 @@
+====================
+     01-06-2016
+====================
+
+
+   * build/
+0207b8c kernel: Fix usage of KERNEL_ARCH
+dbf3bc8 Merge tag 'android-6.0.1_r10' into HEAD
+
+   * device/motorola/msm8226-common/
+dee063b Merge pull request #3 from CyanogenMod/cm-13.0
+
+   * external/bouncycastle/
+882ff27 Merge tag 'android-6.0.1_r10' into HEAD
+
+   * external/wpa_supplicant_8/
+0ee01ad Merge tag 'android-6.0.1_r10' into HEAD
+
+   * frameworks/av/
+0748476 Merge pull request #15 from CyanogenMod/cm-13.0
+af4528b stagefright: Add deferred release option
+8195530 stagefright: Only include HFR/HSR on QCOM devices
+de1e368 stagefright: Forward-port HFR and HSR support
+72f2347 Merge tag 'android-6.0.1_r10' into HEAD
+
+   * frameworks/base/
+c11e392 QSpanel: Fix FC when adding New Tile
+8938427 Themes: Re-enable changing keyguard wallpaper
+23fd3ae SystemUI: Make sure to notifydatasetchange on each tile add.
+2dc038c aapt: Use a std::map instead of a SortedVector
+f24c393 Merge tag 'android-6.0.1_r10' into HEAD
+dee318f SystemUI: clean up tuner
+8106da8 Revert "Remove demo mode, is useless......."
+
+   * frameworks/minikin/
+fb0b851 Merge tag 'android-6.0.1_r10' into HEAD
+
+   * frameworks/opt/telephony/
+84be8ed Merge pull request #11 from CyanogenMod/cm-13.0
+
+   * hardware/broadcom/wlan/
+4b218b0 Merge tag 'android-6.0.1_r10' into HEAD
+
+   * hardware/intel/img/hwcomposer/
+59855cd Merge tag 'android-6.0.1_r10' into HEAD
+
+   * hardware/samsung_slsi/exynos5/
+908dd85 Merge tag 'android-m-preview-2'
+
+   * packages/apps/Settings/
+b7f2de0 Fix zen mode allowed event preference summary.
+89d5427 Remove ic_menu_add.png drawables
+12e0cf4 Merge tag 'android-6.0.1_r10' into HEAD
+3234089 Move more CAF strings and cleanup
+eedc073 regulatory: Make the image fill the whole parent
+
+   * packages/inputmethods/LatinIME/
+254b4b1 Merge tag 'android-6.0.1_r10' into HEAD
+
+   * prebuilts/cmsdk/
+a480e4f Revert "Revert "prebuilts/cmsdk: Update publish makefiles.""
+
+   * system/core/
+ba49824 Merge pull request #1 from CyanogenMod/cm-13.0
+2d0a7c1 Merge tag 'android-6.0.1_r10' into HEAD
+
+   * system/media/
+60bb4ca audio_utils: Fix 24-bit offload conversions
+
+   * vendor/cm/
+8b18a95 cm: Fixup maven artifact publish inclusions.
+9152648 cm: Modify maven artifact publish makefile.
+
+   * vendor/cmsdk/
+420c39c Merge pull request #2 from CyanogenMod/cm-13.0
+33e300e cmsdk: Add example service test.
+bbab82e cmsdk: Add cmsdk non-jack target module.
+a3730df Reorder new setZenModeWithDuration API in aidl
+
+   * vendor/motorola/
+45e747b Merge pull request #17 from TheMuppets/cm-13.0
+1f81965 Merge pull request #219 from stargo/cm-13.0
+3e35a71 omap4: update widevine from sprout
+
+====================
+     01-05-2016
+====================
+
+
+   * build/
+76c3d12 py3: ota_from_target_files.py: fix logic that broke
+bbd403a py3: update releasetools with proper print syntax
+3089dc5 mms: introduce a shortcut to quickly rebuild kernel/boot.img
+f9a9ece kernel: prevent targets from being rebuilt needlessly
+e5b4e77 kernel: don't build modules or dtbs unless enabled
+1c6ed99 py3: update all the things
+3802fd9 py3: post_process_props
+47b4cb5 py3: java-event-log-tags
+2b271f9 py3: java-layers
+fc8aaf0 py3: product_debug
+d1cff02 py3: merge-event-log-tags
+9f25e14 py3: compare_filelist
+fde1590 py3: update check_boot_jars
+1b6cf34 py3: update checktree
+448f739 py3: parsedeps
+7aba238 py3: filter-product-graph
+1b0423a py3: fileslist
+6315791 py3: repopick
+
+   * device/motorola/msm8226-common/
+1136fa0 msm8226-common: Support MIDI function
+2a70fb3 Merge pull request #2 from CyanogenMod/cm-13.0
+
+   * frameworks/base/
+0d3a4fe Fix janky layout
+e746039 FEB: Disable/Enable screenshot sound [1/2]
+5e403b7 FWB: Add clock/date in recents while in fullscreen mode (1/2)
+bcd6454 Default to Resolver Theme
+fee05dd Fix Custom Resolver Theming
+207664a media: Configure audio encode parameters only for valid audio codec.
+9d5fb23 ThemeEngine : Use manifest.mf for hash calculation
+94e7e59 Regional: Customize features for regional package
+d660636 Avoid wrongly reported SIM PIN mismatch.
+1b0247e aapt: Speed up the style pruning
+10145ea SystemUI: fix flicker when removing tiles
+0227870 SystemUI: add tiles detail view
+71f085f NotificationManager: always restore identity on notification error
+79c1121 [1/2] Slim Recent App Sidebar
+2de504b Add SlimRecents 1/2
+6a6aad6 Automatically enable doze mode if significant motion sensor is found
+0c043ca FWB: LS clock fonts: Add more fonts (1/2)
+7c34957 Lockscreen Clock Widget Fonts [1/2]
+165a13d Clean Up Lockscreen Weather (items & layout) [1/2]
+f13fdc3 SystemUI: Fix statusbar clock font size at times not updated on boot
+9fd6288 FWB: Max Lockscreen Notification count [1/2]
+de8c09a Revert "Ls weather: options to hide the weather when notifications are visible (1/2)"
+07fc893 Revert "Fix NPE with WeatherStatus on KeyguardStatusView"
+728fdff SystemUI: Use material delete icon
+96b89b2 SystemUI: bail out of recents-to-home animation when losing focus
+92fd3fd systemui: fix glitches with recents view and search widget
+84b14df SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader
+490e7dc SystemUI: Fix NPE
+6d71ec8 SystemUI: recents panel clear all button - sync with settings
+5391f1e Fix leftAffordanceView visibility bug
+d91f1b9 Turn advanced devices and file sizes on by default
+2e5a606 dynamic tiles: debrand adb icon
+fdb3923 Base: NavBar: add power button [1/2]
+5f103d6 SettingsProvider: Update icon.
+bc3933f Revert "AppOps: add a default constructor"
+81d29a2 Launch app privacy settings when tapping on PG notification (1/2)
+f35af1a DndTile: Always open the detailed view
+c21c63e Settings: Don't attempt to forward writes from System -> Global.
+ab7dcd9 Add entry to copy VideoStop.ogg file to system image
+
+   * frameworks/opt/cards/
+8f1db65 fix card header title vertical centering
+8468284 revert button animation
+9a375cd bump up animation duration for expand button
+9ea1582 add TransformableDrawableButton stuff from Narfss
+8d2ccad More centering fixes
+b52a971 Another expanded icon fix
+94c8ee0 Fix the expand icon and center some things
+ed68e2a Use a better expand icon
+7dd70de Use proper expand icons
+6103aec Some fixes
+676cc7e Cardslib: Add partial onLongClickListener ability
+4d42a12 more RTL changes
+07e573e Cardslib: CardsListView allow to touchevents from swipetodismiss for gesture events
+3077179 Some RTL fixes
+c5b669b use api21 in android.mk
+2b3e43f use api21
+6c04f9b rename paths
+c5a208c Update cards lib
+cbdd0b5 Revert "add trds drawables"
+
+   * frameworks/opt/telephony/
+5d1ab6a MMS: Update apnProfileID for MMS only apn.
+
+   * packages/apps/Browser/
+59917d9 Merge pull request #4 from CyanogenMod/cm-13.0
+d2bc708 Browser: Fix crash while loading a page
+
+   * packages/apps/DeskClock/
+77f18a5 Allow alarms to be modified by 3rd parties.
+
+   * packages/apps/Eleven/
+0739c81 Merge "Eleven: Remove wakelock" into cm-13.0
+
+   * packages/apps/PackageInstaller/
+52f1be3 Merge pull request #3 from CyanogenMod/cm-13.0
+
+   * packages/apps/Settings/
+b93cfe2 Move toast icon setting to Screen & Animations
+6a11954 Settings: Disable/Enable screenshot sound [2/2]
+7d166de Settings: Add clock/date in recents while in fullscreen mode (2/2)
+79e59c5 Settings: Set value on external display mode settings change.
+98f044a Hide manual provisioning switch when extphone framework is not present
+eb6a6fd [2/2] Slim Recent App Sidebar
+2a253ea Settings: Slim Recents app screen (2/2)
+bc46c95 Settings: LS clock fonts: Add more fonts (1/2)
+cd51103 Lockscreen Clock Widget Fonts [2/2]
+e1b3747 Lockscreen: Move DT2S to general category
+c4f7f9d Clean Up Lockscreen Weather (items & layout) [2/2]
+ba75efb Max Lockscreen Notification count: Fix incorrect switch :P
+1a37388 Settings: Max Lockscreen Notification count [2/2]
+11f7d93 Revert "Lock screen weather: Add options to hide the weather when notificatio…"
+97fcfc9 Themes: Add main dashboard background back from lollipop
+cd8cecb Settings : Filter settings for secondary users
+a01b88a Settings: Fix NPE in PowerMenuActions
+365f620 Settings : Update filterSpam to new contract
+b10716a Revert "Introduce SystemSettingsCheckBoxPreference"
+7820857 Launch app privacy settings when tapping on PG notification (2/2)
+6189e5b privacyguard: Add Superuser summary
+eb420df Settings AppOps: show/hide app type and allow/deny counters
+1e9b7fa Update privacy guard reset icon
+8388cef Settings: Convert AppOps array items to string references
+0020ea2 AppOps: Use switch widget for non-strict ops.
+a459d3c AppOps: Add more operations in app ops settings.
+b1c2348 AppOps: Add 'Always ask' option under appOps setting.
+56e7390 Settings: Respect legacy quick pulldown row.
+
+   * packages/services/Telephony/
+be9dbfa Merge pull request #2 from CyanogenMod/cm-13.0
+868b09d Telephony: Fix NPE when any of the sim is disabled
+46f01a4 Merge pull request #1 from CyanogenMod/cm-13.0
+
+   * system/core/
+20d30e9 logd: simpleperf inspired optimizations
+
+   * vendor/cm/
+db02b7c Updated Adaway to latest version v3.1
+7f796e4 Updated KernelAdiutor to latest version 0.9.9.2.3
+d5b1221 Fix adaway prebuilt folder
+9e40e20 otasigcheck: Avoid long lines in XML
+9a8af4e 4.8
+
+   * vendor/cmsdk/
+0a5afe0 Merge pull request #1 from CyanogenMod/cm-13.0
+fcd1883 Sdk: NavBar: add power button [2/2]
+be1678b cmsdk: add method for checking dynamic tiles
+
+   * vendor/motorola/
+22f8edc Merge pull request #16 from TheMuppets/cm-13.0
+
+====================
+     01-04-2016
+====================
+
+
+   * device/motorola/msm8226-common/
+b7ef707 msm8226-common: We don't support EAP SIM, AKA, AKA'
+d2d38cf msm8226-common: Update overlay
+
+   * external/stagefright-plugins/
+78f9d45 stagefright-plugins: Parse file metadata tags
+
+   * external/toybox/
+ac4365b toybox: fix mac build
+
+   * packages/apps/Browser/
+852bcd1 Browser: runtime permissions
+
+   * packages/apps/ExactCalculator/
+6348e58 Themes: Expose hard coded background in java
+
+   * packages/apps/SoundRecorder/
+688b40a SoundRecorder: Fix layout derps
+
+====================
+     01-03-2016
+====================
+
+
+   * device/qcom/sepolicy/
+134a630 msm8952: Label FRP partition
+
+   * external/stagefright-plugins/
+4924fcb stagefright-plugins: Protect against crash
+
+   * hardware/ti/omap4/
+7b565f6 domx: add support for tuna
+
+   * packages/apps/Camera2/
+3b7e673 CameraSettingsActivity: Handle NPE when storage preference is already removed
+
+   * vendor/cmsdk/
+d1129cc cmsdk: Also hide internal package from docs.
+9734639 cmsdk: Fix quick pulldown settings, and unhide numerous system settings.
+2d4d514 cmsdk: Update current api text.
+
+====================
+     01-02-2016
+====================
+
+
+   * development/
+5225472 gdbclient: fix adb output test
+
+   * external/lz4/
+7cb39f5 lz4: Enable building with Android
+a30ee1b Revert "lz4: Add Android.mk file to build as a host static library"
+
+   * external/stagefright-plugins/
+f7c42ea stagefright-plugins: Increase max video buffer size + count
+
+   * frameworks/av/
+c942849 Merge pull request #14 from CyanogenMod/cm-13.0
+38f51de BatteryNotifier: Add missing log LOG_TAG
+8374f4b Merge pull request #13 from CyanogenMod/cm-13.0
+
+   * frameworks/base/
+3c28e40 statusbar: fix overlapping backgrounds when expanded
+479d819 Themes: Expose hard code for themes in SystemUI
+af5ec60 Themes: Expose "Set Wallpaper" text color in wallpaper picker
+ddb0c74 Revert "WallpaperCropper: use same action bar style as Launcher3"
+59738a9 Themes: Expose hard code for themes
+3e23997 Update default public notification view on notification update.
+b4ac276 Reduce log verbosity: Don't spam logcat
+
+   * hardware/intel/img/hwcomposer/
+767cc4e Revert "Hwcomposer Moorefield: Return DummyDevice for TERTIARY display"
+
+   * packages/apps/CMFileManager/
+358590d Change ts file extension mime type
+
+   * packages/apps/ContactsCommon/
+d3de2eb Themes: Define back arrow tint color for themes
+
+   * packages/apps/DeskClock/
+91ac9cb DeskClock: Add back flip and shake actions
+
+   * packages/apps/Settings/
+ce7f3bc settings: adds OVERRIDE_WIFI_CONFIG permission
+
+   * packages/services/Telephony/
+71af7ad CDMA: Unknown is displayed for incoming call
+
+   * system/core/
+57f1deb Add vendor hook to handle_control_message
+
+   * vendor/cm/
+7871555 Fixed backuptool for 6.0.1
+5a92c16 sepolicy: Allow minivold execute_no_trans
+a8d6412 cm: sepolicy: fix denials for external storage
+
+====================
+     01-01-2016
+====================
+
+
+   * hardware/qcom/audio-caf/msm8960/
+b932690 libalsa-intf: Fix clang compiler errors
+3fb8900 alsa_sound: Fix clang compiler errors
+
+   * packages/apps/Camera2/
+553ccb7 Fix writing to external storage.
+16635f1 Add Storage preference (1/2)
+
+====================
+     12-31-2015
+====================
+
+
+   * device/motorola/msm8226-common/
+ca30def msm8226-common: Enable disableWifiApFirmwareReload
+
+   * external/stagefright-plugins/
+e13ea55 stagefright-plugins: Refactor packet queue locking
+
+   * frameworks/av/
+c39941d libmedia: correct latency computing for TRANSFER_SYNC
+
+   * frameworks/base/
+e9df52f Reboot/Recovery QS Tile
+7d73263 Add Music QS Tile
+
+   * kernel/motorola/msm8226/
+e9b441a f2fs: skip committing valid superblock
+a8be264 f2fs: setting discard option in parse_options()
+52d7459 f2fs: do not trim preallocated blocks when truncating after i_size
+1ca3755 f2fs crypto: add alloc_Kinzie_page
+385bb92 f2fs crypto: fix to handle errors likewise ext4
+8d1a1ac f2fs: fix to return exact trimmed size
+9700ee4 f2fs: support FALLOC_FL_INSERT_RANGE
+a956176 f2fs: hide common code in f2fs_replace_block
+920e8df f2fs: disable the discard option when device doesn't support
+7801d06 f2fs crypto: remove alloc_page for Kinzie_page
+9c1e411 f2fs: fix a deadlock for summary page lock vs. sentry_lock
+1a1c3c0 f2fs crypto: clean up error handling in f2fs_fname_setup_filename
+11edeb8 f2fs crypto: avoid f2fs_inherit_context for symlink
+8126a7c f2fs crypto: do not set encryption policy for non-directory by ioctl
+befa127 f2fs crypto: allow setting encryption policy once
+44c317c f2fs: avoid duplicated code by reusing f2fs_read_end_io
+be960a1 f2fs crypto: use per-inode tfm structure
+c28e4be f2fs: recovering broken superblock during mount
+0ad11ce f2fs: introduce update_meta_page
+ae2c18d f2fs crypto: zero next free dnode block
+dbc7797 f2fs crypto: split f2fs_crypto_init/exit with two parts
+5c6b66e f2fs crypto: fix incorrect release for crypto ctx
+135ca64 f2fs crypto: fix to release buffer for fname crypto
+c1112a1 f2fs crypto: shrink size of the f2fs_crypto_ctx structure
+5a7f551 f2fs crypto: get rid of ci_mode from struct f2fs_crypt_info
+b978fbe f2fs crypto: use slab caches
+0b4315f f2fs: truncate data blocks for orphan inode
+8d0e8f0 f2fs: cleanup a confusing indent
+7a7313a f2fs: fix building on 32-bit architectures
+be45844 f2fs: avoid buggy functions
+13eda9d f2fs: add compat_ioctl to provide backward compatability
+f248242 f2fs: do not issue next dnode discard redundantly
+dea4a18 f2fs: add default mount options to remount
+fed8d9d f2fs crypto: remove checking key context during lookup
+939fe65 f2fs crypto: fix missing key when reading a page
+4ed749c f2fs crypto: add symlink encryption
+f4d7e53 f2fs crypto: add filename encryption for roll-forward recovery
+9c57699 f2fs crypto: add filename encryption for f2fs_lookup
+1d26300 f2fs crypto: add filename encryption for f2fs_readdir
+cffa3f5 f2fs crypto: add filename encryption for f2fs_add_link
+4806bea f2fs crypto: add encryption support in read/write paths
+2fcf957 f2fs crypto: activate encryption support for fs APIs
+6318015 f2fs crypto: filename encryption facilities
+b8111fa f2fs crypto: add encryption key management facilities
+7db34dc f2fs crypto: add f2fs encryption facilities
+7ac5642 f2fs crypto: add encryption policy and password salt support
+d7b394f f2fs crypto: add encryption xattr support
+b6ad2c8 f2fs crypto: add f2fs encryption Kconfig
+2b592e4 f2fs crypto: declare some definitions for f2fs encryption feature
+c18ee2a f2fs: report unwritten area in f2fs_fiemap
+c88be2e f2fs: avoid value overflow in showing current status
+32c6a3b f2fs: support FALLOC_FL_ZERO_RANGE
+ac5dc10 f2fs: support FALLOC_FL_COLLAPSE_RANGE
+bd8ccb6 f2fs: introduce f2fs_replace_block() for reuse
+368577f f2fs: do not re-lookup nat cache with same nid
+020287a f2fs: remove unneeded f2fs_make_empty declaration
+e3a93c9 f2fs: issue discard with finally produced len and minlen
+67db7eb f2fs: introduce discard_map for f2fs_trim_fs
+13ccf1f f2fs: revmove spin_lock for write_orphan_inodes
+07d69d5 f2fs: split find_data_page according to specific purposes
+3be107e f2fs: fix counting the number of inline_data inodes
+4019508 f2fs: add need_dentry_mark
+186fccc f2fs: fix race on allocating and deallocating a dentry block
+70a5e45 f2fs: introduce dot and dotdot name check
+80f86dc f2fs: move get_page for gc victims
+8a77594 f2fs: add sbi and page pointer in f2fs_io_info
+54c2101 f2fs: add f2fs_may_inline_{data, dentry}
+6a6eead f2fs: clean up f2fs_lookup
+04c7bd0 f2fs: expose f2fs_mpage_readpages
+f9097e3 f2fs: introduce f2fs_commit_super
+d33af2ae f2fs: add f2fs_map_blocks
+2cd7005 f2fs: add feature facility in superblock
+2c309cb f2fs: move existing definitions into f2fs.h
+36503d2 f2fs: add missing version info in superblock
+be322d7 f2fs: make has_fsynced_inode static
+9f9f898 f2fs: add offset check routine before punch_hole() in f2fs_fallocate()
+f532a7d f2fs: use is_valid_blkaddr to verify blkaddr for readability
+4d2ec8d Revert "f2fs: enhance multi-threads performance"
+f2fa843 f2fs: drop the volatile_write flag only
+50b575f8 f2fs: pass checkpoint reason on roll-forward recovery
+4dbb69a f2fs: change 0 to false for bool type
+ff24eff arm/dt: 8974pro: Update Current Values
+47ec65c common: DMA-mapping: add DMA_ATTR_SKIP_CPU_SYNC attribute
+1dc73ed arm: Skip DMA zeroing completely only if specified
+186aba8 msm: ADSPRPC: Initialize hlist node pointers
+abbd54e mm: let kswapd test movable zone watermark with ALLOC_CMA
+a05d320 msm:cpp: Ignore hardware interrupt when timer expires
+99591c4 msm:isp: handle duplicate frameid.
+ab3ec1bb msm: camera: isp: protect driver from using invalid bufq
+12ebf90 msm:camera: validate user space parameter for max and min value
+c33b682 msm:camera:isp: vfe num input validation during reset
+5f9ec0e msm: camera: fix write sensor settings issue
+ef44195 msm: camera: check size of allocated buffer to prevent overflow
+173570f drivers: misc: defer some ioctls via work queue
+5cf9e39 msm: mdss: Unmap only when buffer was mapped
+bc29cf0 esdfs: set proper permisison for root inode
+0d6e282 drivers/misc: bmg160: Add a start up delay
+7bf9b56 radio-iris: Fix the issue with set calibration
+93adb1b USB: dwc3: ep0: Use WARN_ON_ONCE to fix message flooding issue
+9356a24 esdfs: check the hash table, even when unrestricted
+0bff093 Revert (CR) as this is not the correct approach
+ff77638 drivers/misc: bmg160: Remove filter init in probe
+3f1329c fs: esdfs: Remove the optimization to skip hash lookup.
+ebf3c97 esdfs: parse the Android user ID from the correct root
+b420457 video: fb_quickdraw: Add sysfs debug entries for AoD buffers
+3fd44a6 video: fb_quickdraw: Use kobject in fb_quickdraw buffer
+11cc83a video: fb_quickdraw: use read write semaphores for locking
+c973b86 msm: kgsl: Fix incorrect usage of pagetable entries counter
+e05f0c1 msm: kgsl: Add support for KGSL_CMDBATCH_MARKER
+03fc77e msm: kgsl: Remove a race condition in the event processing code
+f953630 msm: kgsl: Refactor the GPU event engine
+de27dd8 msm: kgsl: Allow memory lists along with command submission
+a97bcc8 msm: kgsl: Split out the context and command batch flags
+aca746a msm: kgsl: Support the KGSL_CONTEXT_CTX_SWITCH flag
+5a45ee6 msm: kgsl: Make global memory statistics atomic
+8739669 msm: kgsl: check for NULL pointer access
+b3690e1 msm: kgsl: Wake up snoozing threads on marker expiry
+e3a8b36 msm: kgsl: Elevate the priority of the thread during adreno start
+67cef8d msm: kgsl: Disable index reg dump during snapshot
+0bc106a msm: kgsl: Disable shader memory dump during snapshot
+57c4061 msm: kgsl: Ignore signals for ringbuffer timestamp waits
+8a10274 msm: kgsl: Continue if an IB couldn't be dumped in snapshot
+63d0b39 msm: kgsl: Fix race in active count wait
+7dc3f0b msm: kgsl: Restrict GPU memory object alignment to 32MB
+4d0ccfc msm: kgsl: Mark mmapped objects with VM_DONTCOPY
+ae5ccfe msm: kgsl: Add ratelimit check to limit excessive kernel logging
+ee1e6e0 msm: kgsl: Do not return invalid power stats when the device is off
+4162d75 msm: kgsl: Cleanup the memory free list
+23ea806 ion: Skip zeroing on secure buffers
+4e42554 arm: Add option to skip buffer zeroing
+0b5f41c msm: kgsl: Fix power api's used in fault interrupt sysfs control
+14cdf51 msm: mdss: refactor ping pong completion logic
+5a25559 msm: mdss: keep clocks on during kickoff operation
+64627fe diag: Make fixes to diag_switch_logging
+853e652 msm: wlan: Correct the wifi database for Indonesia
+0050e36 defconfig: b-family: Enable NETFILTER_XT_TARGET_NFLOG
+a19b97d ACPI / processor: prevent cpu from becoming online
+43df000 arm64: smp: Update the topology masks before calling CPU_STARTING notifiers
+1c73630 defconfig: 8974: Disable memcg related configs
+48cda3e defconfig: 8226: Disable memcg related configs
+1641ee7 power: qpnp-charger-mmi: Update chg_done state.
+f2da36e soc: qcom: smem: Zero out ramdump segment memory
+74a96c2 mmc: core: Fix mmc clk scale down during writes.
+914dfc5 mmc: core: update host->card after getting RCA for SD card
+86db237 USB: u_ether: Set complete handler before queueing to endpoint
+2db1d7c msm: thermal: Add RT priority to kernel hotplug thread
+4e39a5f msm: thermal: Add RT priority to kernel thermal threads
+8a25c7d Revert "nl80211: Fix backport of struct wiphy_vendor_command"
+930d7ee nl80211: Fix backport of struct wiphy_vendor_command
+77c0362 power: qpnp-charger: Avoid override USBIN_COMP in reverse boost for SMBBP
+2297229 qseecom: avoid buffer over-write when copying app_name
+1ecf754 cpufreq: cpu-boost: Resolve deadlock when waking up sync thread
+8946ce9 cpufreq: ondemand: Resolve deadlock when waking up dbs sync thread
+09dab2f power: qpnp-charger: Avoid override USBIN_COMP in reverse boost for SMBBP
+2f2a3e3 qseecom: add mutex protection for unloading app in qseecom_release
+04d89f75 qseecom: Change pr_info messages to pr_debug
+6ee9ed7     kernel: Restrict permissions of /proc/iomem.
+88b2053 wcnss: Add API to get monotonic boot time
+5ea0443 cfg80211: unify station WME parsing
+f981f70 netlink: add signed types
+f9ab43b cfg80211: pass station supported channel and oper class info.
+63cd5c2 USB: dwc3: msm: Don't disable/enable clocks if in lpm during block reset
+8348e99 usb: dwc3: Improve erratic errors events handling
+0de0c0f arm/dts: msm8974: Set ROI restrictions for partial update
+756ec8a msm: mdss: Consider FLIP flags while optimizing pixel fetch
+59f7095 msm: mdss: Share minimum width and height limitations on panel ROI
+15523b6 msm: mdss: dsi: Share panel alignment restrictions through sysfs node
+314987f mmc: increase hold-off time during SD "paranoid" reset
+c4b3247 Set the Titan Gyro filter bandwidth
+673992d replacing warning msg with pr_warn_ratelimited
+8cc3c79 esdfs: add support for multiple storage views
+e94e6d2 esdfs: remove split permission support
+52f029c arm/dts: 8974pro: Update current values for 8974 pro
+87c82be boot:dtsi: Add the active current values in uA for the cpus in device tree.
+ab455da cpufreq: Avoid using global variable total_cpus
+47bf3c1 defconfig: b-family: Enable UID_CPUTIME
+2f5d61c lowmemorykiller: maintain LMK rbtree with signal->adj_node
+9fb6ee8 fs: avoid adding non-thread-group task to LMK rbtree
+8bfb2dd kernel: avoid adding non-thread-group task to LMK rbtree
+c25c9ab usb: gadget: Align Midi Buffer size for DWC3
+ac05856 usb: core: Avoid spammy warning due to misbehaving Apps
+ef4bb87 arm/dt: 8610: otus: delete vddio_disp and lcd_vci vreg node
+0632267 arm/dt: 8610: otus: Wrong supply used by display.
+628b061 defconfig: msm8974: disable QC NFC driver
+696ce4a Report IPv6 NA packets processing to partial resume handler
+b81081b net/compat.c,linux/filter.h: share compat_sock_fprog
+9353e3d sk_run_filter: add BPF_S_ANC_SECCOMP_LD_W
+bd903f6 USB: gadget: android: otus doesn't have midi support.
+f6e42f8 USB: gadget: f_mtp: Fix integer overflow when transferring large files.
+887fee2 USB: gadget: mtp: Fix hang in ioctl(MTP_RECEIVE_FILE) for WritePartialObject
+757577d usb: dwc3: gadget: Protect against ep disabling during completion
+8ad63cb USB: gadget: android: Integrate f_midi USB MIDI gadget driver
+81504e3 USB: gadget: midi: Fix deadlock unbinding driver while it is in use
+29b8d61 posix_types.h: Cleanup stale __NFDBITS and related definitions
+3e33db9 pstore: selinux: add security in-core xattr support for pstore and debugfs
+18630ad Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs
+2324a81 kernel panic in vos_start()
+b5ac705 power: qpnp-charger-mmi: 35% Demo Mode
+7314ddf Revert "ARM: mm: don't limit default CMA region only to low memory"
+f27270a Revert "(CR) ARM: DMA-mapping: clear cached kmap mappings"
+c868487 drivers/misc: stml0xx: Fix reset durign hub flashing
+6b53f31 arm/dt: 8610: otus camera clean up
+c4e6300 arm/dt: 8610: otus: wrong supply used by touch
+18c7dad drivers/misc: stml0xx: Port folio state notification code
+58742f4 arm/mach-msm: board-8610: remove touch control gpios from gpiomux
+e40c808 arm/dt: 8610: fix pinmux for touch reset gpio
+1ff72eb drivers: stml0xx: Allow the AP to control the ALS rate
+48a6afb msm: mdss: Increase commit count for first kickoff
+3870910 ASoC: msm: qdsp6v2: SLIM_RX and I2S_RX is internal echo reference
+61da699 ASoC: Correct the mixer control name
+f977640 ASoC: external EC reference
+983109c mmc: fix MDT wrap around for eMMC v4.41 and later
+c9fdd4d mmc: give up on SD cards that can't be initialized
+0b3e5fe stml0xx: improve sensorhub reset mechanism
+958e523 drivers/misc: stml0xx: Lux calculation devtree settings
+eede4d6 stml0xx: create and use UAPI header
+b7e0aea drivers/misc/stml0xx: New Sensor Hub reset design
+4127b60 arm/dts: otus: New Sensor Hub reset design
+2bd5565 arm/dts: otus: Add lux calculation settings to devtree
+5881f38 ARM: DMA-mapping: clear cached kmap mappings
+0f0a171 ARM: mm: don't limit default CMA region only to low memory
+d28326e drivers:misc:stml0xx: Support DSP interface setting
+cf8fc8f msm: vidc: Skip processing of release buffer event
+dbe4562 ion: cma_heap: free mem if fail to create sg_table
+088e2ff misc: stm401: Fix conversion macros.
+7c3e912 arm/dt: msm8610: Change the button thresholds
+7f5a330 lowmemorykiller: Check tgid with rcu lock held
+137fa12 arm/dts: moto-common: Fix out of bounds ibatsafe
+8298b70 drivers/misc: stml0xx: Handle prox saturation
+ea03ddf arm/dt: otus: Handle prox saturation
+
+   * packages/apps/Settings/
+65bf530 Welcome Google Nexus 5
+
+   * vendor/cmsdk/
+919f8bf Remove QS Battery Saver Tile for now
+ce42f54 Add QS Tiles
+
+   * vendor/motorola/
+6ab5421 victara: update blobs from M
+0db4562 Merge pull request #15 from TheMuppets/cm-13.0
+ae94b82 Merge pull request #216 from razrqcom-dev-team/cm-13.0
+
+====================
+     12-30-2015
+====================
+
+
+   * external/stagefright-plugins/
+30ab9dc stagefright-plugins: Fix shutdown deadlock
+644d57a stagefright-plugins: Fix crash during testDecodeWithEOSOnLastBuffer
+61710f5 stagefright-plugins: Wait for reader shutdown on EOS
+
+   * frameworks/av/
+9fbfe96 Merge pull request #12 from CyanogenMod/cm-13.0
+
+   * frameworks/base/
+1a873e0 Themes: Expose hard code color for divider sim pin
+5c6e0ce Themes: Expose Hard coded colors in Quick Settings Tiles
+
+   * packages/apps/CellBroadcastReceiver/
+dd6bee9 Themes: Expose hardcoded styles and colors for themes
+
+   * packages/apps/InCallUI/
+0f49f42 InCallUI: Add a controller for in-call proximity sensor (2/3)
+691439f InCallUI: Add a controller for proximity sensor
+
+   * packages/apps/Settings/
+a79ff19 Updated CyanPop Logo
+9cebedc Fingerprint: Forward challenge extras
+c02a849 Remove useless crap
+617123c Settings: Expose backgroundTint from Single Button Panel
+1ecf80c Settings: Expose Fingerprint Enrollment Checkmark Tint to an XML
+edc2cbe Add a 45 second timeout option for Screen, Dream and Lock timeouts. Ported from AICP 5.1
+6cd5e9c Profiles: option to disable lock screen device policy override (2/2)
+b0428bd Settings: less notifications sound (2/2)
+39b3299 Disable Immersive Messages [2/2]
+dd040f1 Force Expanded Notifications (2/2)
+839bb3d Add statusbar notification category in Statusbar settings
+4b2a92c Add QS category inside Statusbar settings
+
+   * packages/services/Telephony/
+5cb6497 TeleService: Add a controller for in-call proximity sensor (3/3)
+
+   * vendor/cm/
+058d5b1 4.7
+df1dcd3 sepolicy: label exfat and ntfs mkfs executables
+
+====================
+     12-29-2015
+====================
+
+
+   * development/
+87171a8 gdbclient: fallback to $OUT if available
+
+   * external/stagefright-plugins/
+09f677f stagefright-plugins: Only do as much sniffing as necessary
+e7ea399 stagefright-plugins: Increase confidence on HEVC mp2p files
+c0742cd stagefright-plugins: Fix audio trimmed when reaching eos
+28d6141 stagefright-plugins: Fix crash
+
+   * external/toybox/
+0f882f6 Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
+
+   * frameworks/av/
+8ca3dfd nuplayer: Enable PCM offload for any source
+99d016b Merge pull request #11 from CyanogenMod/cm-13.0
+b19f360 stagefright: Those who cannot remember history are doomed to repeat it
+
+   * frameworks/base/
+a04aac5 Base: Add a controller for in-call proximity sensor (1/3)
+3370582 Profiles: option to disable lock screen device policy override (1/2)
+ac64b3e QS: use CM's profiles vector from settings
+bf6f547 SystemUI: Update WiFi indicator drawable sizes
+9793b9a QS: add Expanded desktop tile
+fc2cb17 Quick Settings: add some more tiles
+41eba93 SystemUI: dont roll but add :)
+ec3ff44 fb: less notifications sound (1/2)
+99e3b07 Disable Immersive Messages [1/2]
+eb930cf Force Expanded Notifications [1/2]
+acbbdd0 FWB: Battery saver and low battery notification toggles [1/2]
+f9ee60c Remove demo mode, is useless.......
+1b67627 Fix Activity.onConfigurationChanged may not be called.
+b404dec Make sure NaturalSurfaceLayout is consistent with SurfaceControl
+a6b7e11 Reduce the delay during headset removal
+
+   * hardware/qcom/display-caf/msm8994/
+a0dd49b gralloc: cflag to use nv21 format for camera write
+
+   * kernel/motorola/msm8226/
+9c37873 ASoC: tpa6165a2: Lower the headphones amplifier gain
+
+   * packages/apps/Settings/
+52fc5ea Settings: Battery saver & low battery notification toggles [2/2]
+bf3eaf8 settings: Animation scale seekbars
+e8a675d Profiles: Cleanup the code
+26cad4d Settings: improve empty Profile trigger icons
+a5a1195 Settings: make empty profile views fit on hdpi
+c0c7963 Improve profile setting layouts.
+6b5eb4c profiles: Make the actions wizard buttons show up
+ca3c49b Profiles: remove unused code
+2def95b Settings: always allow profile app groups to be linked/unlinked
+0ca693f Settings : Save instance state for app group deletes
+6f13dda Settings: fix empty Wifi triggers screen
+d5a0411 Settings: make empty profile trigger screens more useful
+29314e7 Settings: merge ProfilesList into ProfilesSettings
+8039f96 UP Translation
+
+====================
+     12-28-2015
+====================
+
+
+   * bootable/recovery/
+46e4090 imgdiff: skip spurious gzip headers in image files
+
+   * device/motorola/msm8226-common/
+f2d2cc8 msm8226-common: PowerHAL: Add powersave bias profile
+f0cd753 msm8226-common: Unlock the GPS
+bf77af5 msm8226-common: Update system.prop
+1f1c056 msm8226-common: Build the kernel with gcc-4.9
+
+   * frameworks/av/
+c5d2ae9 Merge pull request #10 from CyanogenMod/cm-13.0
+020adf2 nuplayer: Pass along the sniffed metadata from GenericSource
+4adc183 stagefright: Remove special handling of FFMPEG extractor
+1bb6c3e stagefright: Add more hardware codec support for our extractor
+
+   * kernel/motorola/msm8226/
+574b3e0 cpufreq: Correct the data reported in all_time_in_state
+9a22144 Revert "cpufreq: stats: Initialize all_freq_table earlier"
+54ed048 usb: gadget: Remove USB_ANDROID_USBNET default choice
+923f5c3 ARM: be strict about FP exceptions in kernel mode
+48f2c82 ARM: pull in <asm/simd.h> from asm-generic
+d8dbb90 crypto: create generic version of ablk_helper
+28d162b ARM: Make NEON support independent from procfs
+5d70140 sysrq: Emergency Remount R/O in reverse order
+3002539 msm8226: defconfig: Update configs based on Google recommendations
+c6640b6 neigh: Better handling of transition to NUD_PROBE state
+25378ac net: ipv4: tcp: Get tcpi_count via file_count() not direct access
+b6bec01 Set the iif for IPv6 packets as well.
+d283d01 net: ping: Return EAFNOSUPPORT when appropriate.
+813bb24 net: ipv6: allow choosing optimistic addresses with use_optimistic
+55f1fa8 net: ipv6: Add a sysctl to make optimistic addresses useful candidates
+
+   * packages/apps/Settings/
+c0a719c Sudo Fix build
+272b06f Profiles: Fix override item summary not displaying none

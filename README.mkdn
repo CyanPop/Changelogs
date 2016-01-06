@@ -1,4 +1,4 @@
-Changelogs | CyanPop 6.0.0
+Changelogs | CyanPop 6.0.1
 ===========================
 
 ```bash
