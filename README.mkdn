@@ -3,7 +3,7 @@ Changelogs | CyanPop 6.0.1
 
 ```bash
 
-Open the changelog.txt from here: https://goo.gl/OshxrY
+Open the changelog.txt
 
 ```
 
