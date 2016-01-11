@@ -1,4 +1,496 @@
 ====================
+     01-11-2016
+====================
+
+
+   * device/motorola/msm8226-common/
+d18a2be Merge pull request #7 from CyanogenMod/cm-13.0
+a37a0df msm8226-common: camera: Fix the build
+2c6de8d Merge pull request #6 from CyanogenMod/cm-13.0
+103ce74 msm8226-common: Build Snap camera
+04663c1 msm8226-common: camera: Enable touch AF
+9389727 msm8226-common: Bring back the common camera wrapper
+15eda77 Merge pull request #5 from CyanogenMod/cm-13.0
+
+   * device/motorola/thea/
+4d81534 thea: Move camera wrapper to msm8226-common
+
+   * frameworks/base/
+89144e8 FWB: Add Option For Persistent Icon For Edit Tiles [1/2]
+7fa7df8 Fix WFD source incoming persistent connection when device is P2P client
+f33e230 Update PackageInstaller install handing
+d87547d Increase brightness faster if ambient light is brightening quickly.
+0cede08 fwb: SystemUI: Fix missing navbar icons
+1b5a40b Update notifications icon
+7c89340 WiredAccessoryManager: remove warning about Samsung dock support
+624a561 Add Motorola EMU audio dock jack sensing support
+
+   * packages/apps/Bluetooth/
+b90faf3 Improve AVRCP metadata string
+
+   * packages/apps/InCallUI/
+e9175b4 Merge pull request #1 from CyanogenMod/cm-13.0
+9579c96 InCallUI: Use framework yes/no strings
+
+   * packages/apps/OmniSwitch/
+96e3df5 Hide omniswitch from launcher
+ff86e24 Merge pull request #2 from omnirom/android-6.0
+
+   * packages/apps/Settings/
+045d080 Settings: Add Option For Persistent Icon For Edit Tiles [2/2]
+2f6da34 Improve DPI warning string
+
+   * packages/apps/Snap/
+42a806a Snap: support setting default preview resolution via overlay
+f4f5854 Snap: Fix NPE when parameters.getSupportedVideoSizes() is null
+3615cea Snap: Fall back to default quality instead of 352x288
+bc69af7 Snap: Fix NPE if mCameraDevice == null
+4902670 Snap: Fix aapt warnings
+63a9bb1 Snap: Set untranslatables
+
+   * packages/services/Telephony/
+f8d2cbd Fix Lte Tile
+
+   * vendor/cm/
+da2ba36 V5.0
+412b68a build Trebuchet
+f1adff6 Update IMS APN based on Smartfren Device Technical document-v1 2
+
+   * vendor/cmsdk/
+5b671e3 cmsdk: Add App SideBar Tile [2/2]
+1cdf42b cmsdk: Restart SystemUI tile (2/2)
+
+   * vendor/motorola/
+87e1e80 Merge pull request #19 from TheMuppets/cm-13.0
+7fe1c30 Merge pull request #222 from ashwinr64/cm-13.0
+b6908a7 Merge pull request #223 from luk1337/cm-13.0
+5f768eb falcon peregrine titan thea: Hexedit camera HAL for camera model exif
+7a109a6 falcon peregrine: Rename camera HAL to be wrappable
+
+====================
+     01-10-2016
+====================
+
+
+   * device/motorola/thea/
+5e0357f thea: Build Snap camera
+
+   * frameworks/base/
+a3c148b QS: Fix derp in SystemUI restart tile
+468a951 Add Restart SystemUI to reboot menu
+3c46852 Revert "Add Restart SystemUI to reboot menu"
+cd21bb4 QS: Add App SideBar Tile [1/2]
+55c770e SystemUI: Possibly Fix IndexOutofBoundException On adding More than 4 QsPages
+95cbc80 FWB: Restart SystemUI tile (1/2)
+788d3f0 New drawables for play and reboot tiles
+ebd80dd Fixed calendar fields comparison
+e1cf4d1 Revert "Navbar: fix navbar transitions which was causing bizarre statusbar bleed"
+1b3dee2 SystemUI: Add Three New Tiles[1/2]
+1e7e3ba SystemUI:Add LTE Tile
+
+   * frameworks/native/
+cbb6e05 Merge pull request #3 from CyanogenMod/cm-13.0
+8af4e66 Revert "Revert "gui: only support tertiary display if QTI_BSP is defined""
+
+   * frameworks/opt/telephony/
+55448f2 Merge pull request #15 from CyanogenMod/cm-13.0
+
+   * hardware/libhardware/
+a9d5943 Revert "Revert "libhardware: Only support tertiary display in QTI_BSP is defined""
+
+   * hardware/qcom/display-caf/msm8916/
+563759a hwc: Fix compile errors after display-frameworks removal
+a13ca36 hwc: Fix compile errors after display-frameworks removal
+
+   * hardware/qcom/display-caf/msm8952/
+a74edfb hwc: Remove references to display-frameworks
+8be9896 Merge remote-tracking branch 'caf/LA.BR.1.3.3_rb1.8' into cm-13.0-caf-8952
+c7cce05 hwc: Fix compile errors after display-frameworks removal
+
+   * hardware/qcom/display-caf/msm8994/
+1f09140 Default flexible YUV format to NV21
+8b353b3 Revert "Change the IMPLEMENTATION_DEFINED preview buffers format".
+2e8b4c1 Revert "Default flexible YUV format to NV21_ZSL".
+17ad546 Revert "gralloc: add cflag to use nv21 format for camera preview"
+866c928 Revert "gralloc: cflag to use nv21 format for camera write"
+2b1bb1e hwc: Fix compile errors after display-frameworks removal
+4e68b37 hwc: Fix compile errors after display-frameworks removal
+
+   * packages/apps/Browser/
+6518d5b Merge pull request #5 from CyanogenMod/cm-13.0
+
+   * packages/apps/Contacts/
+2bb707d Don't show default and favorites groups in group overview.
+1ec8222 Display group memberships in a meaningful way.
+
+   * packages/apps/ContactsCommon/
+533a7db Propagate group default and favorites state into GroupMembershipDataItem.
+
+   * packages/apps/Settings/
+3fac099 Other CyanPop organizations
+
+   * packages/apps/Snap/
+15c6280 Snap: support usage of preview size 2560x1440 via system prop
+ef01678 Snap: Set parameters before starting preview
+3cda1fd Snap: Remove CAF Chinese translations
+98dfd0d Snap: Fix jni compiler warnings
+6bfdb1b Snap: Remove dead code
+b0d6486 Revert "Snapdragon: Add icons for Snapdragon beautification feature"
+d9be7be Snap: FilmStripView must exist before loading photo/video modules
+
+   * vendor/cmsdk/
+b638ed9 cmsdk: Add Three New Tiles [2/2] Signed-off-by: Varun <date.varun123@gmail.com>
+7e4457a Add QS LTE Tile
+
+====================
+     01-09-2016
+====================
+
+
+   * device/motorola/msm8226-common/
+9f1af56 msm8226-common: PowerHAL: Change min freq depending on screen state
+aa91b96 Merge pull request #4 from CyanogenMod/cm-13.0
+
+   * device/motorola/thea/
+8df44e8 thea: camera: Disable logging
+6c7aab5 thea: Implement CameraWrapper
+
+   * external/toybox/
+cb52bce Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
+c1c226e Merge "Revert "Don't add a symlink for killall --- it's broken.""
+
+   * external/wpa_supplicant_8/
+d8d67d1 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+   * frameworks/av/
+905e6f9 Merge pull request #17 from CyanogenMod/cm-13.0
+c2a6c58 Use standard arm assembly syntax.
+fcd3c6e Fix overflow in amrwbenc
+60fc867 codecs: update for check ifeq ($(TARGET_ARCH),arm)
+6877308 Use unified syntax to compile with both llvm and gas.
+94f3841 Disable integer sanitization for amrwbenc
+3fec0e5 cameraservice: Change the error mapping for ERROR_CAMERA_DEVICE.
+f8eea5d drm : Give permission to access drm service api from Oma Drm engine
+6981543 Clean up time zone handling in MtpUtils::parseDateTime.
+8c4d014 Fix more potential (benign) AMRWB overflows
+a6e3ed3 Fix more amrwbenc overflows
+4f4723a Tabs -> spaces
+8bdd095 ACodec: Fix error handling in OutputPortSettingsChangedState
+
+   * frameworks/base/
+41cf795 Navigationbar: Add just one more button
+36f3e08 QS : Fix add tile visibilty if brightness slider disabled
+9c68916 fix starting window issue
+084c7dc fw: Remove duplicated locales.
+6a1b60e Update private copy of Palette
+cb8a217 Revert "QSpanel: few new vector drawables"
+3f296e2 base: Add permissions to Browser package
+db45377 Enforce weaker grant if app is default handler for miltiple action
+d3f4a47 Revert "Revert "PermissionGrant: Introduce Support for flashing Gapps""
+bac4bec Revert "Revert "GAPPS: Add Google Play Services, Google App and Account Manager permissions""
+648b424 Revert "base: Allow certian browsers to log-in"
+0c55cfb Revert "Enforce weaker grant if app is default handler for miltiple action"
+092b91a Revert "base: Add permissions to Browser package"
+f599b02 SystemUI: fix navbar drawing issues in landscape
+55440dd FWB: Add notification toggle button to navbar (1/2)
+1b0b1bf QSpanel: few new vector drawables
+c383958 Base:Add Option to Disable Brightness Icon In Brightness Slider [1/2]
+8b4efe9 base: app notifications hide when locked
+
+   * frameworks/native/
+bb7725f Merge pull request #2 from CyanogenMod/cm-13.0
+c86c815 SurfaceFlinger: Move Extended SF classes to same repository
+cda438d sf: Change log message in layer query method from ALOGE to ALOGW
+99cf24e Merge pull request #1 from CyanogenMod/cm-13.0
+
+   * frameworks/opt/telephony/
+54f645f telephony: Override nw mode on creation and when trying to calculate nw type.
+26597b1 Merge pull request #14 from CyanogenMod/cm-13.0
+fd6eb59 DcTracker: Fix CDMA NV mode data connection
+8b74377 DCTracker: HACK Fix eHRPD/LTE data connection.
+a8c5801 Add dummy SUB record in CDMA NV mode
+d8822ce Merge pull request #13 from CyanogenMod/cm-13.0
+c5f1a18 Revert "telephony: Also override nw mode on creation of phone objects."
+72253b3 Merge pull request #12 from CyanogenMod/cm-13.0
+
+   * hardware/libhardware/
+598fdcc hardware/libhw: Add display_defs.h to declare custom enums/flags
+
+   * hardware/qcom/audio-caf/msm8916/
+afc9cb7 Check if hardware_info has been updated or not.
+
+   * hardware/qcom/bt-caf/
+1aafa73 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/hardware/qcom/bt into cm-13.0
+
+   * hardware/qcom/display/
+05673d3 Revert "overlay: add tertiary display definition in overlay"
+
+   * hardware/qcom/display-caf/msm8960/
+f1b49f2 hwc: Fix compile errors after display-frameworks removal
+
+   * hardware/qcom/display-caf/msm8974/
+3b3f95d hwc: Fix compile errors after display-frameworks removal
+
+   * hardware/qcom/media-caf/msm8974/
+455f3d0 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/hardware/qcom/media into cm-13.0
+
+   * hardware/qcom/wlan-caf/
+f5a068e Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/hardware/qcom/wlan into cm-13.0
+
+   * hardware/ti/omap4/
+ed9b5b7 gralloc: disable GRALLOC_USAGE_CURSOR
+
+   * packages/apps/Bluetooth/
+b9398e5 Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
+
+   * packages/apps/Contacts/
+c90fc75 Remove unused strings
+209b45a Clean up multi picker activity.
+
+   * packages/apps/ContactsCommon/
+3ff9ac0 Revert "Move info_lookup's LookupHandlerThread into src/"
+72fb9f8 Revert "Refactor contact info lookup"
+6ecfe52 Move info_lookup's LookupHandlerThread into src/
+d262583 Add additional SIM constants
+51aabe6 Refactor contact info lookup
+
+   * packages/apps/Settings/
+f51a930 BlacklistSettings : Ensure contact picker mirrors edit state
+ec0105c Settings : Disable editing existing entries for blacklist
+86ad6f7 More CyanPop organizations
+
+   * packages/apps/SetupWizard/
+396144a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_apps_SetupWizard into CyanogenMod-cm-13.0
+f4f43c6 Revert "SetupWizard: declare setupwizard category in manifest"
+
+   * packages/apps/Snap/
+532497b CameraActivity: Handle NPE when film strip view is null
+a4a443b Snap: initial materialization
+88daff8 SnapdragonCamera: Add missing permissions
+4d7ad55 SnapdragonCamera: Preventing duplicated call of setEnable
+a675b2c SnapdragonCamera: Restart preview in a corner case
+4877242 SnapdragonCamera: Fix rtl photo menu touch issue
+72b58b9 Read camera state from HAL instead of local state variable.
+8ceb088 Update camera state immediately after start preview.
+090c538 Consider fractional value in zoom circle calculation.
+621b628 Enable extended face detection feature.
+84ca00c SnapdragonCamera: notify focus manager about surface change
+7d12db6 SnapdragonCamera: fix screen flash on resuming
+b0fa408 SnapdragonCamera: fix screen flash on resuming
+c134c1e SnapdragonCamera: Hide the preview cover when preview has started
+ba56fa8 PhotoUI: Calling layoutPreview on holdersize become valid
+04f6b22 SnapdragonCamera: Improvement in open camera latency
+9f076a3 SnapdragonCamera: Make camcorder switcher icon invisible.
+b21af4d SnapdragonCamera: Fix the icons disappeared when start recording failed
+ee44a03 Snap: fix typo in PhotoModule
+ad9651e Snap: 100 chars!
+331d17d Snap: restart preview when shutter-speed gets disabled
+34522c4 tests: fix class name
+fc08f9e SnapdragonCamera: Fix incorrect viewfinder ratio for 13.1MP shots
+
+   * packages/apps/Trebuchet/
+7eb7512 Trebuchet: Don't crash on widget clicks
+ba04b03 Trebuchet: Add Snap to hotseat
+
+   * packages/providers/ThemesProvider/
+cd48300 Guard to prevent inserting a record twice when a new theme is installed
+
+   * system/bt/
+80a7a7d Merge branch 'LA.BF.1.1.3_rb1.7' of git://codeaurora.org/platform/system/bt into cm-13.0
+
+   * vendor/cm/
+a1f7976 4.9
+e9e4728 APN: Add Smartfren IMS for Volte support RENDANG-525
+
+   * vendor/cmsdk/
+b533a4c CMSDK: Add notification toggle button to navbar (2/2)
+
+   * vendor/motorola/
+32429f2 Merge pull request #18 from TheMuppets/cm-13.0
+8ad87bc condor: Add back missing chromatix libs
+725f4e6 msm8610-common: condor: otus: Decommmonise camera blobs
+7170127 Merge pull request #221 from luk1337/cm-13.0
+8ae626f titan thea: Rename camera HAL to be wrappable
+
+====================
+     01-08-2016
+====================
+
+
+   * art/
+e5c6b04 Art: disable host clang by default
+
+   * device/motorola/msm8226-common/
+598fdc8 msm8226-common: Remove unneeded (and incorrect) overlay
+
+   * frameworks/base/
+e22234f SysUI: Use mContext to get colors
+84a7b5b SystemUI: Add missing close parenthesis
+7993e34 SystemUI: Expose Add Tiles DetailedView Title and Icon Color
+fa21d72 fix setting new encryption password
+ff3d462 FWB: Dotted circle battery (1/3)
+
+   * frameworks/native/
+fd95bb1 Revert "gui: only support tertiary display if QTI_BSP is defined"
+
+   * frameworks/opt/telephony/
+a2c4d49 telephony: Also override nw mode on creation of phone objects.
+
+   * hardware/libhardware/
+2a6aac5 Revert "libhardware: Only support tertiary display in QTI_BSP is defined"
+
+   * hardware/samsung_slsi/exynos5/
+3ac2ff8 Only log non-null invalid pointers
+
+   * hardware/ti/omap4/
+1cea79b camera: add Pixel{X,Y}Dimension and Orientation EXIF tags
+
+   * packages/apps/CarrierConfig/
+bc6e66f Add carrier config for Smartfren for IMS support RENDANG-525
+
+   * packages/apps/Settings/
+930e97d Option to Disable Brightness Icon In Brightness Slider [2/2]
+48ed746 [2/2] Settings: app notifications hide when locked
+264599d Settings: Dotted circle battery (2/3)
+972265e settings: Change default Animation scale value to 0.5
+
+   * packages/apps/SetupWizard/
+62f1457 SetupWizard: declare setupwizard category in manifest
+
+   * packages/apps/Snap/
+6d5c4d0 Snap: Fix NPE when switching flash modes
+3626f48 SnapdragonCamera: Add support for high-speed video recording
+06ac71f Snap: add fallback for invalid video qualities
+0456857 SnapdragonCamera: Query camcorder profiles before usage
+6bf48d3 Revert "SnapdragonCamera: Filter out unsupported video encoders in  app"
+9ef1c8a SnapdragonCamera: fix messy photo in Panorama mode
+707bdfd SnapdragonCamera: Correct AutoHDR callback data size check
+735ba51 SnapdragonCamera: Make direct shutter callbacks configurable
+986790e SnapdragonCamera: Enable the TNR option in camera mode
+b01b566 Snapdragon Camera: fix face blinking during caf scan
+879b1f0 SnapdragonCamera: Don't display metadata in paused state
+c606f39 Snapdragon Camera: Call shutter callbacks directly
+ec7c5c5 Camera: Avoid 'takePicture()' in preview ready state
+e351de6 Snapdragon Camera: Unlock AE&AWB before snapshot
+b07beb7 Snapdragon Camera: Check mosaic preview dimensions
+202b3c2 Snapdragon Camera: Unlock AE&AWB during longshot
+1e7abfa Snapdragon Camera: Avoid null pointer exception during shutter focus
+d75e7c3 Snapdragon Camera: Override flash mode to off during non-auto scene
+
+   * packages/apps/Trebuchet/
+4fa46ac Trebuchet: Ensure workspace is invisibile while in all apps view
+
+   * system/bt/
+8c41c59 bt: Enable Bluedroid debugging only on eng.
+
+   * vendor/cmsdk/
+ba1fc8a Cmsdk: Dotted circle battery (3/3)
+
+   * vendor/motorola/
+1eacf46 shamu: Nexus 6 (Mobile) binaries for Android 6.0.1 (MMB29S)
+
+====================
+     01-07-2016
+====================
+
+
+   * bionic/
+58af166 Disable Clang
+e1590fc Define char16_t and char32_t to make gcc 5.1 happy
+9fbdb6e Remove gnu99
+
+   * build/
+509f454 qcom: Select Sony display/media variants for Sony devices
+
+   * external/p7zip/
+5553c3f Revert "p7zip: Add lib7z as a dependency so it gets built"
+
+   * external/stagefright-plugins/
+7ba6a02 stagefright-plugins: Fix certain HEVC file cannot playback
+
+   * frameworks/av/
+b00a01c Merge pull request #16 from CyanogenMod/cm-13.0
+02645bf stagefright: Fix crash on mediaserver
+c20f758 audiopolicy: Handle legacy startOutput on output command thread too
+
+   * frameworks/base/
+f17b5f3 Build libc++ as static dependency
+c93a768 Assorted changes to fix syntax on previous commits
+fd112b9 add support for 4 digit mcc/mnc
+9ef3249 return from functions early that modify apk for compat purposes
+a43b2ee remove constraint on requirement of AndroidManifest.xml
+3874774 allow uppercase letters in resources
+3276daf add feature: forcedPackageId
+77f076d add miui rules (including godzillaui)
+7d0d9f1 base: qs brightness toggle rework
+d069bc0 QSBrighnessIcon: Make it show in notification panel
+f7d4bbd base: add auto brightness toggle to qs
+da0b40a Reset battery stats [1/2]
+52edd68 SysUI: Update external keyguard view when component changed
+f34d63e SysUI: Update dismiss callbacks for external keyguard view
+
+   * frameworks/native/
+ab0c994 Tune dex2oat
+dc526be Tuning compiler thread count for optimal application install times
+4ba277d Use 3gb dalvik heap and hwui
+
+   * hardware/qcom/audio-caf/msm8996/
+14bd231 Merge tag 'LA.HB.1.3.1-00510-8x96.0' into cm-13.0
+
+   * hardware/qcom/display-caf/msm8996/
+03e21e3 Merge tag 'LA.HB.1.3.1-00510-8x96.0' into cm-13.0
+
+   * hardware/qcom/fm/
+8c0da85 libfm_jni: Add support for internal antenna hardware
+
+   * hardware/qcom/media-caf/msm8996/
+1f33dcd Merge tag 'LA.HB.1.3.1-00510-8x96.0' into cm-13.0
+
+   * packages/apps/Dialer/
+5f8afa7 Dialer: stop asking for granted loc permission
+
+   * packages/apps/Settings/
+fed6155 Reset battery stats [2/2]
+4bba301 Integrate mobile network settings into SIM settings for MSIM.
+dae250b Remove a few MSIM tab hosts.
+6da8e2e Revert "Device info: Remove IMEI info from SIM status"
+55ccac0 Settings: remove voice wakeup link as necessary
+
+   * packages/apps/Snap/
+c571396 Snap: add support for mw_continuous-picture focus mode
+
+   * packages/apps/Trebuchet/
+d423a03 Trebuchet: Make sure overview arrows point up when collapsed
+aefd95e Trebuchet: Ensure sections list isn't null
+
+   * packages/services/Telecomm/
+f255cb0 Do not query for default sim when more than 1 calling account is available
+
+   * packages/services/Telephony/
+9ceee26 Merge pull request #3 from CyanogenMod/cm-13.0
+
+   * prebuilts/cmsdk/
+6ff8b3c cmsdk: Update for api level 4 snapshot release.
+
+   * system/extras/
+0677949 bootsignature: includes dt image size for signed boot image
+
+   * vendor/cm/
+5079708 cm: add lib7z to product packages
+e08602b APN: Fixup Vodafone IT and remove Noverca
+88a0e65 APN: Update TIM MVNOs
+
+   * vendor/cmsdk/
+c1b3313 Merge pull request #3 from CyanogenMod/cm-13.0
+b4b1321 cmsdk: Update api text.
+aee4b08 cmsdk: Add external views package for api stubs.
+3dffa87 cmsdk: Add unit test for PartnerInterface
+7622e3c ExtView: Fix name of dismissAndStartActivity
+ccf16f8 Keyguard: Broadcast when external keyguard changes
+dbb87e2 ExtView: Document the keyguard external view APIs
+7107e06 cmsdk: Update iconography.
+
+====================
      01-06-2016
 ====================
 
@@ -47,6 +539,12 @@ fb0b851 Merge tag 'android-6.0.1_r10' into HEAD
    * hardware/samsung_slsi/exynos5/
 908dd85 Merge tag 'android-m-preview-2'
 
+   * kernel/motorola/msm8226/
+9aecde9 ASoC: tpa6165a2: Implement headset multi-button detection
+
+   * packages/apps/Browser/
+b152ea3 Browser: Resurface incognito button
+
    * packages/apps/Settings/
 b7f2de0 Fix zen mode allowed event preference summary.
 89d5427 Remove ic_menu_add.png drawables
@@ -54,11 +552,24 @@ b7f2de0 Fix zen mode allowed event preference summary.
 3234089 Move more CAF strings and cleanup
 eedc073 regulatory: Make the image fill the whole parent
 
+   * packages/apps/Snap/
+c75c27d Snap: add support for shutter speed
+b729dc3 Get rid of Holo...
+070b23a add options to restart preview onPictureTaken
+2829362 add support for luminance-condition parameter
+cdf6b80 option to set manufacturer specific parameters on startup
+42b5564 make openLegacy an option
+c544747 add support for non-standard iso keys and values
+185bfd4 add support for lge-camera parameter
+4c98613 add additional ISO values
+c649770 init SDCard, fix nullptr
+8c6c521 SnapdragonCamera: Use StorageManager for SDCard
+
+   * packages/apps/Trebuchet/
+72f2ccb Trebuchet: Move allow rotation pref to overlay panel
+
    * packages/inputmethods/LatinIME/
 254b4b1 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * prebuilts/cmsdk/
-a480e4f Revert "Revert "prebuilts/cmsdk: Update publish makefiles.""
 
    * system/core/
 ba49824 Merge pull request #1 from CyanogenMod/cm-13.0
@@ -110,6 +621,13 @@ fde1590 py3: update check_boot_jars
    * device/motorola/msm8226-common/
 1136fa0 msm8226-common: Support MIDI function
 2a70fb3 Merge pull request #2 from CyanogenMod/cm-13.0
+
+   * device/qcom/common/
+9200c08 power-8960: Remove set_interactive handling
+
+   * external/toybox/
+3fac1bd Update generated files after toybox sync.
+5291717 Merge remote-tracking branch 'toybox/master' into HEAD
 
    * frameworks/base/
 0d3a4fe Fix janky layout
@@ -219,8 +737,14 @@ a459d3c AppOps: Add more operations in app ops settings.
 b1c2348 AppOps: Add 'Always ask' option under appOps setting.
 56e7390 Settings: Respect legacy quick pulldown row.
 
+   * packages/apps/Trebuchet/
+a20b046 Trebuchet Statistics:  - Add plumbing for sending events.  - Add aggregation service that runs on some interval  - Hook send events into respective UX interactions
+2be1306 Trebuchet: Fix page indicator bottom padding on setting change
+514f98d Ensure we don't go over the icon size limitation
+
    * packages/services/Telephony/
 be9dbfa Merge pull request #2 from CyanogenMod/cm-13.0
+623872c Allow MobileNetworkSettings to be invoked for selected SIM.
 868b09d Telephony: Fix NPE when any of the sim is disabled
 46f01a4 Merge pull request #1 from CyanogenMod/cm-13.0
 
@@ -257,6 +781,9 @@ d2d38cf msm8226-common: Update overlay
    * external/toybox/
 ac4365b toybox: fix mac build
 
+   * packages/apps/AudioFX/
+b9f160f AudioFX: Remove up navigation from action bar
+
    * packages/apps/Browser/
 852bcd1 Browser: runtime permissions
 
@@ -283,6 +810,9 @@ ac4365b toybox: fix mac build
    * packages/apps/Camera2/
 3b7e673 CameraSettingsActivity: Handle NPE when storage preference is already removed
 
+   * packages/apps/Snap/
+a575c65 SnapdragonCamera: Fix compilation
+
    * vendor/cmsdk/
 d1129cc cmsdk: Also hide internal package from docs.
 9734639 cmsdk: Fix quick pulldown settings, and unhide numerous system settings.
@@ -296,17 +826,15 @@ d1129cc cmsdk: Also hide internal package from docs.
    * development/
 5225472 gdbclient: fix adb output test
 
-   * external/lz4/
-7cb39f5 lz4: Enable building with Android
-a30ee1b Revert "lz4: Add Android.mk file to build as a host static library"
-
    * external/stagefright-plugins/
 f7c42ea stagefright-plugins: Increase max video buffer size + count
+
+   * external/toybox/
+7b746d2 First pass at iotop.
 
    * frameworks/av/
 c942849 Merge pull request #14 from CyanogenMod/cm-13.0
 38f51de BatteryNotifier: Add missing log LOG_TAG
-8374f4b Merge pull request #13 from CyanogenMod/cm-13.0
 
    * frameworks/base/
 3c28e40 statusbar: fix overlapping backgrounds when expanded
@@ -314,8 +842,6 @@ c942849 Merge pull request #14 from CyanogenMod/cm-13.0
 af5ec60 Themes: Expose "Set Wallpaper" text color in wallpaper picker
 ddb0c74 Revert "WallpaperCropper: use same action bar style as Launcher3"
 59738a9 Themes: Expose hard code for themes
-3e23997 Update default public notification view on notification update.
-b4ac276 Reduce log verbosity: Don't spam logcat
 
    * hardware/intel/img/hwcomposer/
 767cc4e Revert "Hwcomposer Moorefield: Return DummyDevice for TERTIARY display"
@@ -342,425 +868,3 @@ ce7f3bc settings: adds OVERRIDE_WIFI_CONFIG permission
 7871555 Fixed backuptool for 6.0.1
 5a92c16 sepolicy: Allow minivold execute_no_trans
 a8d6412 cm: sepolicy: fix denials for external storage
-
-====================
-     01-01-2016
-====================
-
-
-   * hardware/qcom/audio-caf/msm8960/
-b932690 libalsa-intf: Fix clang compiler errors
-3fb8900 alsa_sound: Fix clang compiler errors
-
-   * packages/apps/Camera2/
-553ccb7 Fix writing to external storage.
-16635f1 Add Storage preference (1/2)
-
-====================
-     12-31-2015
-====================
-
-
-   * device/motorola/msm8226-common/
-ca30def msm8226-common: Enable disableWifiApFirmwareReload
-
-   * external/stagefright-plugins/
-e13ea55 stagefright-plugins: Refactor packet queue locking
-
-   * frameworks/av/
-c39941d libmedia: correct latency computing for TRANSFER_SYNC
-
-   * frameworks/base/
-e9df52f Reboot/Recovery QS Tile
-7d73263 Add Music QS Tile
-
-   * kernel/motorola/msm8226/
-e9b441a f2fs: skip committing valid superblock
-a8be264 f2fs: setting discard option in parse_options()
-52d7459 f2fs: do not trim preallocated blocks when truncating after i_size
-1ca3755 f2fs crypto: add alloc_Kinzie_page
-385bb92 f2fs crypto: fix to handle errors likewise ext4
-8d1a1ac f2fs: fix to return exact trimmed size
-9700ee4 f2fs: support FALLOC_FL_INSERT_RANGE
-a956176 f2fs: hide common code in f2fs_replace_block
-920e8df f2fs: disable the discard option when device doesn't support
-7801d06 f2fs crypto: remove alloc_page for Kinzie_page
-9c1e411 f2fs: fix a deadlock for summary page lock vs. sentry_lock
-1a1c3c0 f2fs crypto: clean up error handling in f2fs_fname_setup_filename
-11edeb8 f2fs crypto: avoid f2fs_inherit_context for symlink
-8126a7c f2fs crypto: do not set encryption policy for non-directory by ioctl
-befa127 f2fs crypto: allow setting encryption policy once
-44c317c f2fs: avoid duplicated code by reusing f2fs_read_end_io
-be960a1 f2fs crypto: use per-inode tfm structure
-c28e4be f2fs: recovering broken superblock during mount
-0ad11ce f2fs: introduce update_meta_page
-ae2c18d f2fs crypto: zero next free dnode block
-dbc7797 f2fs crypto: split f2fs_crypto_init/exit with two parts
-5c6b66e f2fs crypto: fix incorrect release for crypto ctx
-135ca64 f2fs crypto: fix to release buffer for fname crypto
-c1112a1 f2fs crypto: shrink size of the f2fs_crypto_ctx structure
-5a7f551 f2fs crypto: get rid of ci_mode from struct f2fs_crypt_info
-b978fbe f2fs crypto: use slab caches
-0b4315f f2fs: truncate data blocks for orphan inode
-8d0e8f0 f2fs: cleanup a confusing indent
-7a7313a f2fs: fix building on 32-bit architectures
-be45844 f2fs: avoid buggy functions
-13eda9d f2fs: add compat_ioctl to provide backward compatability
-f248242 f2fs: do not issue next dnode discard redundantly
-dea4a18 f2fs: add default mount options to remount
-fed8d9d f2fs crypto: remove checking key context during lookup
-939fe65 f2fs crypto: fix missing key when reading a page
-4ed749c f2fs crypto: add symlink encryption
-f4d7e53 f2fs crypto: add filename encryption for roll-forward recovery
-9c57699 f2fs crypto: add filename encryption for f2fs_lookup
-1d26300 f2fs crypto: add filename encryption for f2fs_readdir
-cffa3f5 f2fs crypto: add filename encryption for f2fs_add_link
-4806bea f2fs crypto: add encryption support in read/write paths
-2fcf957 f2fs crypto: activate encryption support for fs APIs
-6318015 f2fs crypto: filename encryption facilities
-b8111fa f2fs crypto: add encryption key management facilities
-7db34dc f2fs crypto: add f2fs encryption facilities
-7ac5642 f2fs crypto: add encryption policy and password salt support
-d7b394f f2fs crypto: add encryption xattr support
-b6ad2c8 f2fs crypto: add f2fs encryption Kconfig
-2b592e4 f2fs crypto: declare some definitions for f2fs encryption feature
-c18ee2a f2fs: report unwritten area in f2fs_fiemap
-c88be2e f2fs: avoid value overflow in showing current status
-32c6a3b f2fs: support FALLOC_FL_ZERO_RANGE
-ac5dc10 f2fs: support FALLOC_FL_COLLAPSE_RANGE
-bd8ccb6 f2fs: introduce f2fs_replace_block() for reuse
-368577f f2fs: do not re-lookup nat cache with same nid
-020287a f2fs: remove unneeded f2fs_make_empty declaration
-e3a93c9 f2fs: issue discard with finally produced len and minlen
-67db7eb f2fs: introduce discard_map for f2fs_trim_fs
-13ccf1f f2fs: revmove spin_lock for write_orphan_inodes
-07d69d5 f2fs: split find_data_page according to specific purposes
-3be107e f2fs: fix counting the number of inline_data inodes
-4019508 f2fs: add need_dentry_mark
-186fccc f2fs: fix race on allocating and deallocating a dentry block
-70a5e45 f2fs: introduce dot and dotdot name check
-80f86dc f2fs: move get_page for gc victims
-8a77594 f2fs: add sbi and page pointer in f2fs_io_info
-54c2101 f2fs: add f2fs_may_inline_{data, dentry}
-6a6eead f2fs: clean up f2fs_lookup
-04c7bd0 f2fs: expose f2fs_mpage_readpages
-f9097e3 f2fs: introduce f2fs_commit_super
-d33af2ae f2fs: add f2fs_map_blocks
-2cd7005 f2fs: add feature facility in superblock
-2c309cb f2fs: move existing definitions into f2fs.h
-36503d2 f2fs: add missing version info in superblock
-be322d7 f2fs: make has_fsynced_inode static
-9f9f898 f2fs: add offset check routine before punch_hole() in f2fs_fallocate()
-f532a7d f2fs: use is_valid_blkaddr to verify blkaddr for readability
-4d2ec8d Revert "f2fs: enhance multi-threads performance"
-f2fa843 f2fs: drop the volatile_write flag only
-50b575f8 f2fs: pass checkpoint reason on roll-forward recovery
-4dbb69a f2fs: change 0 to false for bool type
-ff24eff arm/dt: 8974pro: Update Current Values
-47ec65c common: DMA-mapping: add DMA_ATTR_SKIP_CPU_SYNC attribute
-1dc73ed arm: Skip DMA zeroing completely only if specified
-186aba8 msm: ADSPRPC: Initialize hlist node pointers
-abbd54e mm: let kswapd test movable zone watermark with ALLOC_CMA
-a05d320 msm:cpp: Ignore hardware interrupt when timer expires
-99591c4 msm:isp: handle duplicate frameid.
-ab3ec1bb msm: camera: isp: protect driver from using invalid bufq
-12ebf90 msm:camera: validate user space parameter for max and min value
-c33b682 msm:camera:isp: vfe num input validation during reset
-5f9ec0e msm: camera: fix write sensor settings issue
-ef44195 msm: camera: check size of allocated buffer to prevent overflow
-173570f drivers: misc: defer some ioctls via work queue
-5cf9e39 msm: mdss: Unmap only when buffer was mapped
-bc29cf0 esdfs: set proper permisison for root inode
-0d6e282 drivers/misc: bmg160: Add a start up delay
-7bf9b56 radio-iris: Fix the issue with set calibration
-93adb1b USB: dwc3: ep0: Use WARN_ON_ONCE to fix message flooding issue
-9356a24 esdfs: check the hash table, even when unrestricted
-0bff093 Revert (CR) as this is not the correct approach
-ff77638 drivers/misc: bmg160: Remove filter init in probe
-3f1329c fs: esdfs: Remove the optimization to skip hash lookup.
-ebf3c97 esdfs: parse the Android user ID from the correct root
-b420457 video: fb_quickdraw: Add sysfs debug entries for AoD buffers
-3fd44a6 video: fb_quickdraw: Use kobject in fb_quickdraw buffer
-11cc83a video: fb_quickdraw: use read write semaphores for locking
-c973b86 msm: kgsl: Fix incorrect usage of pagetable entries counter
-e05f0c1 msm: kgsl: Add support for KGSL_CMDBATCH_MARKER
-03fc77e msm: kgsl: Remove a race condition in the event processing code
-f953630 msm: kgsl: Refactor the GPU event engine
-de27dd8 msm: kgsl: Allow memory lists along with command submission
-a97bcc8 msm: kgsl: Split out the context and command batch flags
-aca746a msm: kgsl: Support the KGSL_CONTEXT_CTX_SWITCH flag
-5a45ee6 msm: kgsl: Make global memory statistics atomic
-8739669 msm: kgsl: check for NULL pointer access
-b3690e1 msm: kgsl: Wake up snoozing threads on marker expiry
-e3a8b36 msm: kgsl: Elevate the priority of the thread during adreno start
-67cef8d msm: kgsl: Disable index reg dump during snapshot
-0bc106a msm: kgsl: Disable shader memory dump during snapshot
-57c4061 msm: kgsl: Ignore signals for ringbuffer timestamp waits
-8a10274 msm: kgsl: Continue if an IB couldn't be dumped in snapshot
-63d0b39 msm: kgsl: Fix race in active count wait
-7dc3f0b msm: kgsl: Restrict GPU memory object alignment to 32MB
-4d0ccfc msm: kgsl: Mark mmapped objects with VM_DONTCOPY
-ae5ccfe msm: kgsl: Add ratelimit check to limit excessive kernel logging
-ee1e6e0 msm: kgsl: Do not return invalid power stats when the device is off
-4162d75 msm: kgsl: Cleanup the memory free list
-23ea806 ion: Skip zeroing on secure buffers
-4e42554 arm: Add option to skip buffer zeroing
-0b5f41c msm: kgsl: Fix power api's used in fault interrupt sysfs control
-14cdf51 msm: mdss: refactor ping pong completion logic
-5a25559 msm: mdss: keep clocks on during kickoff operation
-64627fe diag: Make fixes to diag_switch_logging
-853e652 msm: wlan: Correct the wifi database for Indonesia
-0050e36 defconfig: b-family: Enable NETFILTER_XT_TARGET_NFLOG
-a19b97d ACPI / processor: prevent cpu from becoming online
-43df000 arm64: smp: Update the topology masks before calling CPU_STARTING notifiers
-1c73630 defconfig: 8974: Disable memcg related configs
-48cda3e defconfig: 8226: Disable memcg related configs
-1641ee7 power: qpnp-charger-mmi: Update chg_done state.
-f2da36e soc: qcom: smem: Zero out ramdump segment memory
-74a96c2 mmc: core: Fix mmc clk scale down during writes.
-914dfc5 mmc: core: update host->card after getting RCA for SD card
-86db237 USB: u_ether: Set complete handler before queueing to endpoint
-2db1d7c msm: thermal: Add RT priority to kernel hotplug thread
-4e39a5f msm: thermal: Add RT priority to kernel thermal threads
-8a25c7d Revert "nl80211: Fix backport of struct wiphy_vendor_command"
-930d7ee nl80211: Fix backport of struct wiphy_vendor_command
-77c0362 power: qpnp-charger: Avoid override USBIN_COMP in reverse boost for SMBBP
-2297229 qseecom: avoid buffer over-write when copying app_name
-1ecf754 cpufreq: cpu-boost: Resolve deadlock when waking up sync thread
-8946ce9 cpufreq: ondemand: Resolve deadlock when waking up dbs sync thread
-09dab2f power: qpnp-charger: Avoid override USBIN_COMP in reverse boost for SMBBP
-2f2a3e3 qseecom: add mutex protection for unloading app in qseecom_release
-04d89f75 qseecom: Change pr_info messages to pr_debug
-6ee9ed7     kernel: Restrict permissions of /proc/iomem.
-88b2053 wcnss: Add API to get monotonic boot time
-5ea0443 cfg80211: unify station WME parsing
-f981f70 netlink: add signed types
-f9ab43b cfg80211: pass station supported channel and oper class info.
-63cd5c2 USB: dwc3: msm: Don't disable/enable clocks if in lpm during block reset
-8348e99 usb: dwc3: Improve erratic errors events handling
-0de0c0f arm/dts: msm8974: Set ROI restrictions for partial update
-756ec8a msm: mdss: Consider FLIP flags while optimizing pixel fetch
-59f7095 msm: mdss: Share minimum width and height limitations on panel ROI
-15523b6 msm: mdss: dsi: Share panel alignment restrictions through sysfs node
-314987f mmc: increase hold-off time during SD "paranoid" reset
-c4b3247 Set the Titan Gyro filter bandwidth
-673992d replacing warning msg with pr_warn_ratelimited
-8cc3c79 esdfs: add support for multiple storage views
-e94e6d2 esdfs: remove split permission support
-52f029c arm/dts: 8974pro: Update current values for 8974 pro
-87c82be boot:dtsi: Add the active current values in uA for the cpus in device tree.
-ab455da cpufreq: Avoid using global variable total_cpus
-47bf3c1 defconfig: b-family: Enable UID_CPUTIME
-2f5d61c lowmemorykiller: maintain LMK rbtree with signal->adj_node
-9fb6ee8 fs: avoid adding non-thread-group task to LMK rbtree
-8bfb2dd kernel: avoid adding non-thread-group task to LMK rbtree
-c25c9ab usb: gadget: Align Midi Buffer size for DWC3
-ac05856 usb: core: Avoid spammy warning due to misbehaving Apps
-ef4bb87 arm/dt: 8610: otus: delete vddio_disp and lcd_vci vreg node
-0632267 arm/dt: 8610: otus: Wrong supply used by display.
-628b061 defconfig: msm8974: disable QC NFC driver
-696ce4a Report IPv6 NA packets processing to partial resume handler
-b81081b net/compat.c,linux/filter.h: share compat_sock_fprog
-9353e3d sk_run_filter: add BPF_S_ANC_SECCOMP_LD_W
-bd903f6 USB: gadget: android: otus doesn't have midi support.
-f6e42f8 USB: gadget: f_mtp: Fix integer overflow when transferring large files.
-887fee2 USB: gadget: mtp: Fix hang in ioctl(MTP_RECEIVE_FILE) for WritePartialObject
-757577d usb: dwc3: gadget: Protect against ep disabling during completion
-8ad63cb USB: gadget: android: Integrate f_midi USB MIDI gadget driver
-81504e3 USB: gadget: midi: Fix deadlock unbinding driver while it is in use
-29b8d61 posix_types.h: Cleanup stale __NFDBITS and related definitions
-3e33db9 pstore: selinux: add security in-core xattr support for pstore and debugfs
-18630ad Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs
-2324a81 kernel panic in vos_start()
-b5ac705 power: qpnp-charger-mmi: 35% Demo Mode
-7314ddf Revert "ARM: mm: don't limit default CMA region only to low memory"
-f27270a Revert "(CR) ARM: DMA-mapping: clear cached kmap mappings"
-c868487 drivers/misc: stml0xx: Fix reset durign hub flashing
-6b53f31 arm/dt: 8610: otus camera clean up
-c4e6300 arm/dt: 8610: otus: wrong supply used by touch
-18c7dad drivers/misc: stml0xx: Port folio state notification code
-58742f4 arm/mach-msm: board-8610: remove touch control gpios from gpiomux
-e40c808 arm/dt: 8610: fix pinmux for touch reset gpio
-1ff72eb drivers: stml0xx: Allow the AP to control the ALS rate
-48a6afb msm: mdss: Increase commit count for first kickoff
-3870910 ASoC: msm: qdsp6v2: SLIM_RX and I2S_RX is internal echo reference
-61da699 ASoC: Correct the mixer control name
-f977640 ASoC: external EC reference
-983109c mmc: fix MDT wrap around for eMMC v4.41 and later
-c9fdd4d mmc: give up on SD cards that can't be initialized
-0b3e5fe stml0xx: improve sensorhub reset mechanism
-958e523 drivers/misc: stml0xx: Lux calculation devtree settings
-eede4d6 stml0xx: create and use UAPI header
-b7e0aea drivers/misc/stml0xx: New Sensor Hub reset design
-4127b60 arm/dts: otus: New Sensor Hub reset design
-2bd5565 arm/dts: otus: Add lux calculation settings to devtree
-5881f38 ARM: DMA-mapping: clear cached kmap mappings
-0f0a171 ARM: mm: don't limit default CMA region only to low memory
-d28326e drivers:misc:stml0xx: Support DSP interface setting
-cf8fc8f msm: vidc: Skip processing of release buffer event
-dbe4562 ion: cma_heap: free mem if fail to create sg_table
-088e2ff misc: stm401: Fix conversion macros.
-7c3e912 arm/dt: msm8610: Change the button thresholds
-7f5a330 lowmemorykiller: Check tgid with rcu lock held
-137fa12 arm/dts: moto-common: Fix out of bounds ibatsafe
-8298b70 drivers/misc: stml0xx: Handle prox saturation
-ea03ddf arm/dt: otus: Handle prox saturation
-
-   * packages/apps/Settings/
-65bf530 Welcome Google Nexus 5
-
-   * vendor/cmsdk/
-919f8bf Remove QS Battery Saver Tile for now
-ce42f54 Add QS Tiles
-
-   * vendor/motorola/
-6ab5421 victara: update blobs from M
-0db4562 Merge pull request #15 from TheMuppets/cm-13.0
-ae94b82 Merge pull request #216 from razrqcom-dev-team/cm-13.0
-
-====================
-     12-30-2015
-====================
-
-
-   * external/stagefright-plugins/
-30ab9dc stagefright-plugins: Fix shutdown deadlock
-644d57a stagefright-plugins: Fix crash during testDecodeWithEOSOnLastBuffer
-61710f5 stagefright-plugins: Wait for reader shutdown on EOS
-
-   * frameworks/av/
-9fbfe96 Merge pull request #12 from CyanogenMod/cm-13.0
-
-   * frameworks/base/
-1a873e0 Themes: Expose hard code color for divider sim pin
-5c6e0ce Themes: Expose Hard coded colors in Quick Settings Tiles
-
-   * packages/apps/CellBroadcastReceiver/
-dd6bee9 Themes: Expose hardcoded styles and colors for themes
-
-   * packages/apps/InCallUI/
-0f49f42 InCallUI: Add a controller for in-call proximity sensor (2/3)
-691439f InCallUI: Add a controller for proximity sensor
-
-   * packages/apps/Settings/
-a79ff19 Updated CyanPop Logo
-9cebedc Fingerprint: Forward challenge extras
-c02a849 Remove useless crap
-617123c Settings: Expose backgroundTint from Single Button Panel
-1ecf80c Settings: Expose Fingerprint Enrollment Checkmark Tint to an XML
-edc2cbe Add a 45 second timeout option for Screen, Dream and Lock timeouts. Ported from AICP 5.1
-6cd5e9c Profiles: option to disable lock screen device policy override (2/2)
-b0428bd Settings: less notifications sound (2/2)
-39b3299 Disable Immersive Messages [2/2]
-dd040f1 Force Expanded Notifications (2/2)
-839bb3d Add statusbar notification category in Statusbar settings
-4b2a92c Add QS category inside Statusbar settings
-
-   * packages/services/Telephony/
-5cb6497 TeleService: Add a controller for in-call proximity sensor (3/3)
-
-   * vendor/cm/
-058d5b1 4.7
-df1dcd3 sepolicy: label exfat and ntfs mkfs executables
-
-====================
-     12-29-2015
-====================
-
-
-   * development/
-87171a8 gdbclient: fallback to $OUT if available
-
-   * external/stagefright-plugins/
-09f677f stagefright-plugins: Only do as much sniffing as necessary
-e7ea399 stagefright-plugins: Increase confidence on HEVC mp2p files
-c0742cd stagefright-plugins: Fix audio trimmed when reaching eos
-28d6141 stagefright-plugins: Fix crash
-
-   * external/toybox/
-0f882f6 Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
-
-   * frameworks/av/
-8ca3dfd nuplayer: Enable PCM offload for any source
-99d016b Merge pull request #11 from CyanogenMod/cm-13.0
-b19f360 stagefright: Those who cannot remember history are doomed to repeat it
-
-   * frameworks/base/
-a04aac5 Base: Add a controller for in-call proximity sensor (1/3)
-3370582 Profiles: option to disable lock screen device policy override (1/2)
-ac64b3e QS: use CM's profiles vector from settings
-bf6f547 SystemUI: Update WiFi indicator drawable sizes
-9793b9a QS: add Expanded desktop tile
-fc2cb17 Quick Settings: add some more tiles
-41eba93 SystemUI: dont roll but add :)
-ec3ff44 fb: less notifications sound (1/2)
-99e3b07 Disable Immersive Messages [1/2]
-eb930cf Force Expanded Notifications [1/2]
-acbbdd0 FWB: Battery saver and low battery notification toggles [1/2]
-f9ee60c Remove demo mode, is useless.......
-1b67627 Fix Activity.onConfigurationChanged may not be called.
-b404dec Make sure NaturalSurfaceLayout is consistent with SurfaceControl
-a6b7e11 Reduce the delay during headset removal
-
-   * hardware/qcom/display-caf/msm8994/
-a0dd49b gralloc: cflag to use nv21 format for camera write
-
-   * kernel/motorola/msm8226/
-9c37873 ASoC: tpa6165a2: Lower the headphones amplifier gain
-
-   * packages/apps/Settings/
-52fc5ea Settings: Battery saver & low battery notification toggles [2/2]
-bf3eaf8 settings: Animation scale seekbars
-e8a675d Profiles: Cleanup the code
-26cad4d Settings: improve empty Profile trigger icons
-a5a1195 Settings: make empty profile views fit on hdpi
-c0c7963 Improve profile setting layouts.
-6b5eb4c profiles: Make the actions wizard buttons show up
-ca3c49b Profiles: remove unused code
-2def95b Settings: always allow profile app groups to be linked/unlinked
-0ca693f Settings : Save instance state for app group deletes
-6f13dda Settings: fix empty Wifi triggers screen
-d5a0411 Settings: make empty profile trigger screens more useful
-29314e7 Settings: merge ProfilesList into ProfilesSettings
-8039f96 UP Translation
-
-====================
-     12-28-2015
-====================
-
-
-   * bootable/recovery/
-46e4090 imgdiff: skip spurious gzip headers in image files
-
-   * device/motorola/msm8226-common/
-f2d2cc8 msm8226-common: PowerHAL: Add powersave bias profile
-f0cd753 msm8226-common: Unlock the GPS
-bf77af5 msm8226-common: Update system.prop
-1f1c056 msm8226-common: Build the kernel with gcc-4.9
-
-   * frameworks/av/
-c5d2ae9 Merge pull request #10 from CyanogenMod/cm-13.0
-020adf2 nuplayer: Pass along the sniffed metadata from GenericSource
-4adc183 stagefright: Remove special handling of FFMPEG extractor
-1bb6c3e stagefright: Add more hardware codec support for our extractor
-
-   * kernel/motorola/msm8226/
-574b3e0 cpufreq: Correct the data reported in all_time_in_state
-9a22144 Revert "cpufreq: stats: Initialize all_freq_table earlier"
-54ed048 usb: gadget: Remove USB_ANDROID_USBNET default choice
-923f5c3 ARM: be strict about FP exceptions in kernel mode
-48f2c82 ARM: pull in <asm/simd.h> from asm-generic
-d8dbb90 crypto: create generic version of ablk_helper
-28d162b ARM: Make NEON support independent from procfs
-5d70140 sysrq: Emergency Remount R/O in reverse order
-3002539 msm8226: defconfig: Update configs based on Google recommendations
-c6640b6 neigh: Better handling of transition to NUD_PROBE state
-25378ac net: ipv4: tcp: Get tcpi_count via file_count() not direct access
-b6bec01 Set the iif for IPv6 packets as well.
-d283d01 net: ping: Return EAFNOSUPPORT when appropriate.
-813bb24 net: ipv6: allow choosing optimistic addresses with use_optimistic
-55f1fa8 net: ipv6: Add a sysctl to make optimistic addresses useful candidates
-
-   * packages/apps/Settings/
-c0a719c Sudo Fix build
-272b06f Profiles: Fix override item summary not displaying none
