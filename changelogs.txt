@@ -1,4 +1,549 @@
 ====================
+     01-16-2016
+====================
+
+
+   * external/uicommon/
+b0a0872 Revert "Add a simple SnackBar that doesn't rely on AppCompat"
+
+   * frameworks/base/
+3429950 Keyguard: Clarify error message on bad input length.
+
+   * frameworks/opt/telephony/
+e637e2e Merge pull request #16 from CyanogenMod/cm-13.0
+
+   * hardware/qcom/media-caf/msm8994/
+79e831d Fix flooding of message in calcLumaAlign
+
+   * packages/apps/ContactsCommon/
+b88149f Add required permission to read vcf from gmail
+
+   * packages/apps/LockClock/
+ff1cf25 LockClock : Update to v23 + runtime permissions
+
+   * packages/apps/Settings/
+e41e25c Fix build
+
+   * packages/apps/Snap/
+44cfc31 Don't needlessly make menu button larger than the other toggle buttons.
+3b96d32 Snap: Set some qcom features as untranslatable
+d8420e3 Drop new focus indicator into Camera2.
+db27186 Snap: Actually select the highest quality video by default
+
+   * packages/apps/Trebuchet/
+ab66f21 Trebuchet: Fix NPE when app search controller is off
+
+   * system/vold/
+78f24b1 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
+
+   * vendor/cm/
+a111add Fixed Maven Artifactory to work with jack
+
+   * vendor/cmsdk/
+350dac5 Merge pull request #6 from CyanogenMod/cm-13.0
+cf3f38c cmsdk: Add CYANOGENMOD_VERSION constant.
+969cda0 cmsdk/tests: Temp hack to fix `mka` builds.
+
+====================
+     01-15-2016
+====================
+
+
+   * art/
+543354f art: Use Optimized compiler by default
+fbfbc7d Revert "Art: disable host clang by default"
+f2ea789 art: force optimizing compiler and optimize everything
+
+   * bionic/
+ab6f206 Revert "Disable Clang"
+872bf05 Fix <sys/sysmacros.h>.
+09dd0d1 Re-export libgcc's __aeabi_fcmplt
+426bf72 linker: convert 'mov pc' instruction to 'bx'
+
+   * build/
+cacfebc Squash commit changes by arter97
+4bb3cee Build: Use 0 compression ratio for jar files
+
+   * device/motorola/msm8226-common/
+6b9d1ca Merge pull request #9 from CyanogenMod/cm-13.0
+8594abf msm8226-common: camera: Enable HFR video recording
+
+   * device/motorola/thea/
+61815c6 thea: Exclude unsupported HFR modes
+
+   * external/uicommon/
+fcf1798 Add a simple SnackBar that doesn't rely on AppCompat
+b87d655 Add GalleryNext fixes to SlideUpPanelLayout
+
+   * external/wpa_supplicant_8/
+a5bd438 Add -Os
+
+   * frameworks/av/
+4f83c6e Add -Os
+
+   * frameworks/base/
+b03731f SysUI: Clean up objects when recreating statusbar
+a736887 SettingsProvider: Force aosp upgrade path from 12.1.
+9918ec1 SysUI: Use Objects.equals() for comparing components
+1d57eea SysUI: Fix notification panel alignment after theme change
+48135cb policy: disable EdgeGestureService
+732e40c allow GET_ACCOUNTS_PRIVELEGED to be whitelisted
+9964850 AdbOverNetworkTile: only de/reregister the observer when setListening changes whether we should be listening
+97c342e SysUI: Reuse controllers and managers
+659001d SystemUI: Update recents memorybar on recents clear all
+127d656 Include color picker, (1/2)
+871389a Notification drawer: Custom clear all icon color, (1/2):
+b881384 Fw_base - Proximity speaker [1/3]
+8212c50 Notifications: Custom colors, (1/2):
+c533b02 Make G notification font colors more compatible with dark and light themes
+94f929b Disable Quick Settings on secure lockscreen (1/2)
+
+   * frameworks/opt/telephony/
+6d6213a telephony: Fix persistence of automatic network selection
+
+   * hardware/qcom/audio-caf/msm8916/
+1c5250f audio HAL: fix thread starvation
+793548e audiopolicy: use deep buffer output by default for music streams
+
+   * packages/apps/Bluetooth/
+c2eaa8b Add -Os
+
+   * packages/apps/ContactsCommon/
+f1501f5 Ensure non-null encoded uri before attempting to parse
+
+   * packages/apps/InCallUI/
+6df6fc7 InCallUI: clean up prox speaker code and improve usability
+96d66a7 InCallUI: Proximity speaker
+0b9b9c3 InCallUI: let InCallUI handle proximity sensor for incoming calls
+
+   * packages/apps/Settings/
+bd43fcb Color picker: Enable alpha slider as default
+6adb7b4 Include color picker, (2/2):
+eb3e486 Revert "Add marginov color picker"
+11a3f4a Revert "Settings: show warning in lock screen settings when disabled by qs"
+23cb681 Support multiple SAR values, separate args list with ','
+c928438 Notifications: Custom colors, (2/2):
+4963997 Disable Quick Settings on secure lockscreen (2/2)
+
+   * packages/apps/Snap/
+2233950 CameraActivity: Don't hide navigation bar
+607a2f0 SnapdragonCamera: limit video file size on SD card
+f0e709d SnapdragonCamera: Hide all camera setting when countdown timer starts
+24081ba SnapdragonCamera: Set color effect as none when turn HDR on
+645970f SnapdragonCamera: Fixing NullPointerException in onCreate of VideoModule
+8a0414d SnapdragonCamera: fix thumbnail display
+ff10b54 SnapdragonCamera: fix crash taking Macro+ from MMS
+8eeafc1 SnapdragonCamera: fix NumberFormatException when input value invalide
+cd14209 Snap: Remove touch AF/AEC option
+4b6ac95 Snap: Support 1:1 aspect ratio
+
+   * packages/providers/ThemesProvider/
+59bff5c No default lock wallpaper and live lock screen for system theme
+
+   * packages/services/Telephony/
+c1bb31f Telephony: Proximity speaker
+
+   * packages/wallpapers/PhotoPhase/
+6a4f804 PhotoPhase: ask for runtime permissions
+
+   * system/bt/
+fef47a1 Add -Os
+
+   * system/core/
+8d23bae libnetutils: Check socket() return value
+
+   * system/vold/
+6ab045a vold: hw_fde: Fix merge damage
+
+   * vendor/motorola/
+0efdb6e Merge pull request #21 from TheMuppets/cm-13.0
+3b759ba Merge pull request #225 from Moto8610/cm-13.0
+
+====================
+     01-14-2016
+====================
+
+
+   * device/motorola/msm8226-common/
+67576b1 Merge pull request #8 from CyanogenMod/cm-13.0
+
+   * external/libpng/
+3cfe9d8 Merge pull request #2 from CyanogenMod/cm-13.0
+75a4e74 libpng: fix hang during read when inflate fails
+
+   * frameworks/av/
+deaea6f Merge pull request #19 from CyanogenMod/cm-13.0
+
+   * frameworks/base/
+419d982 Have Battery bar controller obey Hide value
+6a47076 Fix WallpaperCropper crash when setting wallpaper over 8MB
+f09b7e8 Update Lockscreen clock font option [1/2]
+798d0a7 FWB: Make all 18 font variants available to Statusbar weather temp (1/2)
+9133a6d FWB: Make all 18 font variants available to Statusbar Clock (1/2)
+4270d25 SystemUI: write keyguard enabled setting to CMSettings
+3ba17ed SystemUI: Make lockscreen visualizer battery friendly
+56a811e SystemUI: Fix CallbackHandler and NetworkControllerBase tests.
+c0520ba SysUI: Disable window animation when using KeyguardExternalView
+9dc8218 SysUI: Handle KgdExtView callbacks on UI thread
+a29de0c SystemUI: Removing padding on mobile signal group.
+221fd84 Ringtone: Add support for selection of phone ringtone for SIM-2.
+aa9a465 SettingsProvider: Disable data roaming by default
+868095e SystemUi: Reintroduce always_show_roaming config.
+
+   * hardware/intel/common/libmix/
+347c889 intel: videoencoder: Kill logspam when casting a screen
+
+   * hardware/intel/common/libva/
+92286f2 intel: av: Remove attrib_ptr for zenfone2 blobs
+02ad2b8 intel: av: Update slice header group def to support zenfone2 blobs
+
+   * hardware/intel/common/libwsbm/
+b2fc92b intel: libwsbm: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/intel/common/omx-components/
+43ccd58 intel: omx: Unbreak SetConfigVideoBitrate
+1338ce0 intel: omx: Zenfone2 blobs cannot handle metadata mode
+eef0672 intel: omx: LP blob compatibility
+
+   * hardware/intel/img/hwcomposer/
+a1ae079 Merge "HWC: adapt VirtualDevice for old blob compliance" into cm-13.0
+fed56bf Merge "Hwcomposer: Enable VirtualDisplay feature" into cm-13.0
+
+   * hardware/intel/img/psb_headers/
+21817aa intel: mixvbp: LP blob compatibility
+
+   * hardware/qcom/audio-caf/msm8916/
+86d47ef hal: Support the msm8939-florida-snd-card.
+
+   * hardware/ti/omap4/
+9ce3921 add CMHW for ColorCalibration/LiveDisplay
+
+   * packages/apps/CMFileManager/
+26fd0d7 Bump target SDK version to 23
+
+   * packages/apps/CarrierConfig/
+7b25cb4 Set voicemail's notification persistent for O2 UK
+
+   * packages/apps/Settings/
+cef6444 Update Lockscreen clock font option [2/2]
+9ceceb2 Settings: Make all 18 font variants available to Statusbar weather temp (2/2)
+70f24dc Settings: Make all 18 font variants available to Statusbar Clock (2/2)
+7fc0ef9 Settings: show warning in lock screen settings when disabled by qs
+d795f5b Settings: Set regulatory information dialog to non-translatable.
+9bbfb1c Settings: Show ringtone per sim for multi sim device
+916ee16 Squash commit of SAR and IC Code.
+
+   * packages/apps/SetupWizard/
+0e5411c Merge pull request #5 from CyanogenMod/cm-13.0
+
+   * packages/apps/Snap/
+0ad4095 Snap: Support for HTC's HDR mode
+
+   * packages/apps/Trebuchet/
+fb312de Trebuchet: Remove app search controller if turned off
+5b04456 Trebuchet: Fix some monkey test race condition bugs
+
+   * packages/apps/UnifiedEmail/
+032f3a2 Remove mail signatures from notification text.
+
+   * system/vold/
+ba3b7bd cryptfs: Set HW FDE flags when building libvold
+
+   * vendor/cm/
+d1d78ef 5.1
+717dd7f APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs
+bc8603a fix cricket APN
+
+   * vendor/cmsdk/
+4a7e634 Merge pull request #5 from CyanogenMod/cm-13.0
+b9f80b6 cmsdk: Load notification led customization defaults
+bf9cc6d cmsdk: add lockscreen internal enabled setting
+
+   * vendor/motorola/
+e72f4d2 Merge pull request #20 from TheMuppets/cm-13.0
+
+====================
+     01-13-2016
+====================
+
+
+   * build/
+44ba0a8 Make sure to include WebViewGoogle if present
+
+   * device/motorola/msm8226-common/
+d96e6bd msm8226-common: Force NV12 and NV21 pixel alignment
+907aa62 msm8226-common: camera: Add ISO support (falcon/peregrine)
+cd0783f msm8226-common: camera: Enable additional scene modes
+
+   * frameworks/av/
+8ad6568 av: Add support for loading audio_effects_vendor.conf
+
+   * frameworks/base/
+9b4abc9 ThemeService: ManagedProvisioning is a setup package too.
+
+   * frameworks/support/
+6f0a2cb Make sure that AppBarLayout is laid out correctly
+2ae0ed1 AppBarLayout layout/measure fixes
+
+   * hardware/intel/common/libmix/
+fea1c72 intel: videodecoder: Remove attrib_ptr for zenfone2 blobs
+eaa09ab intel: videodecoder: mpeg4: Remove got_vol/got_vop for zenfone2
+543245f intel: videodecoder: AVC: Remove "constraint_set5_flag" for zenfone2
+e01cfdd intel: libmix: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/intel/img/hwcomposer/
+8b7b71a intel: hwcomposer: csc mode is only supported on newer blobs
+a2bc976 intel: hwcomposer: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/intel/img/psb_video/
+a1c9ae0 intel: psb_video: LP blob compatibility
+28f732b intel: psb_video: Use ASUS_ZENFONE2_LP_BLOBS instead
+
+   * hardware/qcom/display-caf/msm8974/
+8c9082a gralloc: allow forcing old pixel alignment
+
+   * packages/apps/Contacts/
+a08be42 Add contact blocking and unblocking
+
+   * packages/apps/ContactsCommon/
+cf86693 Add block contact dialog and supporting helper classes
+bbf7e82 Refactor contact info lookup
+
+   * packages/apps/Email/
+34fb128 email: junk icon
+c929853 email: return default folder name for subfolders
+
+   * packages/apps/Messaging/
+7fc9cfe Adhere to the revised lookup provider api
+
+   * packages/apps/SetupWizard/
+f5ec6ac SetupWizard: Upgrade sdk to 23
+1141611 SetupWizard: Don't disable packages on main thread
+
+   * packages/apps/Snap/
+7f73524 Snap: support more resolutions
+
+   * packages/apps/Trebuchet/
+4eaa0a5 Trebuchet: Fix resource not found exception when picking a wallpaper
+
+   * packages/apps/UnifiedEmail/
+7a5f09b unifiedemail: junk icon
+b50cac5 email: allow move/copy operations to more system folders
+
+   * packages/providers/TelephonyProvider/
+37604de TelephonyProvider: Handle database migration from cm-11.0.
+
+   * packages/providers/ThemesProvider/
+3b82b9c Queries live lock screen preview path
+
+   * system/media/
+c969dad effects: Add AUDIO_EFFECT_VENDOR_CONFIG_FILE2
+
+   * vendor/cm/
+a373e6c sepolicy: Add perfprofd with set_prop macro
+
+   * vendor/motorola/
+b469596 Merge pull request #224 from crpalmer/remove-liboemcrypto
+31dbbf4 victara: Remove liboemcrypto.so as a blob
+115596e Revert "msm8610-common: switch to hammerhead MRA58K adreno blobs"
+7b83a03 msm8610-common: remove extraneous libmot_sensorlistener
+
+====================
+     01-12-2016
+====================
+
+
+   * art/
+0299788 art: Disable ART_HOST_CLANG on darwin builds.
+
+   * build/
+92484ed qcom: Add dataservices to    * pathmap
+492d2c9 qcom: Fix non-QC target pathmappings
+
+   * device/motorola/msm8226-common/
+097075e msm8226-common: camera: Enable face detection
+d226427 msm8226-common: Add a bunch of extra camera parameters
+
+   * device/qcom/common/
+542ac97 power: Add support for 8952
+
+   * frameworks/av/
+5ae5010 Merge pull request #18 from CyanogenMod/cm-13.0
+ddf0593 libstagefright: Support YVU420SemiPlanar camera format
+
+   * frameworks/base/
+c35574d MetricsConstants: Restore DONT_TRACK label for custom tiles
+d98d8e2 SystemUi: Nuke DONT_TRACK label, and introduce CMMetricsLogger constants.
+95df29e Make WIFI_IDLE_MS default into an overlay
+b520074 Automatic translation import
+a2728a0 Fix drawing of VectorDrawables that are rotated by 90 or 270 degrees.
+3ce8b1e Increase brightness faster if ambient light is brightening quickly.
+548acdc Optimize GPS property reloading.
+24c13fc Align checkbox and description in permission confirmation dialog
+
+   * frameworks/opt/net/wifi/
+53cbe97 Use def_wifi_idle_ms to fetch WIFI_IDLE_MS defaults
+
+   * hardware/qcom/audio-caf/msm8994/
+998901b Merge tag 'LA.BF64.1.2.2-02240-8x94.0' into cm-13.0-caf-8994
+
+   * hardware/qcom/display-caf/apq8084/
+fc41c61 hwc: Fix compile errors after display-frameworks removal
+
+   * hardware/qcom/display-caf/msm8994/
+1dbc343 Merge tag 'LA.BF64.1.2.2-02240-8x94.0' into cm-13.0-caf-8994
+
+   * packages/apps/AudioFX/
+49c1954 Automatic translation import
+
+   * packages/apps/Bluetooth/
+4885bdd Automatic translation import
+
+   * packages/apps/BluetoothExt/
+9061adc Automatic translation import
+
+   * packages/apps/Browser/
+8551e4f Merge pull request #6 from CyanogenMod/cm-13.0
+f99d466 Automatic translation import
+
+   * packages/apps/CMBugReport/
+5a019fc Automatic translation import
+
+   * packages/apps/CMFileManager/
+9efd883 Automatic translation import
+
+   * packages/apps/Calendar/
+2c28b43 Automatic translation import
+
+   * packages/apps/Camera2/
+ebd0718 Automatic translation import
+
+   * packages/apps/Contacts/
+019f467 Automatic translation import
+64a9c32 Fix "Copy to .. " overflow menu item title
+
+   * packages/apps/ContactsCommon/
+b5b16f7 Automatic translation import
+
+   * packages/apps/DeskClock/
+e6065f8 Automatic translation import
+
+   * packages/apps/Dialer/
+5a46f31 Automatic translation import
+
+   * packages/apps/Eleven/
+329816e Automatic translation import
+
+   * packages/apps/Email/
+fab6ba7 Automatic translation import
+
+   * packages/apps/Gallery2/
+29e8669 Automatic translation import
+
+   * packages/apps/InCallUI/
+12316b7 Merge pull request #2 from CyanogenMod/cm-13.0
+7107206 Automatic translation import
+
+   * packages/apps/LockClock/
+a461a5c Automatic translation import
+
+   * packages/apps/PhoneCommon/
+47f9c4b Automatic translation import
+
+   * packages/apps/Profiles/
+a53da5a Automatic translation import
+
+   * packages/apps/Screencast/
+eaf1ce6 Automatic translation import
+
+   * packages/apps/Settings/
+fad878d Settings: Add CMMetricsLogger constants to proper pages.
+6d8979a Automatic translation import
+9dce823 Lower minimum vertical range for data usage.
+5ffcf2f Update vertical axis bounds when resetting network policy.
+27e9e1f Revert "Hide usage graph on app usage details pages."
+06e4ddc Some text are missing in eject sdcard warning
+a11908e Settings: Set default value for 'Volume keys control ringer stream'
+232b5df Settings: request runtime permissions inside VoiceWakeup
+6556f8c Settings: increase default regulatory info drawable dimensions
+f8a8499 Settings: EL AOSP translation fixes
+
+   * packages/apps/SetupWizard/
+59e2898 Merge pull request #4 from CyanogenMod/cm-13.0
+3e68503 Automatic translation import
+
+   * packages/apps/Snap/
+8461f25 Snap: remove captureUI pngdrawables
+358ebe9 Snap: Add more resolutions
+66b3a0c Snap: More strings cleanup
+f6a57b1 Snap: special handling of hdr-mode parameter for lge devices
+2d5e458 Fix mismerge of "SnapdragonCamera: fix screen flash on resuming"
+8f10ee0 Don't do touch-to-focus for touches outside of the preview.
+6f16347 SnapdragonCamera: Hide camera controllers when review captured image
+a1b0f7a Move mApplicationContext to init()
+
+   * packages/apps/SoundRecorder/
+40977bf Automatic translation import
+
+   * packages/apps/Stk/
+1f10bf6 Automatic translation import
+
+   * packages/apps/Terminal/
+ff50b7d Automatic translation import
+
+   * packages/apps/ThemeChooser/
+19981c2 Automatic translation import
+
+   * packages/apps/Trebuchet/
+b0c1a0d Automatic translation import
+ef97694 Prevent possible NPE during monkey test
+
+   * packages/apps/TvSettings/
+b9f2f01 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+a5cb4a5 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+7593ae3 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+da87869 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+c9796fc Automatic translation import
+
+   * packages/services/Mms/
+0b83525 Automatic translation import
+
+   * packages/services/Telecomm/
+2ae2624 Automatic translation import
+
+   * packages/services/Telephony/
+f6cda38 Merge pull request #4 from CyanogenMod/cm-13.0
+044982b Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+699976c Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+6fe94fd Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+1304d69 Automatic translation import
+
+   * vendor/cm/
+bc9c791 init: Create directories needed by sshd
+
+   * vendor/cmsdk/
+92bd890 Merge pull request #4 from CyanogenMod/cm-13.0
+c7e69de cmsdk: Introduce internal MetricsLogger class.
+cc517bf Automatic translation import
+
+   * vendor/motorola/
+5b6e2a1 msm8960dt: Remove mm-parser and dependencies
+
+====================
      01-11-2016
 ====================
 
@@ -14,6 +559,9 @@ a37a0df msm8226-common: camera: Fix the build
 
    * device/motorola/thea/
 4d81534 thea: Move camera wrapper to msm8226-common
+
+   * external/f2fs-tools/
+3e88e81 mkfs.f2fs: Disable clang
 
    * frameworks/base/
 89144e8 FWB: Add Option For Persistent Icon For Edit Tiles [1/2]
@@ -116,6 +664,9 @@ c7cce05 hwc: Fix compile errors after display-frameworks removal
 2b1bb1e hwc: Fix compile errors after display-frameworks removal
 4e68b37 hwc: Fix compile errors after display-frameworks removal
 
+   * hardware/qcom/gps/
+1b6461e gps: Use    * pathmap to determine build eligibility
+
    * packages/apps/Browser/
 6518d5b Merge pull request #5 from CyanogenMod/cm-13.0
 
@@ -141,6 +692,9 @@ d9be7be Snap: FilmStripView must exist before loading photo/video modules
    * vendor/cmsdk/
 b638ed9 cmsdk: Add Three New Tiles [2/2] Signed-off-by: Varun <date.varun123@gmail.com>
 7e4457a Add QS LTE Tile
+
+   * vendor/qcom/opensource/dataservices/
+5451bb0 Makefiles: Use    * pathmap to determine build eligibility
 
 ====================
      01-09-2016
@@ -193,9 +747,6 @@ bac4bec Revert "Revert "GAPPS: Add Google Play Services, Google App and Account 
 092b91a Revert "base: Add permissions to Browser package"
 f599b02 SystemUI: fix navbar drawing issues in landscape
 55440dd FWB: Add notification toggle button to navbar (1/2)
-1b0b1bf QSpanel: few new vector drawables
-c383958 Base:Add Option to Disable Brightness Icon In Brightness Slider [1/2]
-8b4efe9 base: app notifications hide when locked
 
    * frameworks/native/
 bb7725f Merge pull request #2 from CyanogenMod/cm-13.0
@@ -323,7 +874,13 @@ e5c6b04 Art: disable host clang by default
    * device/motorola/msm8226-common/
 598fdc8 msm8226-common: Remove unneeded (and incorrect) overlay
 
+   * external/chromium-webview/
+24baf6f Update arm/arm64 to 48.0.2564.71
+
    * frameworks/base/
+1b0b1bf QSpanel: few new vector drawables
+c383958 Base:Add Option to Disable Brightness Icon In Brightness Slider [1/2]
+8b4efe9 base: app notifications hide when locked
 e22234f SysUI: Use mContext to get colors
 84a7b5b SystemUI: Add missing close parenthesis
 7993e34 SystemUI: Expose Add Tiles DetailedView Title and Icon Color
@@ -335,6 +892,10 @@ fd95bb1 Revert "gui: only support tertiary display if QTI_BSP is defined"
 
    * frameworks/opt/telephony/
 a2c4d49 telephony: Also override nw mode on creation of phone objects.
+
+   * hardware/intel/img/hwcomposer/
+72e9fcf HWC: adapt VirtualDevice for old blob compliance
+e8f0703 Hwcomposer: Enable VirtualDisplay feature
 
    * hardware/libhardware/
 2a6aac5 Revert "libhardware: Only support tertiary display in QTI_BSP is defined"
@@ -353,9 +914,6 @@ bc6e66f Add carrier config for Smartfren for IMS support RENDANG-525
 48ed746 [2/2] Settings: app notifications hide when locked
 264599d Settings: Dotted circle battery (2/3)
 972265e settings: Change default Animation scale value to 0.5
-
-   * packages/apps/SetupWizard/
-62f1457 SetupWizard: declare setupwizard category in manifest
 
    * packages/apps/Snap/
 6d5c4d0 Snap: Fix NPE when switching flash modes
@@ -434,6 +992,9 @@ ab0c994 Tune dex2oat
 dc526be Tuning compiler thread count for optimal application install times
 4ba277d Use 3gb dalvik heap and hwui
 
+   * frameworks/opt/net/ims/
+dfb59ac Add method to check volte provisioning by phone id
+
    * hardware/qcom/audio-caf/msm8996/
 14bd231 Merge tag 'LA.HB.1.3.1-00510-8x96.0' into cm-13.0
 
@@ -456,6 +1017,9 @@ dae250b Remove a few MSIM tab hosts.
 6da8e2e Revert "Device info: Remove IMEI info from SIM status"
 55ccac0 Settings: remove voice wakeup link as necessary
 
+   * packages/apps/SetupWizard/
+62f1457 SetupWizard: declare setupwizard category in manifest
+
    * packages/apps/Snap/
 c571396 Snap: add support for mw_continuous-picture focus mode
 
@@ -468,6 +1032,7 @@ f255cb0 Do not query for default sim when more than 1 calling account is availab
 
    * packages/services/Telephony/
 9ceee26 Merge pull request #3 from CyanogenMod/cm-13.0
+de23ef9 Use correct theme for USSD dialog.
 
    * prebuilts/cmsdk/
 6ff8b3c cmsdk: Update for api level 4 snapshot release.
@@ -490,381 +1055,4 @@ ccf16f8 Keyguard: Broadcast when external keyguard changes
 dbb87e2 ExtView: Document the keyguard external view APIs
 7107e06 cmsdk: Update iconography.
 
-====================
-     01-06-2016
-====================
 
-
-   * build/
-0207b8c kernel: Fix usage of KERNEL_ARCH
-dbf3bc8 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * device/motorola/msm8226-common/
-dee063b Merge pull request #3 from CyanogenMod/cm-13.0
-
-   * external/bouncycastle/
-882ff27 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * external/wpa_supplicant_8/
-0ee01ad Merge tag 'android-6.0.1_r10' into HEAD
-
-   * frameworks/av/
-0748476 Merge pull request #15 from CyanogenMod/cm-13.0
-af4528b stagefright: Add deferred release option
-8195530 stagefright: Only include HFR/HSR on QCOM devices
-de1e368 stagefright: Forward-port HFR and HSR support
-72f2347 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * frameworks/base/
-c11e392 QSpanel: Fix FC when adding New Tile
-8938427 Themes: Re-enable changing keyguard wallpaper
-23fd3ae SystemUI: Make sure to notifydatasetchange on each tile add.
-2dc038c aapt: Use a std::map instead of a SortedVector
-f24c393 Merge tag 'android-6.0.1_r10' into HEAD
-dee318f SystemUI: clean up tuner
-8106da8 Revert "Remove demo mode, is useless......."
-
-   * frameworks/minikin/
-fb0b851 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * frameworks/opt/telephony/
-84be8ed Merge pull request #11 from CyanogenMod/cm-13.0
-
-   * hardware/broadcom/wlan/
-4b218b0 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * hardware/intel/img/hwcomposer/
-59855cd Merge tag 'android-6.0.1_r10' into HEAD
-
-   * hardware/samsung_slsi/exynos5/
-908dd85 Merge tag 'android-m-preview-2'
-
-   * kernel/motorola/msm8226/
-9aecde9 ASoC: tpa6165a2: Implement headset multi-button detection
-
-   * packages/apps/Browser/
-b152ea3 Browser: Resurface incognito button
-
-   * packages/apps/Settings/
-b7f2de0 Fix zen mode allowed event preference summary.
-89d5427 Remove ic_menu_add.png drawables
-12e0cf4 Merge tag 'android-6.0.1_r10' into HEAD
-3234089 Move more CAF strings and cleanup
-eedc073 regulatory: Make the image fill the whole parent
-
-   * packages/apps/Snap/
-c75c27d Snap: add support for shutter speed
-b729dc3 Get rid of Holo...
-070b23a add options to restart preview onPictureTaken
-2829362 add support for luminance-condition parameter
-cdf6b80 option to set manufacturer specific parameters on startup
-42b5564 make openLegacy an option
-c544747 add support for non-standard iso keys and values
-185bfd4 add support for lge-camera parameter
-4c98613 add additional ISO values
-c649770 init SDCard, fix nullptr
-8c6c521 SnapdragonCamera: Use StorageManager for SDCard
-
-   * packages/apps/Trebuchet/
-72f2ccb Trebuchet: Move allow rotation pref to overlay panel
-
-   * packages/inputmethods/LatinIME/
-254b4b1 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * system/core/
-ba49824 Merge pull request #1 from CyanogenMod/cm-13.0
-2d0a7c1 Merge tag 'android-6.0.1_r10' into HEAD
-
-   * system/media/
-60bb4ca audio_utils: Fix 24-bit offload conversions
-
-   * vendor/cm/
-8b18a95 cm: Fixup maven artifact publish inclusions.
-9152648 cm: Modify maven artifact publish makefile.
-
-   * vendor/cmsdk/
-420c39c Merge pull request #2 from CyanogenMod/cm-13.0
-33e300e cmsdk: Add example service test.
-bbab82e cmsdk: Add cmsdk non-jack target module.
-a3730df Reorder new setZenModeWithDuration API in aidl
-
-   * vendor/motorola/
-45e747b Merge pull request #17 from TheMuppets/cm-13.0
-1f81965 Merge pull request #219 from stargo/cm-13.0
-3e35a71 omap4: update widevine from sprout
-
-====================
-     01-05-2016
-====================
-
-
-   * build/
-76c3d12 py3: ota_from_target_files.py: fix logic that broke
-bbd403a py3: update releasetools with proper print syntax
-3089dc5 mms: introduce a shortcut to quickly rebuild kernel/boot.img
-f9a9ece kernel: prevent targets from being rebuilt needlessly
-e5b4e77 kernel: don't build modules or dtbs unless enabled
-1c6ed99 py3: update all the things
-3802fd9 py3: post_process_props
-47b4cb5 py3: java-event-log-tags
-2b271f9 py3: java-layers
-fc8aaf0 py3: product_debug
-d1cff02 py3: merge-event-log-tags
-9f25e14 py3: compare_filelist
-fde1590 py3: update check_boot_jars
-1b6cf34 py3: update checktree
-448f739 py3: parsedeps
-7aba238 py3: filter-product-graph
-1b0423a py3: fileslist
-6315791 py3: repopick
-
-   * device/motorola/msm8226-common/
-1136fa0 msm8226-common: Support MIDI function
-2a70fb3 Merge pull request #2 from CyanogenMod/cm-13.0
-
-   * device/qcom/common/
-9200c08 power-8960: Remove set_interactive handling
-
-   * external/toybox/
-3fac1bd Update generated files after toybox sync.
-5291717 Merge remote-tracking branch 'toybox/master' into HEAD
-
-   * frameworks/base/
-0d3a4fe Fix janky layout
-e746039 FEB: Disable/Enable screenshot sound [1/2]
-5e403b7 FWB: Add clock/date in recents while in fullscreen mode (1/2)
-bcd6454 Default to Resolver Theme
-fee05dd Fix Custom Resolver Theming
-207664a media: Configure audio encode parameters only for valid audio codec.
-9d5fb23 ThemeEngine : Use manifest.mf for hash calculation
-94e7e59 Regional: Customize features for regional package
-d660636 Avoid wrongly reported SIM PIN mismatch.
-1b0247e aapt: Speed up the style pruning
-10145ea SystemUI: fix flicker when removing tiles
-0227870 SystemUI: add tiles detail view
-71f085f NotificationManager: always restore identity on notification error
-79c1121 [1/2] Slim Recent App Sidebar
-2de504b Add SlimRecents 1/2
-6a6aad6 Automatically enable doze mode if significant motion sensor is found
-0c043ca FWB: LS clock fonts: Add more fonts (1/2)
-7c34957 Lockscreen Clock Widget Fonts [1/2]
-165a13d Clean Up Lockscreen Weather (items & layout) [1/2]
-f13fdc3 SystemUI: Fix statusbar clock font size at times not updated on boot
-9fd6288 FWB: Max Lockscreen Notification count [1/2]
-de8c09a Revert "Ls weather: options to hide the weather when notifications are visible (1/2)"
-07fc893 Revert "Fix NPE with WeatherStatus on KeyguardStatusView"
-728fdff SystemUI: Use material delete icon
-96b89b2 SystemUI: bail out of recents-to-home animation when losing focus
-92fd3fd systemui: fix glitches with recents view and search widget
-84b14df SystemUI: check RecentsConfiguration isn't null before running RecentsTaskLoader
-490e7dc SystemUI: Fix NPE
-6d71ec8 SystemUI: recents panel clear all button - sync with settings
-5391f1e Fix leftAffordanceView visibility bug
-d91f1b9 Turn advanced devices and file sizes on by default
-2e5a606 dynamic tiles: debrand adb icon
-fdb3923 Base: NavBar: add power button [1/2]
-5f103d6 SettingsProvider: Update icon.
-bc3933f Revert "AppOps: add a default constructor"
-81d29a2 Launch app privacy settings when tapping on PG notification (1/2)
-f35af1a DndTile: Always open the detailed view
-c21c63e Settings: Don't attempt to forward writes from System -> Global.
-ab7dcd9 Add entry to copy VideoStop.ogg file to system image
-
-   * frameworks/opt/cards/
-8f1db65 fix card header title vertical centering
-8468284 revert button animation
-9a375cd bump up animation duration for expand button
-9ea1582 add TransformableDrawableButton stuff from Narfss
-8d2ccad More centering fixes
-b52a971 Another expanded icon fix
-94c8ee0 Fix the expand icon and center some things
-ed68e2a Use a better expand icon
-7dd70de Use proper expand icons
-6103aec Some fixes
-676cc7e Cardslib: Add partial onLongClickListener ability
-4d42a12 more RTL changes
-07e573e Cardslib: CardsListView allow to touchevents from swipetodismiss for gesture events
-3077179 Some RTL fixes
-c5b669b use api21 in android.mk
-2b3e43f use api21
-6c04f9b rename paths
-c5a208c Update cards lib
-cbdd0b5 Revert "add trds drawables"
-
-   * frameworks/opt/telephony/
-5d1ab6a MMS: Update apnProfileID for MMS only apn.
-
-   * packages/apps/Browser/
-59917d9 Merge pull request #4 from CyanogenMod/cm-13.0
-d2bc708 Browser: Fix crash while loading a page
-
-   * packages/apps/DeskClock/
-77f18a5 Allow alarms to be modified by 3rd parties.
-
-   * packages/apps/Eleven/
-0739c81 Merge "Eleven: Remove wakelock" into cm-13.0
-
-   * packages/apps/PackageInstaller/
-52f1be3 Merge pull request #3 from CyanogenMod/cm-13.0
-
-   * packages/apps/Settings/
-b93cfe2 Move toast icon setting to Screen & Animations
-6a11954 Settings: Disable/Enable screenshot sound [2/2]
-7d166de Settings: Add clock/date in recents while in fullscreen mode (2/2)
-79e59c5 Settings: Set value on external display mode settings change.
-98f044a Hide manual provisioning switch when extphone framework is not present
-eb6a6fd [2/2] Slim Recent App Sidebar
-2a253ea Settings: Slim Recents app screen (2/2)
-bc46c95 Settings: LS clock fonts: Add more fonts (1/2)
-cd51103 Lockscreen Clock Widget Fonts [2/2]
-e1b3747 Lockscreen: Move DT2S to general category
-c4f7f9d Clean Up Lockscreen Weather (items & layout) [2/2]
-ba75efb Max Lockscreen Notification count: Fix incorrect switch :P
-1a37388 Settings: Max Lockscreen Notification count [2/2]
-11f7d93 Revert "Lock screen weather: Add options to hide the weather when notificatio…"
-97fcfc9 Themes: Add main dashboard background back from lollipop
-cd8cecb Settings : Filter settings for secondary users
-a01b88a Settings: Fix NPE in PowerMenuActions
-365f620 Settings : Update filterSpam to new contract
-b10716a Revert "Introduce SystemSettingsCheckBoxPreference"
-7820857 Launch app privacy settings when tapping on PG notification (2/2)
-6189e5b privacyguard: Add Superuser summary
-eb420df Settings AppOps: show/hide app type and allow/deny counters
-1e9b7fa Update privacy guard reset icon
-8388cef Settings: Convert AppOps array items to string references
-0020ea2 AppOps: Use switch widget for non-strict ops.
-a459d3c AppOps: Add more operations in app ops settings.
-b1c2348 AppOps: Add 'Always ask' option under appOps setting.
-56e7390 Settings: Respect legacy quick pulldown row.
-
-   * packages/apps/Trebuchet/
-a20b046 Trebuchet Statistics:  - Add plumbing for sending events.  - Add aggregation service that runs on some interval  - Hook send events into respective UX interactions
-2be1306 Trebuchet: Fix page indicator bottom padding on setting change
-514f98d Ensure we don't go over the icon size limitation
-
-   * packages/services/Telephony/
-be9dbfa Merge pull request #2 from CyanogenMod/cm-13.0
-623872c Allow MobileNetworkSettings to be invoked for selected SIM.
-868b09d Telephony: Fix NPE when any of the sim is disabled
-46f01a4 Merge pull request #1 from CyanogenMod/cm-13.0
-
-   * system/core/
-20d30e9 logd: simpleperf inspired optimizations
-
-   * vendor/cm/
-db02b7c Updated Adaway to latest version v3.1
-7f796e4 Updated KernelAdiutor to latest version 0.9.9.2.3
-d5b1221 Fix adaway prebuilt folder
-9e40e20 otasigcheck: Avoid long lines in XML
-9a8af4e 4.8
-
-   * vendor/cmsdk/
-0a5afe0 Merge pull request #1 from CyanogenMod/cm-13.0
-fcd1883 Sdk: NavBar: add power button [2/2]
-be1678b cmsdk: add method for checking dynamic tiles
-
-   * vendor/motorola/
-22f8edc Merge pull request #16 from TheMuppets/cm-13.0
-
-====================
-     01-04-2016
-====================
-
-
-   * device/motorola/msm8226-common/
-b7ef707 msm8226-common: We don't support EAP SIM, AKA, AKA'
-d2d38cf msm8226-common: Update overlay
-
-   * external/stagefright-plugins/
-78f9d45 stagefright-plugins: Parse file metadata tags
-
-   * external/toybox/
-ac4365b toybox: fix mac build
-
-   * packages/apps/AudioFX/
-b9f160f AudioFX: Remove up navigation from action bar
-
-   * packages/apps/Browser/
-852bcd1 Browser: runtime permissions
-
-   * packages/apps/ExactCalculator/
-6348e58 Themes: Expose hard coded background in java
-
-   * packages/apps/SoundRecorder/
-688b40a SoundRecorder: Fix layout derps
-
-====================
-     01-03-2016
-====================
-
-
-   * device/qcom/sepolicy/
-134a630 msm8952: Label FRP partition
-
-   * external/stagefright-plugins/
-4924fcb stagefright-plugins: Protect against crash
-
-   * hardware/ti/omap4/
-7b565f6 domx: add support for tuna
-
-   * packages/apps/Camera2/
-3b7e673 CameraSettingsActivity: Handle NPE when storage preference is already removed
-
-   * packages/apps/Snap/
-a575c65 SnapdragonCamera: Fix compilation
-
-   * vendor/cmsdk/
-d1129cc cmsdk: Also hide internal package from docs.
-9734639 cmsdk: Fix quick pulldown settings, and unhide numerous system settings.
-2d4d514 cmsdk: Update current api text.
-
-====================
-     01-02-2016
-====================
-
-
-   * development/
-5225472 gdbclient: fix adb output test
-
-   * external/stagefright-plugins/
-f7c42ea stagefright-plugins: Increase max video buffer size + count
-
-   * external/toybox/
-7b746d2 First pass at iotop.
-
-   * frameworks/av/
-c942849 Merge pull request #14 from CyanogenMod/cm-13.0
-38f51de BatteryNotifier: Add missing log LOG_TAG
-
-   * frameworks/base/
-3c28e40 statusbar: fix overlapping backgrounds when expanded
-479d819 Themes: Expose hard code for themes in SystemUI
-af5ec60 Themes: Expose "Set Wallpaper" text color in wallpaper picker
-ddb0c74 Revert "WallpaperCropper: use same action bar style as Launcher3"
-59738a9 Themes: Expose hard code for themes
-
-   * hardware/intel/img/hwcomposer/
-767cc4e Revert "Hwcomposer Moorefield: Return DummyDevice for TERTIARY display"
-
-   * packages/apps/CMFileManager/
-358590d Change ts file extension mime type
-
-   * packages/apps/ContactsCommon/
-d3de2eb Themes: Define back arrow tint color for themes
-
-   * packages/apps/DeskClock/
-91ac9cb DeskClock: Add back flip and shake actions
-
-   * packages/apps/Settings/
-ce7f3bc settings: adds OVERRIDE_WIFI_CONFIG permission
-
-   * packages/services/Telephony/
-71af7ad CDMA: Unknown is displayed for incoming call
-
-   * system/core/
-57f1deb Add vendor hook to handle_control_message
-
-   * vendor/cm/
-7871555 Fixed backuptool for 6.0.1
-5a92c16 sepolicy: Allow minivold execute_no_trans
-a8d6412 cm: sepolicy: fix denials for external storage
