@@ -1,9 +1,235 @@
 ====================
+     03-11-2016
+====================
+
+
+   * bionic/
+cc5ce6a Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_bionic into cm-13.0
+f6f0445 linker: Allow text-relocs for x86 (only)
+
+   * build/
+f1da725 Revert "Do not build or use recovery"
+
+   * device/oneplus/bacon/
+24acbee Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_oneplus_bacon into cm-13.0
+
+   * device/qcom/common/
+0125db4 power: Handle POWER_HINT_INTERACTION
+
+   * external/libpng/
+25bb2d7 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_external_libpng into cm-13.0
+
+   * frameworks/av/
+e14e866 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+ba38778 audiopolicy: squashed support for pre-kitkat audio blobs
+3e86db8 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+971a37d Fix derp
+cf67f10 Allow to ignore presentation indicator of outgoing calls [1/3]
+3645329 base: dock battery
+7bd093a Revert "Reset battery stats [1/2]"
+e4bce10 Revert "QS: Add App SideBar Tile [1/2]"
+7a59aec Revert "App sidebar (1/2)"
+61d9672 Revert "Fix force close for App Sidebar."
+604add9 Revert "App sidebar: notify if app is not installed"
+ca7d059 Revert "App sidebar: Fix Left/Right position."
+a3333fd Revert "Listen phone state change"
+
+   * frameworks/opt/telephony/
+16fc2ce Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+e8a8a7f telephony: Move COLP definition to android settings.
+
+   * kernel/oneplus/msm8974/
+fe6bf34 mmc: move to a SCHED_FIFO thread
+a3b642f Merge branch 'LA.BF.1.1.3_rb1.11' of git://codeaurora.org/kernel/msm into cm-13.0
+80105ae Revert "msm: sps: Support low memory condition in SPS driver"
+
+   * packages/apps/Settings/
+a4623e6 settings: dock battery
+7fcac1a Revert "Reset battery stats [2/2]"
+2d26ef0 Revert "App sidebar (2/2)"
+
+   * packages/services/Telephony/
+384c61b Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
+1b895dd telephony: Move COLP definition to android settings.
+
+   * prebuilts/cmsdk/
+7b8b4c8 prebuilts/cmsdk: Remove COLP definitions.
+
+   * system/core/
+8eed405 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_system_core into cm-13.0
+
+   * system/vold/
+6e470d9 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_system_vold into cm-13.0
+
+   * vendor/cm/
+9735829 Modify APN for Orange Romania
+
+   * vendor/cmsdk/
+f3feed3 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into cm-13.0
+32788b0 ExtViews: Guard against bad LLS providers
+2f2d432 Revert "Allow to ignore presentation indicator of outgoing calls [1/3]"
+cd64faf Revert "cmsdk: Add App SideBar Tile [2/2]"
+
+====================
+     03-10-2016
+====================
+
+
+   * bionic/
+e102086 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_bionic into cm-13.0
+e31f2d8 Don't leak sockets if setsockopt() or fchown() fail.
+1bb333c Fix GNU/POSIX basename headers.
+
+   * build/
+2415a0b Do not build or use recovery
+
+   * device/oneplus/bacon/
+10b175c Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_oneplus_bacon into cm-13.0
+2be9834 bacon: Turn down the fire
+4e06fde Revert "bacon: Switch back to dynamic triple buffer"
+
+   * external/libpng/
+8d5e858 libpng: turn off warnings
+
+   * external/toybox/
+d68bb2e Fix cflags pollution from other    *s
+
+   * frameworks/base/
+a3333fd Revert "Listen phone state change"
+779edfa Revert "SystemUI: Clear map on change"
+0dd86f4 SysUI: Fix hiding sensitive notification behavior
+9c264db Remove opaque check in preparing dirty region for all QCOM device
+c6c3833 sensors: Rename bool for selecting what timestamp to use for orientation sensor
+f70b4ab Fix volume expand arrow to be displayed correctly
+cd5f89c SysUI: Clear notification data when recreating status bar
+
+   * hardware/qcom/audio-caf/msm8974/
+c7baa3b hal: Reduce minimum offload fragment size for PCM offload
+
+   * packages/apps/Settings/
+8e94acf Settings: Modify RU translation for Ambient display
+
+   * packages/apps/Snap/
+0f178af Snap: Do not crash when cur-focus-scale is null
+
+   * packages/services/Telephony/
+f879088 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
+2f06ab7 multi-sim: fallback on active subId on emergency calls
+
+   * system/core/
+36060dd liblog: build log_event_write regardless of TARGET_USES_LOGD
+
+====================
+     03-09-2016
+====================
+
+
+   * bionic/
+94a74d3 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_bionic into cm-13.0
+4954aab Add prlimit to LP32.
+
+   * bootable/recovery/
+1faa075 recovery: bu: Make 64-bit clean
+
+   * build/
+7b7e62c Fix a race condition while building the recovery patch
+1b9de2b Merge tag 'android-6.0.1_r17' into HEAD
+
+   * device/oneplus/bacon/
+fbe6828 bacon: Disable offload for streaming media use case
+
+   * external/toybox/
+8f459b0 toybox: Fix build
+1b74e24 toybox: Update makefile, generated files, and configuration
+7d5136d toybox: Fix build of static executable
+5918842 Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
+
+   * frameworks/av/
+161c248 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+2fd815f stagefright: Clear RenderQueue on port settings changed
+c3902bb video: Add metadata support for DataSource
+69714d4 video: Add support to push blank buffers on surface switch
+1aedff9 Nuplayer: Flush the decoder if seamless format change is supported
+97fc248 ACodec: update the right size and crop in smooth streaming case
+41d4ad5 SoftVorbis: memory access check
+47f8c73 audiopolicy: Defer release of output session effects
+0479d7c audiopolicy: Add notification when default effects are updated
+5b94f0c Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+6aedfab SystemUI: Improve string in data capable, not selected scenario.
+50aebd4 audiosystem: Add API for listening to effect session events
+03edb66 sensors: Create bool to select what timestamp to use
+8fa25bd SysUI: Fix hiding per-app sensitive notifications
+37f1ecd SystemUI: Add PERFORMANCE_ACCESS permission.
+41ac3d6 base: Fix proximity check on non power key
+f60c2dd Merge tag 'android-6.0.1_r17' into HEAD
+
+   * frameworks/native/
+91b728a Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * frameworks/opt/telephony/
+ec0d088 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/qcom/audio-caf/msm8974/
+a7e38b7 hal: Disable perf boost by default
+
+   * kernel/oneplus/msm8974/
+6c72aff Bluetooth: Remove unused hci_le_ltk_reply()
+
+   * packages/apps/DeskClock/
+4623c88 DeskClock: Remove "Week Start" preference
+
+   * packages/apps/Settings/
+6b27ffe Settings: Add PERFORMANCE_ACCESS permission.
+8ac2f31 MSIM: Fix erroneous defaults display in slot selection dialog
+
+   * packages/apps/ThemeChooser/
+e926b36 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_ThemeChooser into cm-13.0
+
+   * packages/apps/Trebuchet/
+e48ef94 Trebuchet: Guard against NPE while querying for widget updates
+0a244ba Trebuchet: Highlight section being touched even when not scrolling scrubber
+
+   * packages/services/Telecomm/
+265919a Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telecomm into cm-13.0
+
+   * vendor/cmsdk/
+f83a4f5 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into cm-13.0
+f8d4978 cmsdk: Fix resource name.
+6356c9b cmsdk: Update README for release artifact numerics.
+b4eafda cmsdk: Add PerformanceManager tests, Change target permission.
+7ed4fca cmsdk: Keep generated java classes from aidl interfaces.
+c0bd6d0 cmsdk: Clean up proguard flags.
+
+====================
      03-08-2016
 ====================
 
 
+   * bootable/recovery/
+6c20b00 recovery: Implement sysbar
+
+   * device/oneplus/bacon/
+4f551d2 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_oneplus_bacon into cm-13.0
+c2f7780 bacon: Untangle playback modes, for real this time
+
+   * external/libavc/
+cccc2b8 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * external/toybox/
+06108e6 Regenerate generated files.
+abf0e28 Merge remote-tracking branch 'toybox/master' into HEAD
+
+   * frameworks/av/
+51aee1e stagefright: Support audio in slow motion
+edd6ca3 Merge tag 'android-6.0.1_r17' into HEAD
+
    * frameworks/base/
+f60c2dd Merge tag 'android-6.0.1_r17' into HEAD
+6a96eb2 SystemUI: fix always_show_roaming
 5329a31 SystemUI: Clear map on change
 15f09f8 Frameworks: Fix hw menu key from unlocking on swipe
 7528537 FWB : Clock Color Switch (1/2)
@@ -13,13 +239,22 @@ a66f566 Only window position changed, update window crop.
 6ac34d3 Pimp multi-window
 6e5af81 Fix build after Themes refractor
 
-   * kernel/motorola/msm8226/
-55d4a56 Revert "msm: vibrator: Add voltage setting for haptic"
-411bba4 msm: qpnp-vibrator: Fixup coding style
+   * frameworks/native/
+efd11d3 Merge tag 'android-6.0.1_r17' into HEAD
+
+   * frameworks/opt/telephony/
+b4b65d2 Merge tag 'android-6.0.1_r17' into HEAD
+62883a9 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * kernel/oneplus/msm8974/
+abf7d19 msm: sps: Handle low memory condition in SPS driver
+927d2fd soc: qcom: bam_dmux: Use SPS hold mem flag
+15445a9 mm: vmscan: fix the page state calculation in too_many_isolated
+0abc3d7 usb: host: xhci: Enable XHCI_SPURIOUS_SUCCESS for all  controllers with xhci 1.0
+3d05947 Merge AU_LINUX_ANDROID_LA.BF.1.1.3_RB1.06.00.01.181.010 on remote branch
 
    * packages/apps/ContactsCommon/
 1196024 Fix resource clean-up in LookupProviderImpl
-4d67195 Update info_lookup to use AmbientSDK directly
 
    * packages/apps/Settings/
 b3d9695 Fix build
@@ -29,16 +264,54 @@ fd4cde1 AppOps: Guard against themes without colorAccent defined
 ade0ca2 Update proper strings to clock color switch
 48c509c Settings: Clock Color Switch (2/2)
 
+   * packages/apps/ThemeChooser/
+4366f66 ThemeChooser: update icon
+
    * packages/services/Telephony/
+abae340 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
+773cab5 Allow to ignore presentation indicator of outgoing calls [3/3]
 5121062 Telephony: Intrusive InCall UI switch [2/2]
 
    * vendor/cm/
+b9025b1 Fix cyanpop name
 034a78f Include AmbientSDK artifact
+
+   * vendor/cmsdk/
+bbcc2f0 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into cm-13.0
+3a590c3 Allow to ignore presentation indicator of outgoing calls [1/3]
+
+   * vendor/oneplus/
+3e7758e Merge pull request #20 from Grarak/cm-13.0
+929a6cf oneplus2: Add fingerprint sensor
 
 ====================
      03-07-2016
 ====================
 
+
+   * device/oneplus/bacon/
+0661f14 bacon: Disable 16-bit PCM offload for good
+
+   * kernel/oneplus/msm8974/
+06c9696 Revert "msm: camera: Add support for camera multimodule in eeprom"
+e4142bd ipv4: Fix mismerge
+66dd6bf Revert "WLAN subsystem: Sysctl support for key TCP/IP parameters"
+dbb6bef ASoC: wcd9xxx: Update hph/ear class-H parameters
+f1495b6 asoc: wcd9320: Fix teardown and UHQA issues
+49931f5 ARM: dts: msm: update 28nm DSI PHY regulator settings
+b89a7fc Revert "Revert "msm8974-oppo: Remove cruft from DT""
+bad17e2 ARM: 7928/1: kconfig: select HAVE_EFFICIENT_UNALIGNED_ACCESS for CPUv6+ && MMU
+c5c927a prima: Update driver to LA.BF.1.1.3_rb1.10
+a2ab05d sched: Fix load avg vs cpu-hotplug
+
+   * packages/apps/ContactsCommon/
+4d67195 Update info_lookup to use AmbientSDK directly
+
+   * packages/services/Telecomm/
+81999fd Implement call waiting answer options dialog
+
+   * vendor/oneplus/
+c518c7f Merge pull request #19 from Grarak/cm-13.0
 
 ====================
      03-06-2016
@@ -51,6 +324,9 @@ ade0ca2 Update proper strings to clock color switch
 2d315c6 kernel: add docs for config vars
 c63e056 kernel: remove support for unused MTK Kernel
 2bd96d9 build: better compatibility between zsh shells
+
+   * device/oneplus/bacon/
+40a087f Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_device_oneplus_bacon into cm-13.0
 
    * frameworks/av/
 b2d7105 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_av into cm-13.0
@@ -122,6 +398,9 @@ d7b3896 5.9
    * vendor/cmsdk/
 2bf5946 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into cm-13.0
 
+   * vendor/oneplus/
+9624ed2 bacon: New blobs
+
 ====================
      03-05-2016
 ====================
@@ -130,8 +409,14 @@ d7b3896 5.9
    * dalvik/
 074c28d dexdeps: Ignore static initializers on analysis.
 
-   * external/chromium-webview/
-451ca2f Update arm/arm64 webview to 49.0.2623.63 & x86 48.0.2564.106
+   * device/oppo/common/
+afbe692 Automatic translation import
+
+   * external/toybox/
+b3e9c92 Elliott pointed out that we output "unlimited" instead of "infinity", so accept that as input. (And that I screwed up the test.)
+
+   * frameworks/opt/telephony/
+33a347a Allow to ignore presentation indicator of outgoing calls [2/3]
 
    * hardware/qcom/media-caf/msm8996/
 347b90c libc2dcolorconvert: refer c2d header from display
@@ -322,10 +607,22 @@ ba01275 cmsdk: Strip unused cmsdk members for codecoverage.
 b3ea285 Themes: Refactor themes to CMSDK [2/6]
 567b430 cmsdk: Add cyanogenmod.util to stubs and update API
 
+   * vendor/oneplus/
+eaf21c8 oneplus2: Missing drm blob
+
 ====================
      03-04-2016
 ====================
 
+
+   * device/oppo/common/
+830dde7 configpanel: Move some strings to cmsdk
+
+   * external/chromium-webview/
+451ca2f Update arm/arm64 webview to 49.0.2623.63 & x86 48.0.2564.106
+
+   * external/toybox/
+5ad93f3 Fix bzcat integer overflow reported by John Regehr.
 
    * hardware/qcom/audio-caf/msm8916/
 5232764 Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.10' into cm-13.0-caf-8916
@@ -335,9 +632,6 @@ b91511e Add Ukrainian T9 symbol map
 
    * packages/apps/PhoneCommon/
 5bd46ba Add Ukrainian T9 symbol map
-
-   * packages/apps/Screencast/
-7aff8c2 Screencast: Don't show touches for non-owners
 
 ====================
      03-03-2016
@@ -349,13 +643,23 @@ b91511e Add Ukrainian T9 symbol map
 e17a927 Merge "Camera: remove StaticMetadataCollectionTest" into marshmallow-cts-dev
 541c86b Merge "Disabling tests which depend on a non-NDK shared library." into marshmallow-cts-dev
 1a219ed Disabling tests which depend on a non-NDK shared library.
-1c077ee Merge "Revert "media: skip unsupported test clip in adaptive playback test"" into marshmallow-cts-dev
-7ea817b Revert "media: skip unsupported test clip in adaptive playback test"
-34eed8c Merge "Revert "Revert "CTS test for libmedia OOB write anywhere""" into marshmallow-cts-dev
-29016e3 Revert "Revert "CTS test for libmedia OOB write anywhere""
 
    * dalvik/
 4797751 dexdeps: Add option for --include-cm-classes.
+
+   * external/toybox/
+ffc6fbb Fix file for Java class files, improve script detection, and add tests.
+5231bb5 More minor cleanup (inline a function, simplify name of another).
+53dc99a Minor cleanup.
+0dfa601 Fix base64 so == wraps properly.
+336c44a Factor out command name at the start of test name, have runtest.sh print it.
+eb83072 Print command name at start of each test.
+b69e1ef Split lsattr/chattr tests.
+54f95bd Command name at start of each test.
+b73d9a2 Add fstype test.
+9ef6fbf Try to consistently print command name at the start of each test.
+7ae108f split pgrep/pkill tests.
+7ca5dc4 For years the man pages have said to #include <sys/types.h> to get major/minor/makedev, but glibc has vowed to break existing programs (https://sourceware.org/ml/libc-alpha/2015-11/msg00253.html) and replace it with _another_ non-standard header (not in posix or lsb), so let's just add functions to lib/ that do the transform ourselves.
 
    * packages/apps/CMFileManager/
 029bcc5 PickerActivity: Request for permissions
@@ -363,12 +667,23 @@ e17a927 Merge "Camera: remove StaticMetadataCollectionTest" into marshmallow-cts
    * packages/apps/DeskClock/
 ae8bcce Alarm: Bind start-of-week to the locale
 
+   * packages/apps/Screencast/
+7aff8c2 Screencast: Don't show touches for non-owners
+
+   * vendor/oneplus/
+8f902be bacon: Completely remove QC location stack
+cfa7348 Merge pull request #18 from Grarak/cm-13.0
+
 ====================
      03-02-2016
 ====================
 
 
    * cts/
+1c077ee Merge "Revert "media: skip unsupported test clip in adaptive playback test"" into marshmallow-cts-dev
+7ea817b Revert "media: skip unsupported test clip in adaptive playback test"
+34eed8c Merge "Revert "Revert "CTS test for libmedia OOB write anywhere""" into marshmallow-cts-dev
+29016e3 Revert "Revert "CTS test for libmedia OOB write anywhere""
 e5955cd Camera: remove StaticMetadataCollectionTest
 b2e117b Merge "Bug #201268 android.telecom.cts.RemoteConnectionTest -- testRemoteConnectionVideoCallbacks_CallDataUsage fail" into marshmallow-cts-dev
 d3e6313 Bug #201268 android.telecom.cts.RemoteConnectionTest -- testRemoteConnectionVideoCallbacks_CallDataUsage fail
@@ -380,11 +695,20 @@ dbdf508 DO NOT MERGE: Camera: collect camera device info in CTS
    * development/
 171957c idegen: Check if environment variable exists
 
+   * device/oneplus/bacon/
+2ff1b46 bacon: Completely remove QC location stack
+
+   * external/toybox/
+323819c The last-ever release of uClibc hasn't got prlimit, so probe.
+dfc44f1 SYS_finit_module isn't there on Ubuntu 12.04 because it was only added to the 3.8 kernel in 2012. That's way too new to assume the build environment has it, so #ifdef and simulate a failure if it's not there.
+86f7c04 Use shell builtins instead of calling wc/awk/sed. (Fewer forks in build loop.) Based on suggestions from Nicholas Boichat.
+5a44e4a The last-ever release of uClibc didn't #define MS_RELATIME.
+789d2c1 Use the correct types for recvfrom.
+d3904ef Fix "make help" again.
+bef3a51 config2help: add missing ctype.h include
+
    * frameworks/av/
 808632f stagefright: Don't crash on invalid / null AVCC atoms in MKV
-
-   * hardware/qcom/audio-caf/msm8916/
-3c1ad83 Merge AU_LINUX_ANDROID_LA.BR.1.2.6_RB1.06.00.01.179.013 on remote branch
 
    * packages/apps/Messaging/
 fec6c6a Added 'Always Ask' for Multi SIM phones to decide which SIM to use for every text
@@ -406,74 +730,8 @@ de9323a Themes: Refactor themes to CMSDK [5/6]
    * vendor/cmsdk/
 8a25943 cmsdk: Add device-specific strings
 
-====================
-     03-01-2016
-====================
-
-
-   * cts/
-b48eb3f Merge "DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4" into marshmallow-cts-release
-0d1e320 DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4
-a99bad7 Merge "DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4" into marshmallow-cts-dev
-669a66c DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4
-64e8dc5 Merge "Add tests for the existence of the OS Patch String, and to detect obsolete versions." into marshmallow-cts-release
-c05e90e Add tests for the existence of the OS Patch String, and to detect obsolete versions.
-
-   * frameworks/base/
-cd04e00 HotSpot: Store # of connected clients in receiver
-
-   * frameworks/native/
-9e37519 surfaceflinger: Use only one EventThread when phase offsets are same.
-
-   * frameworks/opt/telephony/
-0f6a630 Forward port Samsung STK support (frameworks/opt/telephony)
-
-   * packages/apps/Messaging/
-80c9a59 Messaging:Swipe right to delete conversation
-
-   * packages/apps/Snap/
-9993625 Snap: update icon
-a301c53 Snap: Fix incorrect preview layout surface size in landscape mode
-
-   * packages/apps/Trebuchet/
-1cd4587 Trebuchet: Handle random crash during theme change / user switch
-c5454ec Trebuchet: Scale icons in portrait if using condensed grid
-
-====================
-     02-29-2016
-====================
-
-
-   * device/motorola/msm8226-common/
-744ac74 Merge branch 'cm-13.0' of https://github.com/CyanogenMod//android_device_motorola_msm8226-common into cm-13.0
-bf1afc9 Revert "msm8226-common: enable basic dexpreopt"
-
-   * device/motorola/thea/
-389a88b thea: Fix up broken earpiece after soft reboot
-
-   * frameworks/base/
-b281072 SystemUI: Don't vibrate on touchscreen camera gesture
-e4d1118 livedisplay: Factoring out color temperature to RGB conversion algorithm
-84924f7 am: Cancel protected app notification on validation launch.
-
-   * hardware/qcom/media-caf/msm8994/
-0382411 Merge tag 'LA.BF64.1.2.2-03340-8x94.0' into HEAD
-
-   * packages/providers/ContactsProvider/
-4417d18 Don't suspend aggregation for new contacts
-
-   * vendor/cmsdk/
-4bad791 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     02-28-2016
-====================
-
-
-   * device/motorola/msm8226-common/
-4d86bfd msm8226-common: enable basic dexpreopt
-f27e942 msm8226-common: sepolicy: Remove no longer needed rules
-6f3ae83 msm8226-common: Set wlan.driver.config prop for softap
-
-   * vendor/cmsdk/
-73fafc1 cmsdk: Add touch gesture haptic feedback setting
+   * vendor/oneplus/
+6844806 oneplus2: Add IPACM, CNE and EAP
+3d13cf4 bacon: The Blobbening 2: Location Strikes Back
+e1ba2a2 bacon: the blobbening
+290c5f9 onyx: Import OnePlusOxygen_14_201602231131
